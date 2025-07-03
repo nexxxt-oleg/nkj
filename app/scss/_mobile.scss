@@ -141,6 +141,10 @@
 }
 
 @media screen and (max-width: 991px) {
+  .footer__soc {
+    justify-content: center;
+    padding-top: 15px;
+  }
   .footer__top {
     display: block;
     padding: 35px 0 30px;
@@ -296,10 +300,49 @@
   .card-box {
     border-radius: 10px;
   }
+  #sliderNews .swiper-slide {
+    width: 440px;
+  }
+  .footer__body {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .footer__bottom {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+  .footer__web__ico {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .footer__web__desc {
+    padding-left: 20px;
+  }
 }
 
 
 @media screen and (max-width: 768px) {
+  .footer__logo {
+    svg {
+      width: 270px;
+      height: 17px;
+    }
+  }
+  .footer__info,
+  .footer__copy {
+    font-size: 11px;
+  }
+  .footer__info__caption {
+    font-size: 14px;
+  }
+  .footer__soc__item {
+    width: 36px;
+    height: 36px;
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
   .card-box .card-box__img--bottom {
     padding-top: 15px;
   }
