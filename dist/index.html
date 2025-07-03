@@ -556,16 +556,35 @@
             </div>
         </div>
     </div>
-
-    <div class="title-box-top fpad30">
-        <a href="" class="caption caption--h2" data-text="Открытый формат">
-            Открытый формат
-        </a>
-        <a href="" target="_blank" class="caption__rss">
-            <svg class="d-block" width="18" height="18">
-                <use xlink:href="#svg-link"></use>
-            </svg>
-        </a>
+    <div class="d-none d-lg-block">
+        <div class="title-box-top fpad30">
+            <a href="" class="caption caption--h2" data-text="Открытый формат">
+                Открытый формат
+            </a>
+            <a href="" target="_blank" class="caption__rss">
+                <svg class="d-block" width="18" height="18">
+                    <use xlink:href="#svg-link"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="d-block d-lg-none">
+        <div class="title-box-top">
+            <a href="" class="caption caption--h2" data-text="Открытый">
+                Открытый
+            </a>
+        </div>
+        <br>
+        <div class="title-box-top fpad30">
+            <a href="" class="caption caption--h2" data-text="формат">
+                формат
+            </a>
+            <a href="" target="_blank" class="caption__rss">
+                <svg class="d-block" width="18" height="18">
+                    <use xlink:href="#svg-link"></use>
+                </svg>
+            </a>
+        </div>
     </div>
     <div class="row">
         <div class="col-lg-4 fpad40 d-flex flex-column">
@@ -644,6 +663,7 @@
             <div class="spec-box">
                 <div class="spec-box__img">
                     <picture>
+                        <source srcset="images/dist/spec1_mob.jpg" media="(max-width: 768px)">
                         <source srcset="images/dist/spec1.jpg 1x, images/dist/spec1@2.jpg 2x">
                         <img src="images/dist/spec1.jpg" loading="lazy" alt="">
                     </picture>
@@ -665,6 +685,7 @@
             <div class="spec-box">
                 <div class="spec-box__img">
                     <picture>
+                        <source srcset="images/dist/spec2_mob.jpg" media="(max-width: 768px)">
                         <source srcset="images/dist/spec2.jpg 1x, images/dist/spec2@2.jpg 2x">
                         <img src="images/dist/spec2.jpg" loading="lazy" alt="">
                     </picture>
@@ -680,15 +701,34 @@
             </div>
         </div>
     </div>
-    <div class="title-box-top fpad30">
-        <a href="" class="caption caption--h2" data-text="Новости партнёров">
-            Новости партнёров
-        </a>
-        <a href="" target="_blank" class="caption__rss">
-            <svg class="d-block" width="18" height="18">
-                <use xlink:href="#svg-link"></use>
-            </svg>
-        </a>
+    <div class="d-lg-block d-none">
+        <div class="title-box-top fpad30">
+            <a href="" class="caption caption--h2" data-text="Новости партнёров">
+                Новости партнёров
+            </a>
+            <a href="" target="_blank" class="caption__rss">
+                <svg class="d-block" width="18" height="18">
+                    <use xlink:href="#svg-link"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="d-lg-none d-block">
+        <div class="title-box-top">
+            <a href="" class="caption caption--h2" data-text="Новости">
+                Новости
+            </a>
+        </div><br>
+        <div class="title-box-top fpad30">
+            <a href="" class="caption caption--h2" data-text="партнёров">
+                партнёров
+            </a>
+            <a href="" target="_blank" class="caption__rss">
+                <svg class="d-block" width="18" height="18">
+                    <use xlink:href="#svg-link"></use>
+                </svg>
+            </a>
+        </div>
     </div>
     <div class="row">
         <div class="col-lg-4 fpad40 d-flex flex-column">
@@ -838,44 +878,53 @@
             Выбор читателей
         </a>
     </div>
-    <div class="row fpad60">
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box card-box--center">
-                <div class="card-box__title pb-0 fs-24">
-                    Вращение Земли в прошлом замедлялось неравномерно
+    <div class="fpad90">
+        <div class="swiper overflow-visible" id="sliderNews">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide d-flex flex-column h-auto">
+                    <a href="" class="card-box card-box--center">
+                        <div class="card-box__title pb-0 fs-24">
+                            Вращение Земли в прошлом замедлялось неравномерно
+                        </div>
+                        <div class="card-box__img card-box__img--bottom">
+                            <div>
+                                <img src="images/dist/n1.jpg" width="240" height="160" loading="lazy" alt="">
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="card-box__img card-box__img--bottom">
-                    <div>
-                        <img src="images/dist/n1.jpg" width="240" height="160" loading="lazy" alt="">
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box card-box--center">
-                <div class="card-box__img">
-                    <div>
-                        <img src="images/dist/n1.jpg" width="240" height="160" loading="lazy" alt="">
-                    </div>
-                </div>
-                <div class="card-box__title pb-0 fs-24">
-                    Знают ли котики, что они жидкие?
+                <div class="swiper-slide d-flex flex-column h-auto">
+                    <a href="" class="card-box card-box--center">
+                        <div class="card-box__img">
+                            <div>
+                                <img src="images/dist/n1.jpg" width="240" height="160" loading="lazy" alt="">
+                            </div>
+                        </div>
+                        <div class="card-box__title pb-0 fs-24">
+                            Знают ли котики, что они жидкие?
+                        </div>
+
+                    </a>
                 </div>
 
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box card-box--center">
-                <div class="card-box__title pb-0 fs-24">
-                    В Северодвинске нашли могилу «строителя» оплота против старообрядцев
+                <div class="swiper-slide d-flex flex-column h-auto">
+                    <a href="" class="card-box card-box--center">
+                        <div class="card-box__title pb-0 fs-24">
+                            В Северодвинске нашли могилу «строителя» оплота против старообрядцев
+                        </div>
+                        <div class="card-box__img card-box__img--bottom">
+                            <div>
+                                <img src="images/dist/n1.jpg" width="240" height="160" loading="lazy" alt="">
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="card-box__img card-box__img--bottom">
-                    <div>
-                        <img src="images/dist/n1.jpg" width="240" height="160" loading="lazy" alt="">
-                    </div>
-                </div>
-            </a>
+            </div>
+
         </div>
+
+
+
     </div>
 </div>
 

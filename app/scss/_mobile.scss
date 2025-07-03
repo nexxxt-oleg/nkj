@@ -135,9 +135,38 @@
     position: relative;
     z-index: 100;
   }
+  .caption--h4 {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 991px) {
+  .footer__top {
+    display: block;
+    padding: 35px 0 30px;
+    .footer__logo {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .hone-categories__item {
+    border-bottom: 2px solid var(--color-black);
+  }
+  .home-categories {
+    margin: 0;
+    padding: 0 0 5px 0;
+    border-bottom: none;
+  }
+  .home-categories__col {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  .home-categories__col:not(:last-child):after {
+    display: none;
+  }
+  .marketing {
+    display: none;
+  }
   .toolbar-top__logo {
     svg {
       width: 130px;
@@ -220,10 +249,63 @@
   .fpad90 {
     padding-bottom: 40px;
   }
+  .caption--h3 {
+    font-size: 24px;
+  }
+  .card-box.card-box--fact {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .fpad30 {
+    padding-bottom: 15px;
+  }
+  .events__item {
+    font-size: 18px;
+    padding: 18px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .events {
+    padding-bottom: 25px;
+  }
+  .mir-box__wrap__img {
+    padding-bottom: 20px;
+  }
+  .mir-box__wrap__title {
+    font-size: 18px;
+  }
+  .mir-box__wrap__text {
+    font-size: 12px;
+  }
+  .home-events {
+    padding-bottom: 35px;
+    margin-bottom: 40px;
+  }
+  .marketing__img {
+    aspect-ratio: auto;
+    height: 250px;
+  }
+  .card-box--v3 {
+    .card-box__img {
+      padding-top: 150px;
+    }
+  }
+  .mir-box__wrap__img img {
+    border-radius: 10px;
+  }
+  .card-box {
+    border-radius: 10px;
+  }
 }
 
 
 @media screen and (max-width: 768px) {
+  .card-box .card-box__img--bottom {
+    padding-top: 15px;
+  }
+  #sliderNews .swiper-slide {
+    width: 221px;
+  }
   .fpad40 {
     padding-bottom: 10px;
   }
@@ -251,13 +333,14 @@
     padding: 15px 0;
   }
   .button {
-    height: 36px;
+    height: 44px;
     padding: 5px 25px;
   }
   .card-box__img {
     padding-bottom: 15px;
   }
-  .card-box__img img {
+  .card-box__img img,
+  .spec-box__img img {
     border-radius: 10px;
   }
   .marketing__img {
@@ -284,8 +367,41 @@
   .header__body__mob-subscription {
     padding-top: 10px;
   }
+  .mir-box__wrap {
+    padding: 0 30px;
+  }
+  .spec-box__img img {
+    height: 320px;
+  }
+
+  .spec-box__wrap {
+    padding: 20px;
+    h3 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .spec-box__logo{
+    top: 20px;
+    right: 20px;
+  }
+  .spec-box__wrap__footer .button {
+    width: 110px;
+    padding: 5px;
+  }
+  .fpad60 {
+    padding-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 574px) {
 
+}
+
+@media screen and (max-width: 350px) {
+  .toolbar-top__right {
+    gap: 12px;
+  }
 }
