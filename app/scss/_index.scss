@@ -163,8 +163,8 @@ body {
 
 .caption {
   text-decoration: none;
-  margin-left: 2px;
-  color: white;
+  margin-left: 1px;
+  color: #fff !important;
   text-shadow: -1px -1px 0 #959595,
   0px -1px 0 #959595,
   1px -1px 0 #959595,
@@ -181,6 +181,7 @@ body {
   letter-spacing: 0.1em;
   vertical-align: top;
   font-weight: 800;
+  /*-webkit-text-stroke: 1px #959595;*/
 
   &::before {
     content: attr(data-text);
@@ -191,22 +192,39 @@ body {
     left: -2px;
     top: -2px;
     color: #282828;
+    /*text-shadow: none;*/
+    text-shadow: -1px -1px 0 #282828,
+    0px -1px 0 #282828,
+    1px -1px 0 #282828,
+    1px 0px 0 #282828,
+    1px 1px 0 #282828,
+    0px 1px 0 #282828,
+    -1px 1px 0 #282828,
+    -1px 0px 0 #282828;
+
   }
 
   &--h2 {
-    font-size: 60px;
+    font-size: 58px;
+    &::before {
+      left: -3px;
+      top: -3px;
+    }
   }
 
   &--h3 {
-    font-size: 36px;
+    font-size: 34px;
+
   }
 
   &--h4 {
-    font-size: 30px;
+    font-size: 28px;
+
   }
 
   &--h5 {
-    font-size: 24px;
+    font-size: 22px;
+
   }
 }
 
