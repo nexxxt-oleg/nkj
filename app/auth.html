@@ -1,0 +1,83 @@
+<!--#set var="title" value="Авторизация" -->
+<!--#include virtual="/parts/header2.html" -->
+
+<div class="w-100 form-reg">
+    <div class="form-reg__top">
+        <a href="" class="active">ВОЙТИ</a>
+        <a href="">РЕГИСТРАЦИЯ</a>
+    </div>
+    <div class="form-reg__wrap">
+        <form action="" id="formReg">
+            <div class="form-reg__inp">
+                <label>E-mail</label>
+                <input autocomplete="off" type="email" required name="email" id="email">
+            </div>
+            <div class="form-reg__inp">
+                <label>Пароль</label>
+                <div class="form-reg__inp__pass">
+                    <input autocomplete="off" type="password" required name="pass" id="pass">
+                    <div class="form-reg__inp__ico js-pass" data-target="pass">
+                        <svg width="24" height="14">
+                            <use xlink:href="#svg-pass-toggle"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="form-reg__ps d-flex justify-content-between align-items-center">
+                <label class="custom-checkbox">
+                    <input type="checkbox" name="save" value="1">
+                    <span class="custom-checkbox__value">Запомнить меня</span>
+                </label>
+                <a href="" class="form-reg__link">Восстановить пароль</a>
+            </div>
+            <div class="form-reg__submit">
+                <input id="submitBtn" type="submit" value="ВОЙТИ" disabled class="button button--black"/>
+            </div>
+        </form>
+
+        <div class="form-reg__footer">
+            <div class="form-reg__footer__soc">
+                <div class="form-reg__footer__soc__header">
+                    <span>Войти с помощью</span>
+                </div>
+                <ul class="nav form-reg__footer__soc__list">
+                    <li>
+                        <a href="" class="form-reg__footer__soc__list__item">
+                            <svg width="24" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205.98 128.53">
+                                <path fill="#0077ff" fill-rule="evenodd"
+                                      d="m35.25,0c1.16,58.93,27.15,83.89,47.73,89.03V0h33.2v50.82c20.33-2.19,41.68-25.35,48.89-50.82h33.19c-5.53,31.39-28.69,54.55-45.16,64.07,16.47,7.72,42.84,27.92,52.88,64.46h-36.54c-7.85-24.44-27.4-43.36-53.26-45.93v45.93h-3.99C41.81,128.53,1.67,80.28,0,0h35.25Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="form-reg__footer__soc__list__item">
+                            <svg width="15" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 319.95 512">
+                                <path fill="#ff7700"
+                                      d="m4.71,274.79c-13.08,25.71,1.77,37.99,35.65,58.99,28.8,17.79,68.59,24.3,94.14,26.9-10.47,10.07,37.53-36.1-100.71,96.87-29.31,28.1,17.88,73.17,47.17,45.67l79.3-76.48c30.36,29.21,59.46,57.19,79.3,76.59,29.31,27.61,76.48-17.09,47.49-45.67-2.18-2.07-107.46-103.06-101.03-96.87,25.88-2.6,65.07-9.49,93.53-26.9l-.02-.02c33.88-21.1,48.73-33.37,35.84-59.07-7.79-14.59-28.78-26.79-56.73-5.7,0,0-37.74,28.91-98.6,28.91s-98.6-28.91-98.6-28.91c-27.93-21.21-49-8.9-56.7,5.7h0Z"/>
+                                <path fill="#ff7700"
+                                      d="m159.98,259.03c74.2,0,134.78-57.98,134.78-129.37S234.18,0,159.98,0,25.17,57.98,25.17,129.66s60.59,129.37,134.81,129.37Zm0-193.34c36.46,0,66.2,28.61,66.2,63.98s-29.74,63.68-66.2,63.68-66.2-28.61-66.2-63.68c-.02-35.39,29.72-63.98,66.2-63.98h0Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="form-reg__footer__soc__list__item">
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 191.89 191.89">
+                                <path fill="#fc3f1d"
+                                      d="m0,95.95C0,42.96,42.94,0,95.94,0s95.94,42.96,95.94,95.94-42.96,95.94-95.94,95.94S0,148.94,0,95.95"/>
+                                <path fill="#fff"
+                                      d="m108.23,54.36h-8.87c-16.25,0-24.8,8.23-24.8,20.37,0,13.72,5.91,20.15,18.05,28.39l10.03,6.75-28.81,43.05h-21.53l25.86-38.51c-14.87-10.66-23.22-21.01-23.22-38.52,0-21.95,15.3-36.94,44.33-36.94h28.81v113.87h-19.84V54.36Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-reg__footer__text">
+                Авторизуясь на сайте, вы принимаете условия<br>
+                <a href="">Пользовательского соглашения</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer2.html" -->

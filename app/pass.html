@@ -1,0 +1,43 @@
+<!--#set var="title" value="Смена пароля" -->
+<!--#include virtual="/parts/header2.html" -->
+
+<div class="w-100 form-reg mt-auto mb-auto">
+    <div class="form-reg__wrap">
+        <div class="form-reg__wrap__header pb-0">
+            <h3>Смена пароля</h3>
+        </div>
+        <form action="" id="formReg">
+            <div class="form-reg__inp">
+                <label>E-mail</label>
+                <input autocomplete="off" type="email" required name="email" id="email">
+            </div>
+            <div class="form-reg__inp">
+                <label>Новый пароль</label>
+                <div class="form-reg__inp__pass">
+                    <input autocomplete="off" type="password" required name="pass" id="pass">
+                    <div class="form-reg__inp__ico js-pass" data-target="pass">
+                        <svg width="24" height="14">
+                            <use xlink:href="#svg-pass-toggle"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="form-reg__inp">
+                <label>Подтверждение пароля</label>
+                <div class="form-reg__inp__pass">
+                    <input autocomplete="off" type="password" required name="pass2" id="pass2">
+                    <div class="form-reg__inp__ico js-pass" data-target="pass2">
+                        <svg width="24" height="14">
+                            <use xlink:href="#svg-pass-toggle"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="form-reg__submit">
+                <input id="submitBtn" type="submit" value="Сохранить" disabled class="button button--black"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer2.html" -->

@@ -1,0 +1,77 @@
+<!--#set var="title" value="Авторизация" -->
+<!--#include virtual="/parts/header2.html" -->
+
+<div class="w-100 form-reg">
+    <div class="form-reg__top">
+        <a href="">ВОЙТИ</a>
+        <a href="" class="active">РЕГИСТРАЦИЯ</a>
+    </div>
+    <div class="form-reg__wrap">
+        <form action="" id="formReg">
+            <div class="form-reg__inp">
+                <label>Ваше Имя</label>
+                <input autocomplete="off" type="text" name="name" id="name">
+            </div>
+            <div class="form-reg__inp">
+                <label>Фамилия</label>
+                <input autocomplete="off" type="text" name="surname" id="surname">
+            </div>
+            <div class="form-reg__inp">
+                <label>E-mail *</label>
+                <input autocomplete="off" type="email" required name="email" id="email">
+            </div>
+            <div class="form-reg__inp">
+                <label>Пароль *</label>
+                <div class="form-reg__inp__pass">
+                    <input autocomplete="off" type="password" required name="pass" id="pass">
+                    <div class="form-reg__inp__ico js-pass" data-target="pass">
+                        <svg width="24" height="14">
+                            <use xlink:href="#svg-pass-toggle"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="form-reg__inp">
+                <label>Подтверждение пароля *</label>
+                <div class="form-reg__inp__pass">
+                    <input autocomplete="off" type="password" required name="pass2" id="pass2">
+                    <div class="form-reg__inp__ico js-pass" data-target="pass2">
+                        <svg width="24" height="14">
+                            <use xlink:href="#svg-pass-toggle"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="form-reg__inp">
+                <label>*Введите слово на картинке:</label>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="capcha-inp"></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="position-relative">
+                            <input autocomplete="off" type="text" required name="capcha" id="capcha">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-reg__ps">
+                <label class="custom-checkbox">
+                    <input type="checkbox" name="save" value="1">
+                    <span class="custom-checkbox__value">
+                        Я подтверждаю, что ознакомлен с политикой обработки<br>
+                            <a href="">персональных данных</a>
+                    </span>
+                </label>
+
+            </div>
+            <div class="form-reg__submit">
+                <input id="submitBtn" type="submit" value="Регистрация" disabled class="button button--black"/>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer2.html" -->
