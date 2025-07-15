@@ -1590,3 +1590,45 @@ body {
   opacity: 0;
   visibility: hidden;
 }
+
+.accordion {
+  border-top: 1px solid #000;
+  &__item {
+    border-bottom: 1px solid #000;
+    &__header {
+      padding: 15px 35px 15px 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 85px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #282828;
+      line-height: 1.3;
+      cursor: pointer;
+      user-select: none;
+
+      &::after {
+        content: '';
+        display: block;
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='_Ð¡Ð»Ð¾Ð¹_1' data-name='Ð¡Ð»Ð¾Ð¹ 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 298.67 298.67'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B stroke-width: 0px; %7D %3C/style%3E%3C/defs%3E%3Cpolygon class='cls-1' points='128 0 128 128 0 128 0 170.67 128 170.67 128 298.67 170.67 298.67 170.67 170.67 298.67 170.67 298.67 128 170.67 128 170.67 0 128 0'/%3E%3C/svg%3E");
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        margin-top: -12px;
+      }
+    }
+    &__body {
+      padding-bottom: 30px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #282828;
+    }
+  }
+}
