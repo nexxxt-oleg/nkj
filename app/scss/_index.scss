@@ -2410,3 +2410,250 @@ table {
   padding-bottom: 20px;
   font-weight: bold;
 }
+
+.subscription__item {
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &--pdf {
+    background: #fff6f4;
+  }
+  &__title {
+    padding: 15px 0;
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #282828;
+  }
+  &__box {
+    position: relative;
+    border-radius: 15px;
+    border: 1px solid #282828;
+    background: #fff;
+    padding-bottom: 15px;
+    &__header {
+      padding: 30px 86px 15px 90px;
+      user-select: none;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+        border: 1px solid #c7d0da;
+        background: #f3f6f9;
+        top: 35px;
+        left: 30px;
+        position: absolute;
+        z-index: 2;
+      }
+
+      &:not(.collapsed)::before {
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        border-radius: 9px;
+        background: #282828;
+        top: 44px;
+        left: 39px;
+        position: absolute;
+        z-index: 3;
+      }
+      &:not(.collapsed)::after {
+        border-color: #282828;
+      }
+
+      &__sale {
+        position: absolute;
+        z-index: 2;
+        top: -12px;
+        right: 20px;
+        padding: 5px 10px;
+        height: 24px;
+        display: inline-flex;
+        align-items: center;
+        border-radius: 12px;
+        background: #e31e27;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+    }
+
+    &__title {
+      padding-bottom: 8px;
+      font-size: 16px;
+      line-height: 18px;
+      b {
+        display: block;
+        font-weight: bold;
+      }
+    }
+
+    &__price {
+      display: flex;
+      gap: 10px;
+      &__old {
+        position: relative;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: bold;
+        color: #c7d0da;
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: 1;
+          top: 12px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: #eb7578;
+        }
+      }
+
+      &__main {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: bold;
+        color: #282828;
+      }
+
+      &__month {
+        color: #6d6d6d;
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    &__body {
+      padding: 0 86px 15px 90px;
+      &__form {
+        border-top: 1px solid #c7d0da;
+        padding-top: 15px;
+      }
+    }
+
+    &__inp {
+      padding-bottom: 15px;
+      &__label {
+        display: block;
+        color: #6d6d6d;
+        font-size: 14px;
+        line-height: 1.2;
+        padding-bottom: 5px;
+      }
+
+
+
+      .dropdown-toggle {
+        position: relative;
+        &::after {
+          position: absolute;
+          z-index: 10;
+          top: 50%;
+          right: 15px;
+          margin-top: -2.4px;
+        }
+      }
+
+      .dropdown-menu {
+        border-radius: 8px;
+        border: 1px solid #c7d0da;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+        li {
+          display: flex;
+          align-items: center;
+          padding: 2px 15px;
+          height: 30px;
+          margin-bottom: 2px;
+          font-size: 16px;
+          line-height: 24px;
+          color: #282828;
+          cursor: pointer;
+          &.active,
+          &:hover {
+            background: #eef1f4;
+          }
+        }
+        &__col-month {
+          width: 105px;
+        }
+
+        &__scroll {
+          height: 240px;
+          padding: 5px 0;
+        }
+      }
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 15px;
+    }
+
+    &__col-btn {
+      width: 240px;
+    }
+
+    &__price-label {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 20px;
+    }
+
+    &__price-val {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    &__itog-month {
+      padding-bottom: 15px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}
+
+.form-control {
+  height: 48px;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #c7d0da;
+  font-size: 16px;
+  line-height: 26px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #c7d0da;
+  }
+}
+
+.ss-scroll {
+  width: 6px !important;
+}
+.subscription__item--book {
+  background: #eaf2d7;
+}
+.subscription__item__box__inp .dropdown-menu li span {
+  min-width: 70px;
+}
+.dropdown-menu__col-price {
+  color: #6d6d6d;
+  font-size: 14px;
+}
