@@ -2726,3 +2726,125 @@ table {
     resize: none;
   }
 }
+
+.payment-item {
+  display: block;
+  cursor: pointer;
+  input {
+    display: none;
+    &:checked + .payment-item__wrap {
+      border-color: #282828;
+      & .payment-item__box::after {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 2;
+        top: 10px;
+        left: 10px;
+        border-radius: 12px;
+        background-color: rgb(40, 40, 40);
+        background-position: 50% 50%;
+        width: 24px;
+        height: 24px;
+        background-image: url("data:image/svg+xml,%3Csvg id='_Слой_2' data-name='Слой 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 511.99 368.41'%3E%3Cg id='Capa_1' data-name='Capa 1'%3E%3Cpath fill='%23fff' d='M500.09,11.89c-15.84-15.86-41.56-15.85-57.43,0L184.21,270.36l-114.87-114.87c-15.86-15.86-41.57-15.86-57.44,0-15.86,15.86-15.86,41.57,0,57.44l143.59,143.58c7.93,7.93,18.32,11.9,28.71,11.9s20.8-3.96,28.72-11.9L500.09,69.33c15.86-15.85,15.86-41.57,0-57.43Z'/%3E%3C/g%3E%3C/svg%3E");
+        background-size: 9px 6px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  &__wrap {
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background: #fff;
+  }
+
+  &__box {
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    height: 132px;
+    padding: 35px 15px;
+    text-align: center;
+    &__ico {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 30px;
+    }
+    &__title {
+      display: block;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+      padding-top: 5px;
+      &.color1 {
+        color: #282828;
+      }
+    }
+  }
+}
+
+.promo-code__form {
+  position: relative;
+  input {
+    padding-right: 130px;
+  }
+  &__btn {
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    right: 5px;
+    height: 38px;
+    border-radius: 7px;
+  }
+}
+
+.promo-code__form__alert {
+  padding: 5px 0 0 15px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1ea055;
+  &.error {
+    color: #e90a0a;
+  }
+}
+
+.form-border__ps {
+  padding: 25px 35px;
+  text-align: center;
+  border-radius: 10px;
+  color: #282828;
+  font-size: 16px;
+  line-height: 24px;
+  background: #e8ecf1;
+  margin-bottom: 20px;
+}
+.form-border__subscription {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-border__price {
+  text-align: center;
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.form-border__btn {
+  max-width: 414px;
+  margin: 0 auto 20px;
+}
+.form-border__footer {
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.2;
+  a {
+    color: #282828;
+    text-decoration: underline;
+  }
+}
