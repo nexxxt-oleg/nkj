@@ -330,20 +330,22 @@
     <div class="row justify-content-center">
         <div class="col-lg-10 col-xl-8">
             <div class="fpad60">
-                <div class="subscription__item subscription__item--pdf">
+                <div class="subscription__item subscription__item--book">
                     <h2 class="subscription__item__title">Выбрана подписка</h2>
                     <div class="subscription__item__box">
                         <div class="subscription__item__box__header subscription__item__box__header--active">
                             <div class="subscription__item__box__title">
-                                Подписка на электронную версию
-                                <b>на 12 месяцев</b>
+                                Подписка на печатную версию
+                                <b>с доставкой заказной бандеролью на 12 месяцев</b>
+                            </div>
+                            <div class="subscription__item__box__structure">
+                                <b>Состав подписки:</b><br>
+                                сентябрь - декабрь 2025 по 473 ₽ (Итого 1 892 ₽)<br>
+                                январь - август 2026 по 500 ₽  (Итого 4 000 ₽)
                             </div>
                             <div class="subscription__item__box__price">
                                 <div class="subscription__item__box__price__main">
-                                    1 764 ₽
-                                </div>
-                                <div class="subscription__item__box__price__month">
-                                    147 ₽ за 1 месяц
+                                    5 892 ₽
                                 </div>
                             </div>
 
@@ -374,9 +376,59 @@
                                 <label for="email">E-mail *</label>
                                 <input type="email" name="email" id="email" required>
                             </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="form-reg__inp">
+                                        <label for="index">Индекс *</label>
+                                        <input type="text" name="index" id="index" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="form-reg__inp">
+                                        <label for="krai">Край/Область *</label>
+                                        <input type="text" name="krai" id="krai" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-reg__inp">
+                                <label for="punkt">Населенный пункт *</label>
+                                <input type="text" name="punkt" id="punkt" required>
+                            </div>
                             <div class="form-reg__inp">
                                 <label for="comment">Комментарий к заказу</label>
                                 <textarea id="comment" name="comment"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="form-reg__inp">
+                                        <label for="street">Улица *</label>
+                                        <input type="text" name="street" id="street" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-reg__inp">
+                                        <label for="dom">Дом *</label>
+                                        <input type="text" name="dom" id="dom" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-reg__inp">
+                                        <label for="korpus">Корпус</label>
+                                        <input type="text" name="korpus" id="korpus" >
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-reg__inp">
+                                        <label for="stroi">Строение</label>
+                                        <input type="text" name="stroi" id="stroi" >
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-reg__inp">
+                                        <label for="kv">Квартира</label>
+                                        <input type="text" name="kv" id="kv" >
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="form-border__group">
@@ -464,7 +516,7 @@
                         <div class="form-border__subscription">Подписка на электронную версию на 6 месяцев</div>
                         <div class="form-border__price">1 195 ₽</div>
                         <div class="form-border__btn">
-                            <button type="submit" class="button button--black button--big w-100">Оформить подписку
+                            <button disabled type="submit" class="button button--black button--big w-100">Оформить подписку
                             </button>
                         </div>
                         <div class="form-border__footer">

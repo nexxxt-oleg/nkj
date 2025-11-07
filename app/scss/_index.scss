@@ -2681,10 +2681,9 @@ table {
   .button {
     position: absolute;
     z-index: 2;
-    top: 50%;
+    top: 30px;
     width: 140px;
     right: 25px;
-    margin-top: -16px;
   }
 }
 
@@ -2847,4 +2846,21 @@ table {
     color: #282828;
     text-decoration: underline;
   }
+}
+
+.subscription__item__box__structure {
+  padding-bottom: 12px;
+  color: #6d6d6d;
+  font-size: 14px;
+  line-height: 18px;
+  b {
+    font-weight: bold;
+  }
+}
+.fs-14 {
+  font-size: 14px !important;
+  line-height: 1.3;
+}
+.fpad10 {
+  padding-bottom: 10px;
 }
