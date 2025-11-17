@@ -12,9 +12,21 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+  .banner__text {
+    width: 500px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
+  .banner {
+    padding: 30px;
+  }
+  .banner__text {
+    width: 400px;
+  }
+  .banner--journal {
+    background-size: 500px auto;
+  }
   .toolbar-top__left,
   .toolbar-top__right__col-subscription {
     display: none;
@@ -141,6 +153,74 @@
 }
 
 @media screen and (max-width: 991px) {
+  .banner__text p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 18px;
+  }
+  .banner__text__footer {
+    padding-top: 20px;
+  }
+  .banner__text h2 {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  .tpad25,
+  .fpad15 {
+    padding-top: 10px;
+  }
+  .fs-16 {
+    font-size: 14px !important;
+  }
+  .fpad50 {
+    padding-bottom: 25px;
+  }
+  .table {
+    thead th {
+      padding: 20px 0 10px 0 !important;
+      font-size: 12px !important;
+      line-height: 1.2;
+    }
+
+    tbody th,
+    tbody td {
+      padding: 10px 0 !important;
+      vertical-align: middle;
+      font-size: 12px !important;
+      line-height: 1.2;
+    }
+  }
+  .banner--journal {
+    background-size: 100% auto;
+    background-position: 50% 100%;
+    padding-bottom: 300px;
+    padding-right: 30px;
+    background-image: url("../images/dist/baaner-journal_mob.png");
+  }
+  .banner__text {
+    width: 100%;
+  }
+  .banner {
+    margin-bottom: 30px;
+  }
+
+  .title-border {
+    font-size: 18px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  .caption--fs48 {
+    font-size: 24px;
+  }
+  .fs-18 {
+    font-size: 14px;
+  }
+  .mb-45 {
+    margin-bottom: 20px;
+  }
+  .caption--h1 {
+    font-size: 22px;
+  }
   .footer__soc {
     justify-content: center;
     padding-top: 15px;
@@ -148,6 +228,7 @@
   .footer__top {
     display: block;
     padding: 35px 0 30px;
+
     .footer__logo {
       display: flex;
       justify-content: center;
@@ -231,22 +312,26 @@
   .card-box--new.card-box--mob {
     flex-direction: row;
     margin-bottom: 25px;
+
     .card-box__desc-nomer {
       padding-left: 20px;
-      .card-box__new-img__caption{
+
+      .card-box__new-img__caption {
         position: relative;
         top: auto;
         left: auto;
         width: auto;
       }
+
       .card-box__mob-nomer {
         padding: 20px 0;
         font-size: 14px;
       }
+
       .card-box__footer-btn {
-         .button {
-           width: 100%;
-         }
+        .button {
+          width: 100%;
+        }
       }
     }
   }
@@ -320,8 +405,84 @@
   }
 }
 
-
 @media screen and (max-width: 768px) {
+  .reklama-statistics__item__number {
+    font-size: 48px;
+    line-height: 50px;
+    height: 52px;
+  }
+  .reklama-statistics__item {
+    padding-bottom: 20px;
+  }
+  .reklama-statistics__item__text {
+    font-size: 14px;
+  }
+  .reklama-statistics__item__number .min {
+    font-size: 24px;
+  }
+  .info-user-box {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .caption--h5 {
+    font-size: 18px;
+  }
+  .info-user-box .editor-group__item__title,
+  .editor-group__item__email, .editor-group__item__phone {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .editor-group__item__img {
+    min-width: 64px;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+  }
+  .number-list__right {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 15px;
+    min-width: auto;
+
+    svg {
+      height: 36px;
+      width: 36px;
+    }
+  }
+  .number-list__value {
+    font-size: 40px;
+    line-height: 1;
+    padding-bottom: 10px;
+  }
+  .number-list li:not(:last-child) {
+    border-bottom-width: 1px;
+  }
+  .number-list__desc {
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .number-list li:first-child {
+    padding-top: 0 !important;
+  }
+  .number-list li {
+    display: block;
+    padding: 15px 0;
+    position: relative;
+  }
+  .card-box.card-box--reklama {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .text .h2 {
+    font-size: 18px;
+  }
+  .text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
   .footer__logo {
     svg {
       width: 270px;
@@ -338,6 +499,7 @@
   .footer__soc__item {
     width: 36px;
     height: 36px;
+
     svg {
       width: 18px;
       height: 18px;
@@ -360,6 +522,7 @@
     .card-box__new-img__wrap {
       margin-bottom: 0;
     }
+
     img {
       width: 72px;
       height: auto;
@@ -419,14 +582,16 @@
 
   .spec-box__wrap {
     padding: 20px;
+
     h3 {
       font-size: 18px;
     }
+
     p {
       font-size: 14px;
     }
   }
-  .spec-box__logo{
+  .spec-box__logo {
     top: 20px;
     right: 20px;
   }
@@ -440,7 +605,77 @@
 }
 
 @media screen and (max-width: 574px) {
+  .banner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .banner--journal {
+    padding-bottom: 180px;
+  }
+  .accordion__item__body {
+    font-size: 14px;
+  }
+  .accordion__item__header {
+    font-size: 16px;
+  }
+  .caption--h5 {
+    font-size: 18px;
+  }
+  .link-box {
+    display: block;
+  }
+  .link-box__name {
+    font-size: 18px;
+  }
+  .link-box__desc {
+    font-size: 14px;
+  }
+  .row {
+    margin-right: -6px;
+    margin-left: -6px;
 
+    & > * {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+  }
+  .tpad25 {
+    padding-top: 5px;
+  }
+  .shop-box__text {
+    min-height: auto;
+    padding-bottom: 25px;
+    padding-top: 15px;
+
+    p br {
+      display: none;
+    }
+  }
+  .shop-box__text h2 {
+    font-size: 18px;
+  }
+  .shop-box__text p {
+    font-size: 14px;
+  }
+  .shop-box {
+    height: auto;
+    border-radius: 10px;
+    padding: 30px 20px;
+  }
+  .shop-box__img {
+    order: -1;
+    position: relative;
+    left: auto;
+    top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: auto;
+      height: 125px;
+    }
+  }
 }
 
 @media screen and (max-width: 350px) {
