@@ -3536,9 +3536,11 @@ table {
     display: flex;
     font-size: 16px;
     line-height: 24px;
+
     &__label {
       width: 190px;
     }
+
     &__value {
       font-weight: bold;
     }
@@ -3560,4 +3562,172 @@ table {
     height: auto;
     border-radius: 20px;
   }
+}
+
+.help-lib {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 15px 15px;
+  border-radius: 15px;
+  background: #e8ecf1;
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0 0 30px 15px;
+  }
+
+  &__list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__caption {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 15px 0 25px 15px;
+  }
+}
+
+.custom-radio-box {
+  display: block;
+
+  input {
+    display: none;
+
+    &:checked + .custom-radio-box__value {
+      border-color: #282828;
+
+      &::after {
+        border-color: #282828;
+      }
+
+      &::before {
+        opacity: 1;
+        background-color: #282828;
+      }
+    }
+  }
+
+  &__value {
+    display: flex;
+    min-height: 95px;
+    align-items: center;
+    padding: 15px 15px 15px 96px;
+    border-radius: 15px;
+    background: #fff;
+    border: 1px solid #c7d0da;
+    color: #282828;
+    font-size: 16px;
+    line-height: 1.2;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 36px;
+      height: 36px;
+      border-radius: 18px;
+      border: 1px solid #c7d0da;
+      background-color: #f3f6f9;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 30px;
+      margin-top: -18px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 18px;
+      border-radius: 18px;
+      left: 39px;
+      transition: all 0.2s ease-in-out;
+      opacity: 0;
+      top: 50%;
+      margin-top: -9px;
+      position: absolute;
+      z-index: 2;
+    }
+  }
+
+
+}
+
+.help-lib__label-inp {
+  display: block;
+  color: #6d6d6d;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 0 0 5px 15px;
+  margin: 0;
+}
+
+.form-select {
+  display: block;
+  width: 100%;
+  height: 48px;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: #6d6d6d;
+  font-size: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg id='_Слой_2' data-name='Слой 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280.99 161.83'%3E%3Cg id='Outline'%3E%3Cpath d='M21.24,0h238.51c11.78.05,21.29,9.64,21.24,21.42-.02,5.66-2.29,11.07-6.31,15.06l-119.04,119.04c-8.3,8.37-21.8,8.42-30.17.12-.04-.04-.08-.08-.12-.12L6.31,36.48c-8.37-8.3-8.42-21.8-.12-30.17C10.17,2.29,15.59.02,21.24,0Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 10px auto;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.help-lib__group__addr {
+  font-size: 14px;
+  line-height: 1.5;
+
+  b {
+    font-weight: 600;
+    display: block;
+  }
+}
+
+.help-lib__res {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+
+  &__label {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  &__cost {
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  &__btn {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 414px;
+
+  }
+}
+.button.h-64 {
+  height: 64px;
+  border-radius: 322px;
+  font-size: 16px;
 }
