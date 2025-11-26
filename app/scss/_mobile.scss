@@ -18,6 +18,7 @@
 }
 
 @media screen and (max-width: 1199px) {
+
   .banner {
     padding: 30px;
   }
@@ -153,6 +154,16 @@
 }
 
 @media screen and (max-width: 991px) {
+  .reklama-statistics__graf img {
+    display: block;
+    margin: 15px auto 0;
+  }
+  .banner--rek-portal {
+    background-size: 152px auto;
+    background-position: 50% 100%;
+    padding-bottom: 170px;
+    background-image: url("../images/dist/banner-rek-portal_mob.png");
+  }
   .banner__text p {
     font-size: 14px;
     margin-bottom: 10px;
