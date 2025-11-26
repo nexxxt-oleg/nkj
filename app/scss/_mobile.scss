@@ -154,6 +154,12 @@
 }
 
 @media screen and (max-width: 991px) {
+  .news__content h2 {
+    font-size: 36px;
+  }
+  .news__content h4 {
+    font-size: 20px;
+  }
   .reklama-statistics__graf img {
     display: block;
     margin: 15px auto 0;
@@ -417,6 +423,98 @@
 }
 
 @media screen and (max-width: 768px) {
+  .related-articles__list {
+    margin-top: 15px;
+  }
+  .news__footer__mob-sharing {
+    display: block;
+    .news__sharing {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-top: 25px;
+    }
+  }
+  .news {
+    padding-bottom: 35px;
+  }
+  .news__footer__authors {
+    display: block;
+    padding-bottom: 15px;
+    &__label {
+      width: 100%;
+      padding-bottom: 15px;
+      font-size: 14px;
+    }
+  }
+  .news__footer__authors__list {
+    display: block;
+  }
+  .news__footer__authors__item {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .news__link {
+    padding: 5px 0 25px;
+    b {
+      display: block;
+      padding-bottom: 5px;
+    }
+  }
+  .news__content p {
+    margin-bottom: 25px;
+  }
+  .news__slider {
+    margin-bottom: 25px;
+    .swiper__nav--next {
+      right: 10px;
+    }
+    .swiper__nav--prev {
+      left: 10px;
+    }
+    .swiper__nav {
+      width: 38px;
+      height: 38px;
+      margin-top: -19px;
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    &__page {
+      padding-top: 10px;
+    }
+  }
+  .news__content {
+    h2 {
+      font-size: 22px;
+      padding-bottom: 10px;
+    }
+    h4 {
+      font-size: 16px;
+      padding-bottom: 10px;
+    }
+  }
+  .news__slider__item__front {
+    height: 300px;
+  }
+  .news__slider__item {
+    height: 300px;
+    padding: 0 33px;
+  }
+  .news__top {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .news__top__cat,
+  .news__top__date,
+  .news__top__time-read {
+    font-size: 12px;
+  }
+  .news__top__time-read {
+    margin: 0;
+    width: 100%;
+  }
   .reklama-statistics__item__number {
     font-size: 48px;
     line-height: 50px;
@@ -616,6 +714,11 @@
 }
 
 @media screen and (max-width: 574px) {
+  .news__slider__item__front,
+  .news__slider__item {
+    height: 172px;
+  }
+
   .banner {
     padding-left: 16px;
     padding-right: 16px;

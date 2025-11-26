@@ -327,7 +327,7 @@
 <div class="container tpad25">
     <article class="news">
         <div class="row">
-            <div class="col-xl-2 col-lg-1 tpad10">
+            <div class="col-xl-2 col-lg-1 tpad10 d-none d-lg-block">
                 <ul class="nav news__sharing">
                     <li>
                         <a href="" class="news__sharing__item">
@@ -370,7 +370,7 @@
                         5 минут на прочтение
                     </div>
                 </div>
-                <div class="text news__content">
+                <div class="text news__content" id="news_1">
                     <h2>Центральное погребение «древнейшего» скифского кургана оказалось не похожим на скифское</h2>
                     <h4>Археологи не исключают, что оно было разрушено ещё в древности, возможно, это было частью
                         неизвестного нам ритуала.</h4>
@@ -503,6 +503,38 @@
                             <a href="" class="list-tags__item">#Туннуг</a>
                         </li>
                     </ul>
+                    <div class="news__footer__mob-sharing">
+                        <ul class="nav news__sharing">
+                            <li>
+                                <a href="" class="news__sharing__item">
+                                    <svg width="24" height="15">
+                                        <use xlink:href="#svg-vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="news__sharing__item">
+                                    <svg width="24" height="20">
+                                        <use xlink:href="#svg-tg"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="news__sharing__item">
+                                    <svg width="24" height="20">
+                                        <use xlink:href="#svg-ok"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="news__sharing__item">
+                                    <svg width="22" height="22">
+                                        <use xlink:href="#svg-x"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -568,7 +600,7 @@
             </div>
         </div>
     </div>
-    <div class="fpad90">
+    <div class="fpad90 d-none d-lg-block">
         <div class="marketing">
             <div class="marketing__header">
                 <h3 class="caption caption--h5" data-text="НЕМНОГО РЕКЛАМЫ">
@@ -595,7 +627,7 @@
     </div>
     <article class="news">
         <div class="row">
-            <div class="col-xl-2 col-lg-1">
+            <div class="col-xl-2 col-lg-1 d-none d-lg-block">
                 <a href="" class="new-journal-link">
                     <figure class="card-box__new-img__wrap">
                         <img src="images/dist/j1.jpg" width="95" height="149" loading="lazy" alt="">
@@ -889,6 +921,15 @@
     </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/gh/SH20RAJ/ScrollProgressJS@main/ScrollProgress.js"></script>
+<script>
+    ScrollProgress.init({
+        color: '#282828',   // Progress bar color
+        height: '1px',      // Progress bar height
+        position: 'bottom'  // Progress bar position ('top' or 'bottom')
+    });
+    ScrollProgress.setScrollElement('#news_1');
+</script>
 <footer class="footer">
     <div class="container">
         <div class="footer__top">
