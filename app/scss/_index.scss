@@ -3522,7 +3522,6 @@ table {
 
 .news__content--castle {
   position: relative;
-  margin-bottom: 30px;
 
   &::after {
     content: '';
@@ -3538,11 +3537,7 @@ table {
 }
 
 .news__content__footer-link {
-  position: absolute;
-  z-index: 10;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin-bottom: 30px;
 }
 
 .new-journal-footer {
@@ -3805,4 +3800,10 @@ table {
 }
 .news__footer__mob-sharing {
   display: none;
+}
+
+.news__top__col-castle {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
 }

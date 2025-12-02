@@ -1,6 +1,8 @@
 <!--#set var="title" value="Новости" -->
 <!--#include virtual="/parts/header.html" -->
 <!--#include virtual="/parts/breadcrumbs.html" -->
+<!--div class="progress-bar" id="progressBar"></div-->
+
 <div class="container tpad25">
     <article class="news">
         <div class="row">
@@ -40,11 +42,13 @@
                 <div class="news__top">
                     <a href="" class="news__top__cat">НОВОСТИ</a>
                     <div class="news__top__date">25 мая 2025</div>
-                    <div class="news__top__time-read">
-                        <svg class="mr-15" width="16" height="16">
-                            <use xlink:href="#svg-time"></use>
-                        </svg>
-                        5 минут на прочтение
+                    <div class="news__top__col-castle">
+                        <div class="news__top__time-read">
+                            <svg class="mr-15" width="16" height="16">
+                                <use xlink:href="#svg-time"></use>
+                            </svg>
+                            5 минут на прочтение
+                        </div>
                     </div>
                 </div>
                 <div class="text news__content" id="news_1">
@@ -305,14 +309,16 @@
     <article class="news">
         <div class="row">
             <div class="col-xl-2 col-lg-1 d-none d-lg-block">
-                <a href="" class="new-journal-link">
-                    <figure class="card-box__new-img__wrap">
-                        <img src="images/dist/j1.jpg" width="95" height="149" loading="lazy" alt="">
-                    </figure>
-                    <div class="new-journal-link__caption">
-                        10 сентябрь 2025
-                    </div>
-                </a>
+                <div class="d-none d-xl-block">
+                    <a href="" class="new-journal-link">
+                        <figure class="card-box__new-img__wrap">
+                            <img src="images/dist/j1.jpg" width="95" height="149" loading="lazy" alt="">
+                        </figure>
+                        <div class="new-journal-link__caption">
+                            10 сентябрь 2025
+                        </div>
+                    </a>
+                </div>
                 <ul class="nav news__sharing">
                     <li>
                         <a href="" class="news__sharing__item">
@@ -348,71 +354,124 @@
                 <div class="news__top">
                     <a href="" class="news__top__cat">Коротко о науке и технике</a>
                     <div class="news__top__date">25 мая 2025</div>
-                    <div class="news__top__ico">
-                        <svg width="13" height="16">
-                            <use xlink:href="#svg-castle"></use>
-                        </svg>
-                    </div>
-                    <div class="news__top__time-read">
-                        <svg class="mr-15" width="16" height="16">
-                            <use xlink:href="#svg-time"></use>
-                        </svg>
-                        15 минут на прочтение
-                    </div>
-                </div>
-                <div class="text news__content news__content--castle">
-                    <h2>Центральное погребение «древнейшего» скифского кургана оказалось не похожим на скифское</h2>
-                    <h4>Археологи не исключают, что оно было разрушено ещё в древности, возможно, это было частью
-                        неизвестного нам ритуала.</h4>
-                    <p>В центре кургана Туннуг, одного из самых древних скифских курганов, археологи обнаружили два
-                        сруба.
-                        Находки из этих погребений заметно отличаются от тех, которые археологи обычно считают
-                        скифскими. Об
-                        этом рассказал начальник экспедиции Тимур Садыков в комментарии для
-                        <a href="">телеграм-канала «АрхеоКод»</a> (принадлежит Институту истории материальной культуры
-                        РАН).
-                    </p>
-
-                    <div class="news__slider">
-                        <div class="news__slider__img">
-                            <img src="images/dist/nn2.jpg" alt="">
+                    <div class="news__top__col-castle">
+                        <div class="news__top__ico">
+                            <svg width="13" height="16">
+                                <use xlink:href="#svg-castle"></use>
+                            </svg>
                         </div>
-                        <div class="news__slider__caption">
-                            Расчистка золотого украшения. Кадр из видео: <a href="" target="_blank">телеграм-канал
-                            «АрхеоКод»</a> (ИИМК РАН).
+                        <div class="news__top__time-read">
+                            <svg class="mr-15" width="16" height="16">
+                                <use xlink:href="#svg-time"></use>
+                            </svg>
+                            15 минут на прочтение
                         </div>
                     </div>
+                </div>
+                <div class="text news__content " id="news_2">
+                    <div class="news__content--castle">
+                        <h2>Центральное погребение «древнейшего» скифского кургана оказалось не похожим на скифское</h2>
+                        <h4>Археологи не исключают, что оно было разрушено ещё в древности, возможно, это было частью
+                            неизвестного нам ритуала.</h4>
+                        <p>В центре кургана Туннуг, одного из самых древних скифских курганов, археологи обнаружили два
+                            сруба.
+                            Находки из этих погребений заметно отличаются от тех, которые археологи обычно считают
+                            скифскими. Об
+                            этом рассказал начальник экспедиции Тимур Садыков в комментарии для
+                            <a href="">телеграм-канала «АрхеоКод»</a> (принадлежит Институту истории материальной
+                            культуры
+                            РАН).
+                        </p>
 
-                    <p>Курган находятся в Туве, в так называемой «Долине царей», где ранее археологи раскопали крупные и
-                        богатые захоронения скифских вождей – Аржан 1 и Аржан 2. Работы на Туннуге начались в 2017 году,
-                        их
-                        ведёт ИИМК РАН, в сотрудничестве с иностранными и российскими коллегами из разных организаций.
-                        Курган похож по конструкции на Аржан 1: это большое сооружение, в основе которого находится
-                        деревянная конструкция. Она напоминает колесо со спицами, его диаметр – около 80 метров.
-                        Радиоуглеродный метод позволил датировать Туннуг девятым веком до н.э. В это время происходит
-                        формирование скифской общности.</p>
-                    <p>Курган находятся в Туве, в так называемой «Долине царей», где ранее археологи раскопали крупные и
-                        богатые захоронения скифских вождей – Аржан 1 и Аржан 2. Работы на Туннуге начались в 2017 году,
-                        их
-                        ведёт ИИМК РАН, в сотрудничестве с иностранными и российскими коллегами из разных организаций.
-                        Курган похож по конструкции на Аржан 1: это большое сооружение, в основе которого находится
-                        деревянная конструкция. Она напоминает колесо со спицами, его диаметр – около 80 метров.
-                        Радиоуглеродный метод позволил датировать Туннуг девятым веком до н.э. В это время происходит
-                        формирование скифской общности.</p>
-                    <p>Курган находятся в Туве, в так называемой «Долине царей», где ранее археологи раскопали крупные и
-                        богатые захоронения скифских вождей – Аржан 1 и Аржан 2. Работы на Туннуге начались в 2017 году,
-                        их
-                        ведёт ИИМК РАН, в сотрудничестве с иностранными и российскими коллегами из разных организаций.
-                        Курган похож по конструкции на Аржан 1: это большое сооружение, в основе которого находится
-                        деревянная конструкция. Она напоминает колесо со спицами, его диаметр – около 80 метров.
-                        Радиоуглеродный метод позволил датировать Туннуг девятым веком до н.э. В это время происходит
-                        формирование скифской общности.</p>
-                    <div class="news__content__footer-link">
-                        <a href="" class="button button--black button--big w-100">Продолжение статьи читайте в номере
-                            журнала</a>
+                        <div class="news__slider">
+                            <div class="news__slider__img">
+                                <img src="images/dist/nn2.jpg" alt="">
+                            </div>
+                            <div class="news__slider__caption">
+                                Расчистка золотого украшения. Кадр из видео: <a href="" target="_blank">телеграм-канал
+                                «АрхеоКод»</a> (ИИМК РАН).
+                            </div>
+                        </div>
+
+                        <p>Курган находятся в Туве, в так называемой «Долине царей», где ранее археологи раскопали
+                            крупные и
+                            богатые захоронения скифских вождей – Аржан 1 и Аржан 2. Работы на Туннуге начались в 2017
+                            году,
+                            их
+                            ведёт ИИМК РАН, в сотрудничестве с иностранными и российскими коллегами из разных
+                            организаций.
+                            Курган похож по конструкции на Аржан 1: это большое сооружение, в основе которого находится
+                            деревянная конструкция. Она напоминает колесо со спицами, его диаметр – около 80 метров.
+                            Радиоуглеродный метод позволил датировать Туннуг девятым веком до н.э. В это время
+                            происходит
+                            формирование скифской общности.</p>
+                        <p>Курган находятся в Туве, в так называемой «Долине царей», где ранее археологи раскопали
+                            крупные и
+                            богатые захоронения скифских вождей – Аржан 1 и Аржан 2. Работы на Туннуге начались в 2017
+                            году,
+                            их
+                            ведёт ИИМК РАН, в сотрудничестве с иностранными и российскими коллегами из разных
+                            организаций.
+                            Курган похож по конструкции на Аржан 1: это большое сооружение, в основе которого находится
+                            деревянная конструкция. Она напоминает колесо со спицами, его диаметр – около 80 метров.
+                            Радиоуглеродный метод позволил датировать Туннуг девятым веком до н.э. В это время
+                            происходит
+                            формирование скифской общности.</p>
+                        <p>Курган находятся в Туве, в так называемой «Долине царей», где ранее археологи раскопали
+                            крупные и
+                            богатые захоронения скифских вождей – Аржан 1 и Аржан 2. Работы на Туннуге начались в 2017
+                            году,
+                            их
+                            ведёт ИИМК РАН, в сотрудничестве с иностранными и российскими коллегами из разных
+                            организаций.
+                            Курган похож по конструкции на Аржан 1: это большое сооружение, в основе которого находится
+                            деревянная конструкция. Она напоминает колесо со спицами, его диаметр – около 80 метров.
+                            Радиоуглеродный метод позволил датировать Туннуг девятым веком до н.э. В это время
+                            происходит
+                            формирование скифской общности.</p>
                     </div>
                 </div>
 
+                <div class="news__content__footer-link">
+                    <div class="news__footer__mob-sharing">
+                        <ul class="nav news__sharing">
+                            <li>
+                                <a href="" class="news__sharing__item">
+                                    <svg width="24" height="15">
+                                        <use xlink:href="#svg-vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="news__sharing__item">
+                                    <svg width="24" height="20">
+                                        <use xlink:href="#svg-tg"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="news__sharing__item">
+                                    <svg width="24" height="20">
+                                        <use xlink:href="#svg-ok"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="news__sharing__item">
+                                    <svg width="22" height="22">
+                                        <use xlink:href="#svg-x"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="" class="button button--black button--big w-100">
+                        <span>Продолжение статьи
+                        <span class="text-nowrap">читайте в номере журнала</span></span>
+                    </a>
+
+                </div>
                 <div class="new-journal-footer">
                     <div class="new-journal-footer__img">
                         <a href="" class="new-journal-link">
@@ -458,13 +517,11 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </article>
     <div class="fpad90">
-        <div class="position-relative">
+        <div class="position-relative slider-journal">
             <div class="swiper js-slider-journal overflow-visible" data-next="journal1_next" data-prev="journal1_prev">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide h-auto d-flex flex-column">
@@ -571,7 +628,7 @@
             </div>
         </div>
     </div>
-    <div class="fpad90">
+    <div class="fpad90 d-none d-lg-block">
         <div class="marketing">
             <div class="marketing__header">
                 <h3 class="caption caption--h5" data-text="НЕМНОГО РЕКЛАМЫ">
@@ -599,184 +656,43 @@
 </div>
 
 <script>
-    class BlockScrollProgress {
-        constructor(targetBlockSelector, options = {}) {
-            this.targetBlock = document.querySelector(targetBlockSelector);
-            this.options = {
-                scaleHeight: '1px',
-                scaleColor: '#292929',
-                scalePosition: 'top',
-                showInfo: true,
-                infoPosition: 'top-right',
-                ...options
-            };
 
-            if (!this.targetBlock) {
-                console.error('Целевой блок не найден');
-                return;
+    function progressBar(blockId) {
+
+        const widthScreen = window.innerWidth || document.documentElement.clientWidth ||
+            document.body.clientWidth;
+        if (widthScreen < 1200) {
+
+            const block = document.getElementById(blockId);
+
+            if (!block) return;
+
+            const rect = block.getBoundingClientRect();
+            const scale = document.createElement('div');
+            scale.classList.add('progress-bar');
+            scale.classList.add('d-none');
+            document.body.appendChild(scale);
+
+            function update() {
+                let scroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+                if (scroll > rect.top && scroll < rect.top + rect.height) {
+                    scale.classList.remove('d-none');
+
+                    let scrolled = (scroll - rect.top) / rect.height * 100;
+                    scale.style.width = scrolled + '%';
+                } else {
+                    scale.classList.add('d-none');
+                }
             }
 
-            this.init();
-        }
-
-        init() {
-            this.createProgressScale();
-            if (this.options.showInfo) {
-                this.createInfoPanel();
-            }
-            this.bindEvents();
-            this.calculateBlockPosition();
-            this.updateProgress();
-        }
-
-        createProgressScale() {
-            this.scaleContainer = document.createElement('div');
-            this.scaleContainer.className = 'block-progress-scale';
-            this.scaleContainer.style.cssText = `
-                    position: fixed;
-                    ${this.options.scalePosition}: 0;
-                    left: 0;
-                    width: 100%;
-                    height: ${this.options.scaleHeight};
-                    background: #f0f0f0;
-                    z-index: 10000;
-                `;
-
-            this.progressBar = document.createElement('div');
-            this.progressBar.className = 'block-progress-bar';
-            this.progressBar.style.cssText = `
-                    height: 100%;
-                    width: 0%;
-                    background: ${this.options.scaleColor};
-                    transition: width 0.1s ease;
-                    position: relative;
-                `;
-
-            // Добавляем маркер на конце
-            this.progressBar.innerHTML = ``;
-
-            this.scaleContainer.appendChild(this.progressBar);
-            document.body.appendChild(this.scaleContainer);
-        }
-
-        createInfoPanel() {
-            this.infoPanel = document.createElement('div');
-            this.infoPanel.className = 'block-progress-info';
-            this.infoPanel.style.cssText = `
-                    position: fixed;
-                    ${this.getInfoPanelPosition()};
-                    background: rgba(0,0,0,0.8);
-                    color: white;
-                    padding: 10px 15px;
-                    border-radius: 6px;
-                    font-size: 14px;
-                    font-family: Arial, sans-serif;
-                    z-index: 10001;
-                    white-space: nowrap;
-                `;
-            this.infoPanel.innerHTML = `Прогресс блока: <strong>0%</strong>`;
-            document.body.appendChild(this.infoPanel);
-        }
-
-        getInfoPanelPosition() {
-            const positions = {
-                'top-right': 'top: 20px; right: 20px;',
-                'top-left': 'top: 20px; left: 20px;',
-                'bottom-right': 'bottom: 20px; right: 20px;',
-                'bottom-left': 'bottom: 20px; left: 20px;'
-            };
-            return positions[this.options.infoPosition] || positions['top-right'];
-        }
-
-        bindEvents() {
-            window.addEventListener('scroll', this.updateProgress.bind(this));
-            window.addEventListener('resize', () => {
-                this.calculateBlockPosition();
-                this.updateProgress();
-            });
-
-            // Наблюдаем за изменениями в DOM
-            const observer = new MutationObserver(() => {
-                setTimeout(() => {
-                    this.calculateBlockPosition();
-                    this.updateProgress();
-                }, 100);
-            });
-            observer.observe(document.body, {
-                childList: true,
-                subtree: true,
-                attributes: true
-            });
-        }
-
-        calculateBlockPosition() {
-            const rect = this.targetBlock.getBoundingClientRect();
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            console.log('rect ' + rect.top);
-            console.log('rect2 ' + scrollTop);
-            this.blockStart = rect.top;
-            this.blockEnd = this.blockStart + rect.height;
-            this.viewportHeight = window.innerHeight;
-            this.documentHeight = document.documentElement.scrollHeight;
-        }
-
-        updateProgress() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const scrollBottom = scrollTop + this.viewportHeight;
-
-            // Рассчитываем прогресс видимости блока
-            let progress = 0;
-
-            if (scrollBottom < this.blockStart) {
-                // Блок еще не виден
-                progress = 0;
-            } else if (scrollTop > this.blockEnd) {
-                // Блок полностью прокручен
-                progress = 100;
-            } else {
-                // Блок частично виден
-                const visibleHeight = Math.min(scrollBottom, this.blockEnd) - Math.max(scrollTop, this.blockStart);
-                const totalVisible = Math.min(this.blockEnd - this.blockStart, this.viewportHeight);
-                progress = (visibleHeight / totalVisible) * 100;
-            }
-
-            // Обновляем шкалу прогресса
-            this.progressBar.style.width = progress + '%';
-
-            // Обновляем информационную панель
-            if (this.infoPanel) {
-                this.infoPanel.innerHTML = `Прогресс блока: <strong>${Math.round(progress)}%</strong>`;
-            }
-
-            // Вызываем callback если есть
-            if (this.options.onProgress) {
-                this.options.onProgress(progress);
-            }
-        }
-
-        destroy() {
-            window.removeEventListener('scroll', this.updateProgress.bind(this));
-            window.removeEventListener('resize', this.updateProgress.bind(this));
-
-            if (this.scaleContainer && this.scaleContainer.parentNode) {
-                this.scaleContainer.parentNode.removeChild(this.scaleContainer);
-            }
-
-            if (this.infoPanel && this.infoPanel.parentNode) {
-                this.infoPanel.parentNode.removeChild(this.infoPanel);
-            }
+            window.addEventListener('scroll', update);
         }
     }
 
-    // Использование
-    const blockProgress = new BlockScrollProgress('#news_1', {
-        scaleHeight: '1px',
-        scaleColor: '#292929',
-        showInfo: false,
-        infoPosition: 'top-right',
-        onProgress: (percent) => {
-            console.log(`Прогресс блока: ${Math.round(percent)}%`);
-        }
-    });
+    progressBar('news_1');
+    progressBar('news_2');
+
 </script>
+
 <!--#include virtual="/parts/footer.html" -->
