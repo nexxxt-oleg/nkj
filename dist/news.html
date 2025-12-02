@@ -921,14 +921,186 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/gh/SH20RAJ/ScrollProgressJS@main/ScrollProgress.js"></script>
 <script>
-    ScrollProgress.init({
-        color: '#282828',   // Progress bar color
-        height: '1px',      // Progress bar height
-        position: 'bottom'  // Progress bar position ('top' or 'bottom')
+    class BlockScrollProgress {
+        constructor(targetBlockSelector, options = {}) {
+            this.targetBlock = document.querySelector(targetBlockSelector);
+            this.options = {
+                scaleHeight: '8px',
+                scaleColor: 'linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1)',
+                scalePosition: 'top',
+                showInfo: true,
+                infoPosition: 'top-right',
+                ...options
+            };
+
+            if (!this.targetBlock) {
+                console.error('Целевой блок не найден');
+                return;
+            }
+
+            this.init();
+        }
+
+        init() {
+            this.createProgressScale();
+            if (this.options.showInfo) {
+                this.createInfoPanel();
+            }
+            this.bindEvents();
+            this.calculateBlockPosition();
+            this.updateProgress();
+        }
+
+        createProgressScale() {
+            this.scaleContainer = document.createElement('div');
+            this.scaleContainer.className = 'block-progress-scale';
+            this.scaleContainer.style.cssText = `
+                    position: fixed;
+                    ${this.options.scalePosition}: 0;
+                    left: 0;
+                    width: 100%;
+                    height: ${this.options.scaleHeight};
+                    background: #f0f0f0;
+                    z-index: 10000;
+                `;
+
+            this.progressBar = document.createElement('div');
+            this.progressBar.className = 'block-progress-bar';
+            this.progressBar.style.cssText = `
+                    height: 100%;
+                    width: 0%;
+                    background: ${this.options.scaleColor};
+                    transition: width 0.1s ease;
+                    position: relative;
+                `;
+
+            // Добавляем маркер на конце
+            this.progressBar.innerHTML = ``;
+
+            this.scaleContainer.appendChild(this.progressBar);
+            document.body.appendChild(this.scaleContainer);
+        }
+
+        createInfoPanel() {
+            this.infoPanel = document.createElement('div');
+            this.infoPanel.className = 'block-progress-info';
+            this.infoPanel.style.cssText = `
+                    position: fixed;
+                    ${this.getInfoPanelPosition()};
+                    background: rgba(0,0,0,0.8);
+                    color: white;
+                    padding: 10px 15px;
+                    border-radius: 6px;
+                    font-size: 14px;
+                    font-family: Arial, sans-serif;
+                    z-index: 10001;
+                    white-space: nowrap;
+                `;
+            this.infoPanel.innerHTML = `Прогресс блока: <strong>0%</strong>`;
+            document.body.appendChild(this.infoPanel);
+        }
+
+        getInfoPanelPosition() {
+            const positions = {
+                'top-right': 'top: 20px; right: 20px;',
+                'top-left': 'top: 20px; left: 20px;',
+                'bottom-right': 'bottom: 20px; right: 20px;',
+                'bottom-left': 'bottom: 20px; left: 20px;'
+            };
+            return positions[this.options.infoPosition] || positions['top-right'];
+        }
+
+        bindEvents() {
+            window.addEventListener('scroll', this.updateProgress.bind(this));
+            window.addEventListener('resize', () => {
+                this.calculateBlockPosition();
+                this.updateProgress();
+            });
+
+            // Наблюдаем за изменениями в DOM
+            const observer = new MutationObserver(() => {
+                setTimeout(() => {
+                    this.calculateBlockPosition();
+                    this.updateProgress();
+                }, 100);
+            });
+            observer.observe(document.body, {
+                childList: true,
+                subtree: true,
+                attributes: true
+            });
+        }
+
+        calculateBlockPosition() {
+            const rect = this.targetBlock.getBoundingClientRect();
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            console.log('rect ' + rect.top);
+            console.log('rect2 ' + scrollTop);
+            this.blockStart = rect.top;
+            this.blockEnd = this.blockStart + rect.height;
+            this.viewportHeight = window.innerHeight;
+            this.documentHeight = document.documentElement.scrollHeight;
+        }
+
+        updateProgress() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollBottom = scrollTop + this.viewportHeight;
+
+            // Рассчитываем прогресс видимости блока
+            let progress = 0;
+
+            if (scrollBottom < this.blockStart) {
+                // Блок еще не виден
+                progress = 0;
+            } else if (scrollTop > this.blockEnd) {
+                // Блок полностью прокручен
+                progress = 100;
+            } else {
+                // Блок частично виден
+                const visibleHeight = Math.min(scrollBottom, this.blockEnd) - Math.max(scrollTop, this.blockStart);
+                const totalVisible = Math.min(this.blockEnd - this.blockStart, this.viewportHeight);
+                progress = (visibleHeight / totalVisible) * 100;
+            }
+
+            // Обновляем шкалу прогресса
+            this.progressBar.style.width = progress + '%';
+
+            // Обновляем информационную панель
+            if (this.infoPanel) {
+                this.infoPanel.innerHTML = `Прогресс блока: <strong>${Math.round(progress)}%</strong>`;
+            }
+
+            // Вызываем callback если есть
+            if (this.options.onProgress) {
+                this.options.onProgress(progress);
+            }
+        }
+
+        destroy() {
+            window.removeEventListener('scroll', this.updateProgress.bind(this));
+            window.removeEventListener('resize', this.updateProgress.bind(this));
+
+            if (this.scaleContainer && this.scaleContainer.parentNode) {
+                this.scaleContainer.parentNode.removeChild(this.scaleContainer);
+            }
+
+            if (this.infoPanel && this.infoPanel.parentNode) {
+                this.infoPanel.parentNode.removeChild(this.infoPanel);
+            }
+        }
+    }
+
+    // Использование
+    const blockProgress = new BlockScrollProgress('#news_1', {
+        scaleHeight: '1px',
+        scaleColor: '#292929',
+        showInfo: false,
+        infoPosition: 'top-right',
+        onProgress: (percent) => {
+            console.log(`Прогресс блока: ${Math.round(percent)}%`);
+        }
     });
-    ScrollProgress.setScrollElement('#news_1');
 </script>
 <footer class="footer">
     <div class="container">
