@@ -1497,10 +1497,10 @@ body {
 
 .library-banner-top {
   padding: 50px;
-  border-radius: 15px;
+  border-radius: 25px;
   background-color: #eaf2d7;
   background-position: 100% 100%;
-  background-image: url("../images/dist/bg-lib.jpg");
+  background-image: url("../images/dist/bg-lib.png");
   background-size: 600px auto;
   background-repeat: no-repeat;
   min-height: 430px;
@@ -1608,6 +1608,7 @@ body {
       font-weight: 500;
       font-size: 16px;
       line-height: 1.3;
+      padding-bottom: 5px;
     }
 
     &__position {
