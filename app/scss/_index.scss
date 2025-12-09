@@ -3808,3 +3808,7 @@ table {
   align-items: center;
   flex-grow: 1;
 }
+
+.contacts__list__item > div {
+  word-break: break-all;
+}
