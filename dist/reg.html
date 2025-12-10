@@ -25,9 +25,15 @@
 <body>
 <div class="main " id="top">
     <div class="reg-box position-relative">
-        <div class="container">
+        <div class="reg-box__mob-header">
+            <svg class="d-block" width="180" height="11">
+                <use xlink:href="#svg-logo"></use>
+            </svg>
+        </div>
+        <div class="reg-box__inner">
+            <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 ">
                     <div class="reg-box__left">
                         <div class="reg-box__left__wrap">
                             <div class="reg-box__left__header">
@@ -103,7 +109,7 @@
                             </a>
                         </div>
                         <div class="row justify-content-center flex-grow-1">
-                            <div class="col-lg-8 d-flex flex-column">
+                            <div class="col-lg-10 col-xl-8 d-flex flex-column">
 
 
 
@@ -168,20 +174,21 @@
                 <label class="custom-checkbox">
                     <input type="checkbox" name="save" value="1">
                     <span class="custom-checkbox__value">
-                        Я подтверждаю, что ознакомлен с политикой обработки<br>
-                            <a href="">персональных данных</a>
+                        Я подтверждаю, что ознакомлен с политикой обработки
+                            <a href="" class="text-nowrap">персональных данных</a>
                     </span>
                 </label>
 
             </div>
             <div class="form-reg__submit">
-                <input id="submitBtn" type="submit" value="Регистрация" disabled class="button button--black"/>
+                <input id="submitBtn" type="submit" value="Регистрация"  class="button button--black"/>
             </div>
         </form>
 
     </div>
 </div>
 
+</div>
 </div>
 </div>
 </div>

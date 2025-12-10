@@ -1387,11 +1387,11 @@ body {
 }
 
 .just-validate-error-label {
-  position: absolute;
-  top: 100%;
-  left: 0;
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
   width: 100%;
-  color: #e90a0a;
+  color: #e90a0a !important;
   font-size: 12px;
   line-height: 18px;
 }
@@ -1418,6 +1418,9 @@ body {
   }
 }
 
+.reg-box__mob-header {
+  display: none;
+}
 
 .form-reg__alert {
   text-align: center;

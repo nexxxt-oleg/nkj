@@ -1,4 +1,5 @@
 @media screen and (max-width: 1400px) {
+
   .header__nav li {
     padding: 0;
   }
@@ -163,6 +164,43 @@
 }
 
 @media screen and (max-width: 991px) {
+  .reg-box__mob-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 68px;
+    color: #fff;
+  }
+  .reg-box {
+    background: url(../images/dist/bg-auth.jpg) 50% -50px no-repeat;
+    background-size: 100% auto;
+  }
+  .reg-box__inner {
+    padding: 25px 0;
+    background: #fff;
+    border-radius: 18px 18px 0 0;
+  }
+  .reg-box__right {
+    position: relative;
+    padding-top: 0;
+  }
+  .reg-box__right__header {
+    position: absolute;
+    z-index: 10;
+    top: -75px;
+    right: 0;
+    .reg-box__right__back {
+      color: #fff;
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+  .reg-box__left,
+  .reg-box:after{
+    display: none;
+  }
   .library-banner-top__desc {
     width: 100%;
   }
@@ -1205,7 +1243,7 @@
     font-size: 12px;
     padding-bottom: 5px;
   }
-  .form-border__group  {
+  .form-border__group {
     padding-bottom: 20px;
     margin-bottom: 15px;
   }
@@ -1230,7 +1268,7 @@
     background-image: url("data:image/svg+xml,%3Csvg id='_Слой_2' data-name='Слой 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 341.34 331.87'%3E%3Cg id='Layer_1' data-name='Layer 1'%3E%3Cpath fill='%23fff' d='M259.67,187.26H0s0-42.66,0-42.66l259.66-.02L145.24,30.17,175.41,0l165.93,165.93-165.93,165.93-30.17-30.17,114.43-114.43Z'/%3E%3C/g%3E%3C/svg%3E");
     background-size: 16px auto;
   }
-  .promo-code__form__alert{
+  .promo-code__form__alert {
     padding-left: 0;
     font-size: 12px;
   }
@@ -1246,11 +1284,12 @@
   .form-border__subscription {
     padding-bottom: 10px;
   }
-  .form-border__footer{
+  .form-border__footer {
     font-size: 12px;
   }
   .form-border__btn {
     width: 100%;
+
     .button.button--big {
       height: 64px;
       border-radius: 32px;
@@ -1263,10 +1302,55 @@
 }
 
 @media screen and (max-width: 574px) {
+  .form-reg__alert__ico {
+    margin-bottom: 20px;
+  }
+  .form-reg__alert {
+    padding-top: 5px;
+  }
+  .form-reg__alert__desc p {
+    font-size: 14px;
+  }
+  .reg-box__right {
+    padding-bottom: 0;
+  }
+  .form-reg__submit {
+    .button {
+      width: 100%;
+      height: 48px;
+    }
+  }
+  .form-reg__footer {
+    padding-top: 35px;
+  }
+  .form-reg__inp label,
+  .custom-checkbox__value,
+  .form-reg__link,
+  .form-reg__footer__text,
+  .form-reg__wrap__header p{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .form-reg__wrap__header p br {
+    display: none;
+  }
+  .form-reg__top a {
+    font-size: 14px;
+  }
+  .reg-box__right__header {
+    right: -15px;
+  }
+  .reg-box__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .reg-box {
+    background-image: url("../images/dist/bg-reg-mob.jpg");
+    background-position: 50% 0;
+  }
   .subscription__item__box__header {
     padding-right: 25px;
   }
-
 
   .library-banner-top__desc__footer {
     flex-direction: column;
