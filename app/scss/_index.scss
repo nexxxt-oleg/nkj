@@ -3827,10 +3827,10 @@ table {
 }
 
 .banner.banner--elemets {
-  height: auto;
-  aspect-ratio: 1296 / 627;
-  background-image: url("../images/dist/bg-elements.jpg");
-  background-size: cover;
+  height: 627px;
+  //aspect-ratio: 1296 / 627;
+  background: #e8ecf1 url("../images/dist/bg-elements.jpg") 100% 100% no-repeat;
+  background-size: 600px 500px;
   margin-bottom: 50px;
 }
 
@@ -3973,6 +3973,137 @@ table {
       letter-spacing: 0.1em;
       text-transform: uppercase;
       font-weight: 800;
+    }
+  }
+}
+
+.elemets-table {
+  position: relative;
+  padding-top: 12px;
+
+  &__title {
+    color: #282828;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 2;
+    top: 95px;
+    left: 150px;
+  }
+  &__wrap {
+    width: 830px;
+    height: 300px;
+    table {
+      width: 100%;
+      td {
+        border:1px solid transparent !important;
+        padding: 0 !important;
+        width: 47px;
+        height: 47px;
+        &.spacer {
+          width: auto;
+          height: 10px;
+        }
+        & > span {
+          display: block;
+          width: 45px;
+          height: 45px;
+          background: #fff;
+          border-radius: 5px;
+          border: 1px solid #282828;
+          color: #282828;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: center;
+          line-height: 42px;
+          position: relative;
+        }
+        a {
+          display: block;
+          width: 45px;
+          height: 45px;
+          background: #fff;
+          border-radius: 5px;
+          border: 1px solid #282828;
+          color: #282828;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: center;
+          line-height: 42px;
+          position: relative;
+          text-decoration: none;
+        }
+
+        & > div {
+          text-align: right;
+          padding-right: 10px;
+          padding-top: 5px;
+          span {
+            display: inline-block;
+            width: 20px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: bold;
+            color: #282828;
+          }
+        }
+
+        &.chem_group_default {
+          a {
+            background: #f2f2f3;
+          }
+        }
+
+        &.chem_group_alkali {
+          a {
+            background: #ff6566;
+          }
+        }
+
+        &.chem_group_metalloid {
+          a {
+            background: #cccc9a;
+          }
+        }
+
+        &.chem_group_halogen {
+          a {
+            background: #feff98;
+          }
+        }
+
+        &.chem_group_transition {
+          a {
+            background: #ffbfbe;
+          }
+        }
+
+        &.chem_group_posttransition {
+          a {
+            background: #cccbcb;
+          }
+        }
+
+        &.chem_group_actinide {
+          a {
+            background: #e39dca;
+          }
+        }
+      }
+    }
+
+    .atom-extra {
+      display: block;
+      text-align: center;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      bottom: -3px;
+      width: 100%;
+      line-height: 1;
     }
   }
 }
