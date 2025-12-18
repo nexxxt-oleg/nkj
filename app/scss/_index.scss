@@ -168,7 +168,7 @@ body {
 .caption {
   text-decoration: none;
   margin-left: 1px;
-  color: #fff ;
+  color: #fff;
   text-shadow: -1px -1px 0 #959595,
   0px -1px 0 #959595,
   1px -1px 0 #959595,
@@ -246,6 +246,7 @@ body {
 
   &.caption--white {
     color: #3b3b3b;
+
     &::before {
       color: #fff;
     }
@@ -2494,7 +2495,7 @@ body {
   }
 }
 
-table {
+.table {
   thead {
     th {
       border-bottom: 2px solid #c7d0da !important;
@@ -3840,6 +3841,7 @@ table {
   background-size: 600px 500px;
   margin-bottom: 50px;
 }
+
 .banner.banner--elemet {
   height: 627px;
   margin-bottom: 50px;
@@ -4004,20 +4006,25 @@ table {
     top: 95px;
     left: 150px;
   }
+
   &__wrap {
     width: 830px;
     min-width: 830px;
+
     table {
       width: 100%;
+
       td {
-        border:1px solid transparent !important;
+        border: 1px solid transparent !important;
         padding: 0 !important;
         width: 47px;
         height: 47px;
+
         &.spacer {
           width: auto;
           height: 10px;
         }
+
         & > span {
           display: block;
           width: 45px;
@@ -4032,6 +4039,7 @@ table {
           line-height: 42px;
           position: relative;
         }
+
         a {
           display: block;
           width: 45px;
@@ -4052,6 +4060,7 @@ table {
           text-align: right;
           padding-right: 10px;
           padding-top: 5px;
+
           span {
             display: inline-block;
             width: 20px;
@@ -4124,6 +4133,7 @@ table {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+
   .elements__item {
     width: 305px;
     height: 305px;
@@ -4131,12 +4141,15 @@ table {
     padding: 40px;
     min-height: 304px;
   }
+
   .elemets-table__wrap {
     min-width: 750px;
     width: 750px;
+
     table td {
       width: 42px;
       height: 42px;
+
       a {
         width: 40px;
         height: 40px;
@@ -4144,20 +4157,24 @@ table {
       }
     }
   }
-  .elemets-table__wrap table td>span{
+
+  .elemets-table__wrap table td > span {
     width: 40px;
     height: 40px;
     font-size: 16px;
     line-height: 38px;
   }
+
   .elemets-table__wrap table td.spacer {
     height: 8px !important;
   }
+
   .elemets-table__title {
     font-size: 22px;
     left: 134px;
     top: 73px;
   }
+
   .elemets-table {
     padding-top: 0;
   }
@@ -4172,6 +4189,7 @@ table {
   align-items: center;
   padding: 55px;
   margin-bottom: 50px;
+
   h1 {
     margin: 0;
     padding: 0;
@@ -4180,27 +4198,33 @@ table {
 
 .vov-list {
   flex-direction: column;
+
   li:not(:last-child) {
     padding-bottom: 30px;
     margin-bottom: 30px;
     border-bottom: 1px solid #c7d0da;
   }
+
   &__item {
     display: flex;
     align-items: center;
     gap: 30px;
     text-decoration: none;
+
     &__img {
       min-width: 170px;
+
       img {
         display: block;
         position: relative;
         z-index: 2;
         border: 1px solid #f0f3f6;
       }
+
       picture {
         display: block;
         margin: 0;
+
         &::after {
           content: '';
           display: block;
@@ -4247,6 +4271,680 @@ table {
   background-size: cover;
   padding: 55px;
 }
+
 .text p.fs-24 {
   font-size: 24px;
+}
+
+.crosswords {
+  padding-bottom: 100px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    gap: 30px;
+    border-bottom: 2px solid #282828;
+    margin-bottom: 50px;
+
+    &__filter {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      &__label {
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+      }
+    }
+
+    &__year {
+      width: 80px;
+      min-width: 80px;
+      font-size: 24px;
+      letter-spacing: 0.1em;
+      text-align: center;
+      line-height: 1;
+      border: none;
+      font-weight: 800;
+
+      &:hover,
+      &:focus,
+      &:active {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .dropdown-toggle {
+      display: flex;
+      align-items: center;
+    }
+
+    .dropdown-toggle::after {
+      border-top: 5px solid #282828;
+    }
+
+    &__label {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+  }
+
+  &__list {
+    padding-bottom: 30px;
+
+    &__item {
+      display: block;
+      text-decoration: none;
+      min-height: 165px;
+      padding: 40px 20px 20px 144px;
+      border: 1px solid #282828;
+      border-radius: 18px;
+      position: relative;
+
+      &__ico {
+        position: absolute;
+        z-index: 1;
+        left: 40px;
+        top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #282828;
+        width: 64px;
+        height: 64px;
+        background: #e8ecf1;
+        border-radius: 10px;
+      }
+
+      &__title {
+        padding-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: bold;
+
+        b {
+          display: block;
+          font-size: 36px;
+          font-weight: bold;
+        }
+      }
+
+      &__views {
+        color: #6d6d6d;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.pagination {
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 50px;
+  border-top: 2px solid #282828;
+
+  a,
+  & .pagination__item__dotts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    border: 1px solid #c7d0da;
+    font-size: 16px;
+    color: #282828;
+    font-weight: bold;
+  }
+  .active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    border: 1px solid #282828;
+    font-size: 16px;
+    color: #282828;
+    font-weight: bold;
+  }
+}
+
+.gm_crwd_table
+{
+  border-collapse:collapse;
+}
+
+.gm_crwd_table input
+{
+  background:none;
+  border:0px;
+  width:100%;
+  height: 100%;
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+  color:#464646;
+  margin: 0px;
+  padding: 0px;
+}
+
+.gm_question_dir
+{
+  font-size:16px;
+  color:#666666;
+  font-weight:bold;
+}
+
+.gm_crossword_qnum
+{
+  font-size:14px;
+  font-weight:bold;
+  color:#666666;
+}
+
+.gm_crossword_qtxt
+{
+  font-size:13px;
+  color:#555555;
+}
+
+.gm_result_msg_span
+{
+  font-size:16px;
+  color:#04a900;
+}
+
+.gm_result_msg_a
+{
+  color:#038400;
+}
+
+.gm_result_msg_a:hover
+{
+  text-decoration:none;
+}
+
+.gm_result_msg_td
+{
+  padding-bottom:40px;
+  padding-top:30px;
+  text-align:center;
+  line-height:1.5;
+}
+
+.help_content_td
+{
+  padding-left:50px;
+  padding-right:50px;
+  text-align:justify;
+  line-height:1.5;
+}
+
+.help_span
+{
+  font-size:14px;
+  color:#959595;
+}
+.gm_crwd_cell_gray{ background:#e0e0e0;}
+.gm_crwd_cell_red{ background:#fde6e6;}
+.gm_crwd_cell_green{ background:#e7fde6; }
+.gm_crwd_cell_blue_gray, .gm_crwd_cell_blue_green, .gm_crwd_cell_blue_red{ background:#e6fdfd;}
+
+.gm_crwd_cell_blue_gray_1,.gm_crwd_cell_blue_gray_2,.gm_crwd_cell_blue_gray_3,
+.gm_crwd_cell_blue_gray_4,.gm_crwd_cell_blue_gray_5,.gm_crwd_cell_blue_gray_6,
+.gm_crwd_cell_blue_gray_7,.gm_crwd_cell_blue_gray_8,.gm_crwd_cell_blue_gray_9,
+.gm_crwd_cell_blue_gray_10,.gm_crwd_cell_blue_gray_11,.gm_crwd_cell_blue_gray_12,
+.gm_crwd_cell_blue_gray_13,.gm_crwd_cell_blue_gray_14,.gm_crwd_cell_blue_gray_15,
+.gm_crwd_cell_blue_gray_16,.gm_crwd_cell_blue_gray_17,.gm_crwd_cell_blue_gray_18,
+.gm_crwd_cell_blue_gray_19,.gm_crwd_cell_blue_gray_20,.gm_crwd_cell_blue_gray_21,
+.gm_crwd_cell_blue_gray_22,.gm_crwd_cell_blue_gray_23,.gm_crwd_cell_blue_gray_24,
+.gm_crwd_cell_blue_gray_25,.gm_crwd_cell_blue_gray_26,.gm_crwd_cell_blue_gray_27,
+.gm_crwd_cell_blue_gray_28,.gm_crwd_cell_blue_gray_29,.gm_crwd_cell_blue_gray_30,
+.gm_crwd_cell_blue_gray_31,.gm_crwd_cell_blue_gray_32,.gm_crwd_cell_blue_gray_33,
+.gm_crwd_cell_blue_gray_34,.gm_crwd_cell_blue_gray_35,.gm_crwd_cell_blue_gray_36,
+.gm_crwd_cell_blue_gray_37,.gm_crwd_cell_blue_gray_38,.gm_crwd_cell_blue_gray_39,
+.gm_crwd_cell_blue_gray_40,.gm_crwd_cell_blue_gray_41,.gm_crwd_cell_blue_gray_42,
+.gm_crwd_cell_blue_gray_43,.gm_crwd_cell_blue_gray_44,.gm_crwd_cell_blue_gray_45,
+.gm_crwd_cell_blue_gray_46,.gm_crwd_cell_blue_gray_47,.gm_crwd_cell_blue_gray_48,
+.gm_crwd_cell_blue_gray_49,.gm_crwd_cell_blue_gray{ border:1px solid #b8b7b7; }
+
+.gm_crwd_cell_blue_green_1,.gm_crwd_cell_blue_green_2,.gm_crwd_cell_blue_green_3,
+.gm_crwd_cell_blue_green_4,.gm_crwd_cell_blue_green_5,.gm_crwd_cell_blue_green_6,
+.gm_crwd_cell_blue_green_7,.gm_crwd_cell_blue_green_8,.gm_crwd_cell_blue_green_9,
+.gm_crwd_cell_blue_green_10,.gm_crwd_cell_blue_green_11,.gm_crwd_cell_blue_green_12,
+.gm_crwd_cell_blue_green_13,.gm_crwd_cell_blue_green_14,.gm_crwd_cell_blue_green_15,
+.gm_crwd_cell_blue_green_16,.gm_crwd_cell_blue_green_17,.gm_crwd_cell_blue_green_18,
+.gm_crwd_cell_blue_green_19,.gm_crwd_cell_blue_green_20,.gm_crwd_cell_blue_green_21,
+.gm_crwd_cell_blue_green_22,.gm_crwd_cell_blue_green_23,.gm_crwd_cell_blue_green_24,
+.gm_crwd_cell_blue_green_25,.gm_crwd_cell_blue_green_26,.gm_crwd_cell_blue_green_27,
+.gm_crwd_cell_blue_green_28,.gm_crwd_cell_blue_green_29,.gm_crwd_cell_blue_green_30,
+.gm_crwd_cell_blue_green_31,.gm_crwd_cell_blue_green_32,.gm_crwd_cell_blue_green_33,
+.gm_crwd_cell_blue_green_34,.gm_crwd_cell_blue_green_35,.gm_crwd_cell_blue_green_36,
+.gm_crwd_cell_blue_green_37,.gm_crwd_cell_blue_green_38,.gm_crwd_cell_blue_green_39,
+.gm_crwd_cell_blue_green_40,.gm_crwd_cell_blue_green_41,.gm_crwd_cell_blue_green_42,
+.gm_crwd_cell_blue_green_43,.gm_crwd_cell_blue_green_44,.gm_crwd_cell_blue_green_45,
+.gm_crwd_cell_blue_green_46,.gm_crwd_cell_blue_green_47,.gm_crwd_cell_blue_green_48,
+.gm_crwd_cell_blue_green_49,.gm_crwd_cell_blue_green{ border:1px solid #ace8a8; }
+
+.gm_crwd_cell_blue_red_1,.gm_crwd_cell_blue_red_2,.gm_crwd_cell_blue_red_3,
+.gm_crwd_cell_blue_red_4,.gm_crwd_cell_blue_red_5,.gm_crwd_cell_blue_red_6,
+.gm_crwd_cell_blue_red_7,.gm_crwd_cell_blue_red_8,.gm_crwd_cell_blue_red_9,
+.gm_crwd_cell_blue_red_10,.gm_crwd_cell_blue_red_11,.gm_crwd_cell_blue_red_12,
+.gm_crwd_cell_blue_red_13,.gm_crwd_cell_blue_red_14,.gm_crwd_cell_blue_red_15,
+.gm_crwd_cell_blue_red_16,.gm_crwd_cell_blue_red_17,.gm_crwd_cell_blue_red_18,
+.gm_crwd_cell_blue_red_19,.gm_crwd_cell_blue_red_20,.gm_crwd_cell_blue_red_21,
+.gm_crwd_cell_blue_red_22,.gm_crwd_cell_blue_red_23,.gm_crwd_cell_blue_red_24,
+.gm_crwd_cell_blue_red_25,.gm_crwd_cell_blue_red_26,.gm_crwd_cell_blue_red_27,
+.gm_crwd_cell_blue_red_28,.gm_crwd_cell_blue_red_29,.gm_crwd_cell_blue_red_30,
+.gm_crwd_cell_blue_red_31,.gm_crwd_cell_blue_red_32,.gm_crwd_cell_blue_red_33,
+.gm_crwd_cell_blue_red_34,.gm_crwd_cell_blue_red_35,.gm_crwd_cell_blue_red_36,
+.gm_crwd_cell_blue_red_37,.gm_crwd_cell_blue_red_38,.gm_crwd_cell_blue_red_39,
+.gm_crwd_cell_blue_red_40,.gm_crwd_cell_blue_red_41,.gm_crwd_cell_blue_red_42,
+.gm_crwd_cell_blue_red_43,.gm_crwd_cell_blue_red_44,.gm_crwd_cell_blue_red_45,
+.gm_crwd_cell_blue_red_46,.gm_crwd_cell_blue_red_47,.gm_crwd_cell_blue_red_48,
+.gm_crwd_cell_blue_red_49,.gm_crwd_cell_blue_red{ border:1px solid #ffb5b5; }
+
+
+
+.gm_crwd_cell_gray,.gm_crwd_cell_gray_1, .gm_crwd_cell_gray_2, .gm_crwd_cell_gray_3, .gm_crwd_cell_gray_4,
+.gm_crwd_cell_gray_5, .gm_crwd_cell_gray_6, .gm_crwd_cell_gray_7, .gm_crwd_cell_gray_8,
+.gm_crwd_cell_gray_9, .gm_crwd_cell_gray_10, .gm_crwd_cell_gray_11, .gm_crwd_cell_gray_12,
+.gm_crwd_cell_gray_13, .gm_crwd_cell_gray_14, .gm_crwd_cell_gray_15, .gm_crwd_cell_gray_16,
+.gm_crwd_cell_gray_17, .gm_crwd_cell_gray_18, .gm_crwd_cell_gray_19, .gm_crwd_cell_gray_20,
+.gm_crwd_cell_gray_21, .gm_crwd_cell_gray_22, .gm_crwd_cell_gray_23, .gm_crwd_cell_gray_24,
+.gm_crwd_cell_gray_25, .gm_crwd_cell_gray_26, .gm_crwd_cell_gray_27, .gm_crwd_cell_gray_28,
+.gm_crwd_cell_gray_29, .gm_crwd_cell_gray_30, .gm_crwd_cell_gray_31, .gm_crwd_cell_gray_32,
+.gm_crwd_cell_gray_33, .gm_crwd_cell_gray_34, .gm_crwd_cell_gray_35, .gm_crwd_cell_gray_36,
+.gm_crwd_cell_gray_37, .gm_crwd_cell_gray_38, .gm_crwd_cell_gray_39, .gm_crwd_cell_gray_40,
+.gm_crwd_cell_gray_41, .gm_crwd_cell_gray_42, .gm_crwd_cell_gray_43, .gm_crwd_cell_gray_44,
+.gm_crwd_cell_gray_45, .gm_crwd_cell_gray_46, .gm_crwd_cell_gray_47, .gm_crwd_cell_gray_48,
+.gm_crwd_cell_gray_49{border:1px solid #b8b7b7;}
+
+.gm_crwd_cell_red, .gm_crwd_cell_red_1, .gm_crwd_cell_red_2, .gm_crwd_cell_red_3, .gm_crwd_cell_red_4,
+.gm_crwd_cell_red_5, .gm_crwd_cell_red_6, .gm_crwd_cell_red_7, .gm_crwd_cell_red_8,
+.gm_crwd_cell_red_9, .gm_crwd_cell_red_10, .gm_crwd_cell_red_11, .gm_crwd_cell_red_12,
+.gm_crwd_cell_red_13, .gm_crwd_cell_red_14, .gm_crwd_cell_red_15, .gm_crwd_cell_red_16,
+.gm_crwd_cell_red_17, .gm_crwd_cell_red_18, .gm_crwd_cell_red_19, .gm_crwd_cell_red_20,
+.gm_crwd_cell_red_21, .gm_crwd_cell_red_22, .gm_crwd_cell_red_23, .gm_crwd_cell_red_24,
+.gm_crwd_cell_red_25, .gm_crwd_cell_red_26, .gm_crwd_cell_red_27, .gm_crwd_cell_red_28,
+.gm_crwd_cell_red_29, .gm_crwd_cell_red_30, .gm_crwd_cell_red_31, .gm_crwd_cell_red_32,
+.gm_crwd_cell_red_33, .gm_crwd_cell_red_34, .gm_crwd_cell_red_35, .gm_crwd_cell_red_36,
+.gm_crwd_cell_red_37, .gm_crwd_cell_red_38, .gm_crwd_cell_red_39, .gm_crwd_cell_red_40,
+.gm_crwd_cell_red_41, .gm_crwd_cell_red_42, .gm_crwd_cell_red_43, .gm_crwd_cell_red_44,
+.gm_crwd_cell_red_45, .gm_crwd_cell_red_46, .gm_crwd_cell_red_47, .gm_crwd_cell_red_48,
+.gm_crwd_cell_red_49{border:1px solid #ffb5b5;}
+
+.gm_crwd_cell_green, .gm_crwd_cell_green_1, .gm_crwd_cell_green_2, .gm_crwd_cell_green_3, .gm_crwd_cell_green_4,
+.gm_crwd_cell_green_5, .gm_crwd_cell_green_6, .gm_crwd_cell_green_7, .gm_crwd_cell_green_8,
+.gm_crwd_cell_green_9, .gm_crwd_cell_green_10, .gm_crwd_cell_green_11, .gm_crwd_cell_green_12,
+.gm_crwd_cell_green_13, .gm_crwd_cell_green_14, .gm_crwd_cell_green_15, .gm_crwd_cell_green_16,
+.gm_crwd_cell_green_17, .gm_crwd_cell_green_18, .gm_crwd_cell_green_19, .gm_crwd_cell_green_20,
+.gm_crwd_cell_green_21, .gm_crwd_cell_green_22, .gm_crwd_cell_green_23, .gm_crwd_cell_green_24,
+.gm_crwd_cell_green_25, .gm_crwd_cell_green_26, .gm_crwd_cell_green_27, .gm_crwd_cell_green_28,
+.gm_crwd_cell_green_29, .gm_crwd_cell_green_30, .gm_crwd_cell_green_31, .gm_crwd_cell_green_32,
+.gm_crwd_cell_green_33, .gm_crwd_cell_green_34, .gm_crwd_cell_green_35, .gm_crwd_cell_green_36,
+.gm_crwd_cell_green_37, .gm_crwd_cell_green_38, .gm_crwd_cell_green_39, .gm_crwd_cell_green_40,
+.gm_crwd_cell_green_41, .gm_crwd_cell_green_42, .gm_crwd_cell_green_43, .gm_crwd_cell_green_44,
+.gm_crwd_cell_green_45, .gm_crwd_cell_green_46, .gm_crwd_cell_green_47, .gm_crwd_cell_green_48,
+.gm_crwd_cell_green_49{border:1px solid #ace8a8;}
+
+.gm_crwd_cell_gray,.gm_crwd_cell_red,.gm_crwd_cell_green,.gm_crwd_cell_blue,.gm_crwd_cell_white_gray,
+.gm_crwd_cell_white_green, .gm_crwd_cell_white_red,
+.gm_crwd_cell_gray_1, .gm_crwd_cell_gray_2, .gm_crwd_cell_gray_3, .gm_crwd_cell_gray_4,
+.gm_crwd_cell_gray_5, .gm_crwd_cell_gray_6, .gm_crwd_cell_gray_7, .gm_crwd_cell_gray_8,
+.gm_crwd_cell_gray_9, .gm_crwd_cell_gray_10, .gm_crwd_cell_gray_11, .gm_crwd_cell_gray_12,
+.gm_crwd_cell_gray_13, .gm_crwd_cell_gray_14, .gm_crwd_cell_gray_15, .gm_crwd_cell_gray_16,
+.gm_crwd_cell_gray_17, .gm_crwd_cell_gray_18, .gm_crwd_cell_gray_19, .gm_crwd_cell_gray_20,
+.gm_crwd_cell_gray_21, .gm_crwd_cell_gray_22, .gm_crwd_cell_gray_23, .gm_crwd_cell_gray_24,
+.gm_crwd_cell_gray_25, .gm_crwd_cell_gray_26, .gm_crwd_cell_gray_27, .gm_crwd_cell_gray_28,
+.gm_crwd_cell_gray_29, .gm_crwd_cell_gray_30, .gm_crwd_cell_gray_31, .gm_crwd_cell_gray_32,
+.gm_crwd_cell_gray_33, .gm_crwd_cell_gray_34, .gm_crwd_cell_gray_35, .gm_crwd_cell_gray_36,
+.gm_crwd_cell_gray_37, .gm_crwd_cell_gray_38, .gm_crwd_cell_gray_39, .gm_crwd_cell_gray_40,
+.gm_crwd_cell_gray_41, .gm_crwd_cell_gray_42, .gm_crwd_cell_gray_43, .gm_crwd_cell_gray_44,
+.gm_crwd_cell_gray_45, .gm_crwd_cell_gray_46, .gm_crwd_cell_gray_47, .gm_crwd_cell_gray_48,
+.gm_crwd_cell_gray_49,
+.gm_crwd_cell_red_1, .gm_crwd_cell_red_2, .gm_crwd_cell_red_3, .gm_crwd_cell_red_4,
+.gm_crwd_cell_red_5, .gm_crwd_cell_red_6, .gm_crwd_cell_red_7, .gm_crwd_cell_red_8,
+.gm_crwd_cell_red_9, .gm_crwd_cell_red_10, .gm_crwd_cell_red_11, .gm_crwd_cell_red_12,
+.gm_crwd_cell_red_13, .gm_crwd_cell_red_14, .gm_crwd_cell_red_15, .gm_crwd_cell_red_16,
+.gm_crwd_cell_red_17, .gm_crwd_cell_red_18, .gm_crwd_cell_red_19, .gm_crwd_cell_red_20,
+.gm_crwd_cell_red_21, .gm_crwd_cell_red_22, .gm_crwd_cell_red_23, .gm_crwd_cell_red_24,
+.gm_crwd_cell_red_25, .gm_crwd_cell_red_26, .gm_crwd_cell_red_27, .gm_crwd_cell_red_28,
+.gm_crwd_cell_red_29, .gm_crwd_cell_red_30, .gm_crwd_cell_red_31, .gm_crwd_cell_red_32,
+.gm_crwd_cell_red_33, .gm_crwd_cell_red_34, .gm_crwd_cell_red_35, .gm_crwd_cell_red_36,
+.gm_crwd_cell_red_37, .gm_crwd_cell_red_38, .gm_crwd_cell_red_39, .gm_crwd_cell_red_40,
+.gm_crwd_cell_red_41, .gm_crwd_cell_red_42, .gm_crwd_cell_red_43, .gm_crwd_cell_red_44,
+.gm_crwd_cell_red_45, .gm_crwd_cell_red_46, .gm_crwd_cell_red_47, .gm_crwd_cell_red_48,
+.gm_crwd_cell_red_49,
+.gm_crwd_cell_green_1, .gm_crwd_cell_green_2, .gm_crwd_cell_green_3, .gm_crwd_cell_green_4,
+.gm_crwd_cell_green_5, .gm_crwd_cell_green_6, .gm_crwd_cell_green_7, .gm_crwd_cell_green_8,
+.gm_crwd_cell_green_9, .gm_crwd_cell_green_10, .gm_crwd_cell_green_11, .gm_crwd_cell_green_12,
+.gm_crwd_cell_green_13, .gm_crwd_cell_green_14, .gm_crwd_cell_green_15, .gm_crwd_cell_green_16,
+.gm_crwd_cell_green_17, .gm_crwd_cell_green_18, .gm_crwd_cell_green_19, .gm_crwd_cell_green_20,
+.gm_crwd_cell_green_21, .gm_crwd_cell_green_22, .gm_crwd_cell_green_23, .gm_crwd_cell_green_24,
+.gm_crwd_cell_green_25, .gm_crwd_cell_green_26, .gm_crwd_cell_green_27, .gm_crwd_cell_green_28,
+.gm_crwd_cell_green_29, .gm_crwd_cell_green_30, .gm_crwd_cell_green_31, .gm_crwd_cell_green_32,
+.gm_crwd_cell_green_33, .gm_crwd_cell_green_34, .gm_crwd_cell_green_35, .gm_crwd_cell_green_36,
+.gm_crwd_cell_green_37, .gm_crwd_cell_green_38, .gm_crwd_cell_green_39, .gm_crwd_cell_green_40,
+.gm_crwd_cell_green_41, .gm_crwd_cell_green_42, .gm_crwd_cell_green_43, .gm_crwd_cell_green_44,
+.gm_crwd_cell_green_45, .gm_crwd_cell_green_46, .gm_crwd_cell_green_47, .gm_crwd_cell_green_48,
+.gm_crwd_cell_green_49,
+.gm_crwd_cell_blue_gray, .gm_crwd_cell_blue_green, .gm_crwd_cell_blue_red,
+.gm_crwd_cell_blue_gray_1,.gm_crwd_cell_blue_gray_2,.gm_crwd_cell_blue_gray_3,
+.gm_crwd_cell_blue_gray_4,.gm_crwd_cell_blue_gray_5,.gm_crwd_cell_blue_gray_6,
+.gm_crwd_cell_blue_gray_7,.gm_crwd_cell_blue_gray_8,.gm_crwd_cell_blue_gray_9,
+.gm_crwd_cell_blue_gray_10,.gm_crwd_cell_blue_gray_11,.gm_crwd_cell_blue_gray_12,
+.gm_crwd_cell_blue_gray_13,.gm_crwd_cell_blue_gray_14,.gm_crwd_cell_blue_gray_15,
+.gm_crwd_cell_blue_gray_16,.gm_crwd_cell_blue_gray_17,.gm_crwd_cell_blue_gray_18,
+.gm_crwd_cell_blue_gray_19,.gm_crwd_cell_blue_gray_20,.gm_crwd_cell_blue_gray_21,
+.gm_crwd_cell_blue_gray_22,.gm_crwd_cell_blue_gray_23,.gm_crwd_cell_blue_gray_24,
+.gm_crwd_cell_blue_gray_25,.gm_crwd_cell_blue_gray_26,.gm_crwd_cell_blue_gray_27,
+.gm_crwd_cell_blue_gray_28,.gm_crwd_cell_blue_gray_29,.gm_crwd_cell_blue_gray_30,
+.gm_crwd_cell_blue_gray_31,.gm_crwd_cell_blue_gray_32,.gm_crwd_cell_blue_gray_33,
+.gm_crwd_cell_blue_gray_34,.gm_crwd_cell_blue_gray_35,.gm_crwd_cell_blue_gray_36,
+.gm_crwd_cell_blue_gray_37,.gm_crwd_cell_blue_gray_38,.gm_crwd_cell_blue_gray_39,
+.gm_crwd_cell_blue_gray_40,.gm_crwd_cell_blue_gray_41,.gm_crwd_cell_blue_gray_42,
+.gm_crwd_cell_blue_gray_43,.gm_crwd_cell_blue_gray_44,.gm_crwd_cell_blue_gray_45,
+.gm_crwd_cell_blue_gray_46,.gm_crwd_cell_blue_gray_47,.gm_crwd_cell_blue_gray_48,
+.gm_crwd_cell_blue_gray_49,.gm_crwd_cell_blue_green_1,.gm_crwd_cell_blue_green_2,.gm_crwd_cell_blue_green_3,
+.gm_crwd_cell_blue_green_4,.gm_crwd_cell_blue_green_5,.gm_crwd_cell_blue_green_6,
+.gm_crwd_cell_blue_green_7,.gm_crwd_cell_blue_green_8,.gm_crwd_cell_blue_green_9,
+.gm_crwd_cell_blue_green_10,.gm_crwd_cell_blue_green_11,.gm_crwd_cell_blue_green_12,
+.gm_crwd_cell_blue_green_13,.gm_crwd_cell_blue_green_14,.gm_crwd_cell_blue_green_15,
+.gm_crwd_cell_blue_green_16,.gm_crwd_cell_blue_green_17,.gm_crwd_cell_blue_green_18,
+.gm_crwd_cell_blue_green_19,.gm_crwd_cell_blue_green_20,.gm_crwd_cell_blue_green_21,
+.gm_crwd_cell_blue_green_22,.gm_crwd_cell_blue_green_23,.gm_crwd_cell_blue_green_24,
+.gm_crwd_cell_blue_green_25,.gm_crwd_cell_blue_green_26,.gm_crwd_cell_blue_green_27,
+.gm_crwd_cell_blue_green_28,.gm_crwd_cell_blue_green_29,.gm_crwd_cell_blue_green_30,
+.gm_crwd_cell_blue_green_31,.gm_crwd_cell_blue_green_32,.gm_crwd_cell_blue_green_33,
+.gm_crwd_cell_blue_green_34,.gm_crwd_cell_blue_green_35,.gm_crwd_cell_blue_green_36,
+.gm_crwd_cell_blue_green_37,.gm_crwd_cell_blue_green_38,.gm_crwd_cell_blue_green_39,
+.gm_crwd_cell_blue_green_40,.gm_crwd_cell_blue_green_41,.gm_crwd_cell_blue_green_42,
+.gm_crwd_cell_blue_green_43,.gm_crwd_cell_blue_green_44,.gm_crwd_cell_blue_green_45,
+.gm_crwd_cell_blue_green_46,.gm_crwd_cell_blue_green_47,.gm_crwd_cell_blue_green_48,
+.gm_crwd_cell_blue_green_49,.gm_crwd_cell_blue_red_1,.gm_crwd_cell_blue_red_2,.gm_crwd_cell_blue_red_3,
+.gm_crwd_cell_blue_red_4,.gm_crwd_cell_blue_red_5,.gm_crwd_cell_blue_red_6,
+.gm_crwd_cell_blue_red_7,.gm_crwd_cell_blue_red_8,.gm_crwd_cell_blue_red_9,
+.gm_crwd_cell_blue_red_10,.gm_crwd_cell_blue_red_11,.gm_crwd_cell_blue_red_12,
+.gm_crwd_cell_blue_red_13,.gm_crwd_cell_blue_red_14,.gm_crwd_cell_blue_red_15,
+.gm_crwd_cell_blue_red_16,.gm_crwd_cell_blue_red_17,.gm_crwd_cell_blue_red_18,
+.gm_crwd_cell_blue_red_19,.gm_crwd_cell_blue_red_20,.gm_crwd_cell_blue_red_21,
+.gm_crwd_cell_blue_red_22,.gm_crwd_cell_blue_red_23,.gm_crwd_cell_blue_red_24,
+.gm_crwd_cell_blue_red_25,.gm_crwd_cell_blue_red_26,.gm_crwd_cell_blue_red_27,
+.gm_crwd_cell_blue_red_28,.gm_crwd_cell_blue_red_29,.gm_crwd_cell_blue_red_30,
+.gm_crwd_cell_blue_red_31,.gm_crwd_cell_blue_red_32,.gm_crwd_cell_blue_red_33,
+.gm_crwd_cell_blue_red_34,.gm_crwd_cell_blue_red_35,.gm_crwd_cell_blue_red_36,
+.gm_crwd_cell_blue_red_37,.gm_crwd_cell_blue_red_38,.gm_crwd_cell_blue_red_39,
+.gm_crwd_cell_blue_red_40,.gm_crwd_cell_blue_red_41,.gm_crwd_cell_blue_red_42,
+.gm_crwd_cell_blue_red_43,.gm_crwd_cell_blue_red_44,.gm_crwd_cell_blue_red_45,
+.gm_crwd_cell_blue_red_46,.gm_crwd_cell_blue_red_47,.gm_crwd_cell_blue_red_48,
+.gm_crwd_cell_blue_red_49
+{ width:30px;height:30px; }
+
+.b_full_dt_cnt
+{
+  padding-top:30px;
+}
+
+.b_each_btn_cmd_td
+{
+  padding-right:5px;
+}
+
+.b_dt_check_td
+{
+  width:50px;
+  text-align:center;
+}
+
+.b_dt_header_txt
+{
+  font-size:13px;
+  font-weight:bold;
+  color:#5d5c5c;
+}
+
+.b_dt_txt, .b_dt_a
+{
+  font-size:13px;
+  color:#797979;
+}
+
+.b_dt_a:hover
+{
+  text-decoration:none;
+}
+
+.b_dt_tr1 td
+{
+  background:#eeeded;
+}
+
+.b_dt_tr2 td
+{
+  background:#faf9f9;
+}
+
+.b_dt_tr_selected td
+{
+  background:#ffe09c;
+}
+
+.b_dt_cnt
+{
+  padding-top:15px;
+}
+
+.b_dt td
+{
+  height:25px;
+}
+
+.b_new_issue_table_cnt
+{
+  background:#c2c2c2;
+  height:40px;
+}
+
+.b_new_issue_data_cnt
+{
+  padding:30px 20px 15px 20px;
+}
+
+.b_new_issue_btn_cnt
+{
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:15px;
+}
+
+.b_new_new_issue_head_txt
+{
+  font-size:18px;
+  color:#696969;
+  padding-right:20px;
+  padding-left:20px;
+}
+
+.b_new_issue_data_field_txt
+{
+  font-size:13px;
+  color:#797979;
+}
+
+.b_new_issue_data_field_input_td
+{
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.b_new_issue_data_field_td,.b_new_issue_data_field_td1
+{
+  padding-right:50px;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.b_new_issue_data_field_td
+{
+  width:110px;
+}
+
+.b_new_issue_data_field_td1
+{
+  width:40px;
+}
+
+.b_new_issue_data_field_input_txt
+{
+  width:250px;
+}
+
+.new_isuue_data_field_input_small
+{
+  width:35px;
+}
+
+.new_isuue_data_field_input_small,.b_new_issue_data_field_input_txt,.b_new_issue_select
+{
+  background:#f7f7f7;
+  border:1px solid #bebebe;
+  color:#696969;
+  height:20px;
+  font-size:13px;
+}
+
+.b_new_issue_data_table_td
+{
+  padding-bottom:10px;
+  padding-top:10px;
+}
+
+.b_new_issue_table
+{
+  border:1px solid #a9a9a9;
+}
+
+.b_new_issue_cnt
+{
+  padding-top:50px;
+}
+
+.b_dotted_separator
+{
+  width:100%;
+  height:1px;
+  background:url(../img/back/separator.jpg);
+  font-size:0px;
+}
+
+.b_new_issue_btn_save_td
+{
+  padding-right:5px;
+}
+
+.b_new_issue_crwd_cnt,.b_new_issue_add_word_btn_td
+{
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.b_new_issue_select
+{
+  width:135px;
+}
+
+.b_new_issue_save_crwd_td
+{
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.b_new_issue_file_open
+{
+  color:#696969;
+  height:20px;
+  font-size:13px;
+}
+
+.b_new_issue_text_area
+{
+  background:#f7f7f7;
+  border:1px solid #bebebe;
+  color:#696969;
+  font-size:13px;
+}
+.gm_crwd_table input:hover,
+.gm_crwd_table input:active,
+.gm_crwd_table input:focus {
+  outline: none;
+}
+.crossword {
+  padding-bottom: 70px;
+  &__box {
+    display: inline-block;
+    padding-bottom: 30px;
+    &__footer {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+    }
+  }
+  &__questions {
+    padding-bottom: 30px;
+    padding-left: 25px;
+    &__caption {
+      padding-bottom: 25px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #282828;
+      color: #282828;
+      font-size: 18px;
+      text-transform: uppercase;
+      line-height: 1.2;
+      font-weight: bold;
+    }
+
+    &__group {
+      display: flex;
+      gap: 30px;
+      &__col {
+        width: calc(50% - 15px);
+      }
+
+      &__item {
+        border-bottom: 1px solid #c7d0da;
+        margin-bottom: 20px;
+        img {
+          display: block;
+          margin-bottom: 20px;
+          max-width: 200px;
+          width: 100%;
+          height: auto;
+        }
+        p {
+          font-size: 14px;
+          line-height: 24px;
+          margin-bottom: 20px;
+        }
+
+        &__numb {
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 1.3;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
 }

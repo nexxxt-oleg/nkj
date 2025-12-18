@@ -16,6 +16,10 @@
   .banner__text {
     width: 500px;
   }
+
+  .crosswords__header__label {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -162,8 +166,76 @@
     font-size: 20px;
   }
 }
-
+@media screen and (min-width: 992px) {
+  .crossword__mob-tabs {
+    display: none;
+  }
+  #vertical,
+  #horizontally{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+}
 @media screen and (max-width: 991px) {
+  .crossword__mob-tabs {
+    width: 100%;
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #282828;
+    li {
+      width: 50%;
+      a {
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .crossword__questions__caption {
+    display: none;
+  }
+  .pagination {
+    padding-top: 20px;
+  }
+  .crosswords__list {
+    padding-bottom: 10px;
+  }
+  .crosswords__list__item {
+    padding: 20px 20px 20px 90px;
+    min-height: auto;
+    &__ico {
+      top: 20px;
+      left: 20px;
+      width: 48px;
+      height: 48px;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &__title {
+      font-size: 14px;
+      b {
+        font-size: 30px;
+      }
+    }
+
+    &__views {
+      font-size: 12px;
+    }
+  }
+  .caption--h1:before {
+    left: -2px;
+    top: -2px;
+  }
+  .crosswords__header {
+    display: block;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  .crosswords__header__label {
+    padding:18px 0 15px;
+  }
   .reg-box__mob-header {
     display: flex;
     align-items: center;
@@ -370,8 +442,7 @@
     font-size: 18px;
     padding-bottom: 15px;
   }
-  .tpad25,
-  .fpad15 {
+  .tpad25 {
     padding-top: 10px;
   }
   .fs-16 {
@@ -611,9 +682,39 @@
   .fpad140 {
     padding-bottom: 50px;
   }
+  .crossword__questions {
+    padding-left: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
+
+
+
+  .crosswords__list__item__title {
+    padding-bottom: 5px;
+  }
+  .crosswords__header__filter__label {
+    font-size: 16px;
+  }
+  .crosswords__header__year {
+    font-size: 20px;
+    width: 70px;
+    min-width: 70px;
+  }
+  .pagination .active, .pagination .pagination__item__dotts, .pagination a {
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+  }
+  .pagination__btn__nav svg {
+    width: 18px;
+    height: 18px;
+  }
+  .crosswords {
+    padding-bottom: 50px;
+  }
+
   .subscription__item__box__price-val {
     font-size: 18px;
   }
@@ -1298,6 +1399,9 @@
   .subscription__item__box__structure {
     font-size: 12px;
     line-height: 16px;
+  }
+  .crosswords__header {
+    padding-bottom: 10px;
   }
 }
 
