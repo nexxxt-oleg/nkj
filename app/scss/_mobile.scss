@@ -178,6 +178,16 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .crossword {
+    padding-bottom: 30px;
+  }
+  .crossword__questions__group__item__numb {
+    font-size: 14px;
+  }
+  .crossword__questions__group__item p {
+    font-size: 12px;
+    line-height: 18px;
+  }
   .crossword__mob-tabs {
     width: 100%;
     flex-wrap: nowrap;
@@ -187,6 +197,15 @@
       width: 50%;
       a {
         padding-bottom: 10px;
+        display: block;
+        text-decoration: none;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #7a7a7a;
+        &.active {
+          color: #282828 !important;
+        }
       }
     }
   }
