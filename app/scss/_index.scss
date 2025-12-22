@@ -358,6 +358,11 @@ body {
     border-color: #f3f1ef;
   }
 
+  &--v4 {
+    background-color: #eaf3d8;
+    border-color: #eaf3d8;
+  }
+
   &--color1 {
     background-color: #e8ecf1 !important;
   }
@@ -4947,4 +4952,43 @@ body {
       }
     }
   }
+}
+
+
+.spec-box.spec-box--big {
+  margin-bottom: 26px;
+  .spec-box__wrap {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 810px;
+    padding: 30px 64px;
+
+  }
+}
+.mir-title {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px;
+  .caption__rss {
+    margin-top: 8px;
+  }
+}
+.spec-box__wrap p.fs-24 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+
+.pagination.pagination--v2 {
+  border-top: none;
+  padding-top: 25px;
+}
+
+
+.fs-52 {
+  font-size: 52px;
+  font-weight: bold;
 }
