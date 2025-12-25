@@ -178,6 +178,11 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .spec-box.spec-box--min.spec-box--full-width.spec-box--mendel {
+    .spec-box__img {
+      display: none;
+    }
+  }
   .crossword {
     padding-bottom: 30px;
   }
@@ -707,8 +712,83 @@
 }
 
 @media screen and (max-width: 768px) {
+  .spec-box--full-width.spec-box--mendel {
+    height: 370px;
+    padding-bottom: 160px;
+    padding-top: 15px;
+    img {
+      width: 300px !important;
+      height: auto;
+    }
+    .spec-box__img {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      width: 100%;
+    }
+    .spec-box__wrap {
+      display: block;
+      p {
+        font-size: 16px;
+      }
+      h1 {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .editor-group__item--mob-market {
+    display: block;
+    padding-top: 30px;
+    .marketing-mob {
+      padding-bottom: 5px;
+    }
+  }
+  .editor-group__item {
+    align-items: flex-start;
+    .editor-group__item__img {
+      margin-top: 25px;
+    }
+  }
+  .marketing-mob {
+    display: block;
+    padding-bottom: 30px;
+  }
+  #specProjects {
+    .swiper-wrapper {
+      height: auto;
+      flex-direction: column;
+      gap: 10px;
+    }
 
-
+  }
+  #specProjectsNext,
+  #specProjectsPrev {
+    display: none !important;
+  }
+  .news__content__top-author {
+    padding-bottom: 20px;
+    .editor-group__item__desc {
+      padding-top: 0;
+    }
+    .editor-group__item {
+      align-items: flex-start;
+    }
+  }
+  .news.fpad60 {
+    padding-bottom: 30px;
+  }
+  .editor-group__item {
+    gap: 20px;
+  }
+  .spec-box--full-width.spec-box--min {
+    height: auto;
+    .spec-box__wrap {
+      position: relative;
+    }
+  }
+  .editor-group__item__text {
+    font-size: 12px;
+  }
 
   .crosswords__list__item__title {
     padding-bottom: 5px;
@@ -862,6 +942,7 @@
   }
   .editor-group__item__position {
     font-size: 14px;
+    padding-top: 5px;
   }
   .editor-group__item__desc {
     padding: 20px 0;
@@ -1289,6 +1370,9 @@
 
     h3 {
       font-size: 18px;
+      br {
+        display: none;
+      }
     }
 
     p {
