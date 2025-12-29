@@ -20,9 +20,43 @@
   .crosswords__header__label {
     font-size: 16px;
   }
+  .element-top .elements__item {
+    width: 142px;
+    height: 142px;
+    min-height: 142px;
+    padding: 20px;
+    border-radius: 10px;
+
+    .elements__item__header {
+      border-radius: 10px;
+      height: 98px;
+      padding: 5px 7px;
+    }
+
+    .elements__item__header__number,
+    & .elements__item__header__atomic-mass {
+      font-size: 14px;
+      height: 16px;
+    }
+
+    .elements__item__header__title {
+      font-size: 36px;
+    }
+  }
 }
 
 @media screen and (max-width: 1199px) {
+  .banner.banner--elemet {
+    background-image: url("../images/dist/bg-element_mob.png");
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 320px auto;
+    height: 350px;
+  }
+
+  .element-top .elemets-table {
+    display: none;
+  }
   .progress-bar {
     z-index: 200;
     position: fixed;
@@ -166,18 +200,127 @@
     font-size: 20px;
   }
 }
+
 @media screen and (min-width: 992px) {
   .crossword__mob-tabs {
     display: none;
   }
   #vertical,
-  #horizontally{
+  #horizontally {
     display: block;
     opacity: 1;
     visibility: visible;
   }
 }
+
 @media screen and (max-width: 991px) {
+  .elements {
+    padding-bottom: 25px;
+  }
+  .elements__item {
+    display: flex;
+    min-height: auto;
+    gap: 20px;
+    .elements__item__header {
+      width: 225px;
+      min-width: 225px;
+    }
+    .elements__item__body {
+      padding-top: 0;
+    }
+  }
+  .banner.banner--elemets {
+    background-image: url("../images/dist/bg-element_mob.png");
+    background-size: 320px auto;
+    background-position: 50% 100%;
+    height: 350px;
+    margin-bottom: 20px;
+
+    .elemets-table {
+      display: none;
+    }
+  }
+  .mendel-mob-slider {
+    padding-bottom: 40px;
+    display: block;
+
+    .swiper-slide {
+      width: 45px !important;
+      height: 45px !important;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        color: #c7d0da;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: bold;
+        border: 1px solid #c7d0da;
+        border-radius: 5px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        color: #282828;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: bold;
+        border: 1px solid #282828;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+
+      &.chem_group_default {
+        a {
+          background: #f2f2f3;
+        }
+      }
+
+      &.chem_group_metalloid {
+        a {
+          background: #cccc9a;
+        }
+      }
+
+      &.chem_group_halogen {
+        a {
+          background: #feff98;
+        }
+      }
+
+      &.chem_group_alkali {
+        a {
+          background: #ff6566;
+        }
+      }
+
+      &.chem_group_transition {
+        a {
+          background: #ffbfbe;
+        }
+      }
+
+      &.chem_group_posttransition {
+        a {
+          background: #ffbfbe;
+        }
+      }
+
+      &.chem_group_actinide {
+        a {
+          background: #ffbfbe;
+        }
+      }
+    }
+
+  }
   .spec-box.spec-box--min.spec-box--full-width.spec-box--mendel {
     .spec-box__img {
       display: none;
@@ -198,8 +341,10 @@
     flex-wrap: nowrap;
     margin-bottom: 15px;
     border-bottom: 2px solid #282828;
+
     li {
       width: 50%;
+
       a {
         padding-bottom: 10px;
         display: block;
@@ -208,6 +353,7 @@
         text-transform: uppercase;
         font-weight: bold;
         color: #7a7a7a;
+
         &.active {
           color: #282828 !important;
         }
@@ -226,11 +372,13 @@
   .crosswords__list__item {
     padding: 20px 20px 20px 90px;
     min-height: auto;
+
     &__ico {
       top: 20px;
       left: 20px;
       width: 48px;
       height: 48px;
+
       svg {
         width: 24px;
         height: 24px;
@@ -239,6 +387,7 @@
 
     &__title {
       font-size: 14px;
+
       b {
         font-size: 30px;
       }
@@ -258,7 +407,7 @@
     margin-bottom: 20px;
   }
   .crosswords__header__label {
-    padding:18px 0 15px;
+    padding: 18px 0 15px;
   }
   .reg-box__mob-header {
     display: flex;
@@ -285,8 +434,10 @@
     z-index: 10;
     top: -75px;
     right: 0;
+
     .reg-box__right__back {
       color: #fff;
+
       svg {
         width: 18px;
         height: 18px;
@@ -294,7 +445,7 @@
     }
   }
   .reg-box__left,
-  .reg-box:after{
+  .reg-box:after {
     display: none;
   }
   .library-banner-top__desc {
@@ -712,25 +863,53 @@
 }
 
 @media screen and (max-width: 768px) {
+  .elements__item {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .elements-nav__item.elements-nav__item--center {
+    display: none;
+  }
+  .elements-nav {
+    justify-content: space-between;
+  }
+  .banner.banner--elemet {
+    position: relative;
+    margin-bottom: 80px;
+    padding-top: 15px;
+
+    .element-top__col {
+      position: absolute;
+      z-index: 10;
+      left: 50%;
+      bottom: -71px;
+      margin-left: -71px;
+    }
+  }
   .spec-box--full-width.spec-box--mendel {
     height: 370px;
     padding-bottom: 160px;
     padding-top: 15px;
+
     img {
       width: 300px !important;
       height: auto;
     }
+
     .spec-box__img {
       display: flex;
       align-items: flex-end;
       justify-content: center;
       width: 100%;
     }
+
     .spec-box__wrap {
       display: block;
+
       p {
         font-size: 16px;
       }
+
       h1 {
         margin-bottom: 15px;
       }
@@ -739,12 +918,14 @@
   .editor-group__item--mob-market {
     display: block;
     padding-top: 30px;
+
     .marketing-mob {
       padding-bottom: 5px;
     }
   }
   .editor-group__item {
     align-items: flex-start;
+
     .editor-group__item__img {
       margin-top: 25px;
     }
@@ -767,9 +948,11 @@
   }
   .news__content__top-author {
     padding-bottom: 20px;
+
     .editor-group__item__desc {
       padding-top: 0;
     }
+
     .editor-group__item {
       align-items: flex-start;
     }
@@ -782,6 +965,7 @@
   }
   .spec-box--full-width.spec-box--min {
     height: auto;
+
     .spec-box__wrap {
       position: relative;
     }
@@ -1370,6 +1554,7 @@
 
     h3 {
       font-size: 18px;
+
       br {
         display: none;
       }
@@ -1509,6 +1694,85 @@
 }
 
 @media screen and (max-width: 574px) {
+  .elements__item {
+    .elements__item__header {
+      width: 100px;
+      min-width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      padding: 5px;
+      .elements__item__header__number {
+        font-size: 14px;
+        line-height: 16px;
+        height: 16px;
+      }
+      .elements__item__header__atomic-mass {
+        font-size: 14px;
+        line-height: 16px;
+        height: 16px;
+      }
+      .elements__item__header__title {
+        font-size: 36px;
+      }
+    }
+    .elements__item__body h2 {
+      font-size: 16px;
+    }
+    .elements__item__body p {
+      font-size: 12px;
+    }
+  }
+  .elements {
+    padding-bottom: 0;
+  }
+  .fpad90 {
+    padding-bottom: 20px;
+  }
+
+
+  .banner.banner--elemets {
+    padding-top: 15px;
+    border-radius: 10px;
+  }
+  .elements-nav__item__footer {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .elements-nav {
+    padding-top: 35px;
+    padding-bottom: 30px;
+
+    &__item {
+      width: 142px;
+
+      .elements-nav__item__header {
+
+        width: 142px;
+        height: 142px;
+        min-height: 142px;
+        padding: 20px;
+        border-radius: 10px;
+
+        .elements-nav__item__header__inner {
+          border-radius: 10px;
+          height: 98px;
+          padding: 5px 7px;
+        }
+
+        & .elements-nav__item__header__atomic-mass,
+        & .elements-nav__item__header__number {
+          font-size: 14px;
+          height: 16px;
+          line-height: 16px;
+        }
+
+        .elements-nav__item__header__title {
+          font-size: 36px;
+        }
+      }
+
+    }
+  }
   .form-reg__alert__ico {
     margin-bottom: 20px;
   }
@@ -1534,7 +1798,7 @@
   .custom-checkbox__value,
   .form-reg__link,
   .form-reg__footer__text,
-  .form-reg__wrap__header p{
+  .form-reg__wrap__header p {
     font-size: 12px;
     line-height: 16px;
   }
