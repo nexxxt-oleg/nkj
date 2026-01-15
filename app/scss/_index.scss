@@ -5399,6 +5399,8 @@ input[type=number]::-webkit-inner-spin-button {
     text-align: center;
     flex-grow: 1;
     padding: 15px 0;
+    display: flex;
+    flex-direction: column;
   }
 
   &__title {
@@ -5406,6 +5408,7 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: 16px;
     line-height: 24px;
     font-weight: bold;
+    flex-grow: 1;
   }
 
   .journal-box__price {
@@ -5447,4 +5450,35 @@ input[type=number]::-webkit-inner-spin-button {
   border-bottom: 2px solid #282828;
   border-top: 2px solid #282828;
   margin-bottom: 90px;
+}
+
+.journal-box__img {
+  position: relative;
+  .cart-list__item__badge {
+    z-index: 20;
+  }
+}
+
+.books-list {
+  position: relative;
+  margin-bottom: 90px;
+  .journal-box {
+    border-bottom: 1px solid #e8ecf1;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #282828;
+  }
+}
+
+.border-img {
+  border: 1px solid #282828;
 }
