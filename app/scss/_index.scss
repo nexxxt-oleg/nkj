@@ -353,7 +353,7 @@ body {
   flex-direction: column;
   text-decoration: none;
   flex-grow: 1;
-  padding: 39px;
+  padding: 39px 35px;
   border-radius: 20px;
   border: 1px solid #282828;
 
@@ -5425,6 +5425,7 @@ input[type=number]::-webkit-inner-spin-button {
 .marketing__body.marketing__body--light {
   border-bottom: 1px solid #e8ecf1;
   border-top: 1px solid #e8ecf1;
+  margin-top: -1px;
 }
 
 .journal-footer-nav {
@@ -5434,6 +5435,9 @@ input[type=number]::-webkit-inner-spin-button {
   padding: 20px 30px;
   border-bottom: 2px solid #282828;
   border-top: 2px solid #282828;
+  position: relative;
+  z-index: 20;
+  margin-top: -1px;
 
   &__link {
     display: flex;
@@ -5454,6 +5458,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .journal-box__img {
   position: relative;
+
   .cart-list__item__badge {
     z-index: 20;
   }
@@ -5462,9 +5467,7 @@ input[type=number]::-webkit-inner-spin-button {
 .books-list {
   position: relative;
   margin-bottom: 90px;
-  .journal-box {
-    border-bottom: 1px solid #e8ecf1;
-  }
+
 
   &::after {
     content: '';
@@ -5481,4 +5484,88 @@ input[type=number]::-webkit-inner-spin-button {
 
 .border-img {
   border: 1px solid #282828;
+}
+
+.journal-box {
+  border-bottom: 1px solid #e8ecf1;
+}
+
+.nav-sharing {
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.books-params {
+  padding-top: 25px;
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+}
+
+.price-box {
+  border: 2px solid #c7d0da;
+  border-radius: 18px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__line {
+    height: 1px;
+    background: #e8ecf1;
+  }
+
+  &__item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    &__desc {
+      flex-grow: 1;
+    }
+    &__btn {
+      min-width: 145px;
+    }
+    &__label {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+    &__cost {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+  }
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.author-box {
+  padding: 40px 0;
+  margin-bottom: 40px;
+  border-top: 1px solid #282828;
+  border-bottom: 1px solid #282828;
+  &__wrap {
+    display: flex;
+    gap: 26px;
+  }
+  &__ava {
+    min-width: 64px;
+    img {
+      width: 64px;
+      height: 64px;
+      display: block;
+      border-radius: 32px;
+    }
+  }
+
+  &__desc {
+    flex-grow: 1;
+  }
 }

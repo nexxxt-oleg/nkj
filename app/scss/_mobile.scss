@@ -214,6 +214,23 @@
 }
 
 @media screen and (max-width: 991px) {
+  .books-list {
+    margin-bottom: 30px;
+  }
+  .journal-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .mtop-1 {
+    position: relative;
+    z-index: 20;
+    margin-top: -1px;
+  }
+  .header-box {
+    display: block;
+    padding-bottom: 15px;
+  }
+
   .elements {
     padding-bottom: 25px;
   }
@@ -863,6 +880,37 @@
 }
 
 @media screen and (max-width: 768px) {
+  .sets-journal {
+    margin-bottom: 30px;
+  }
+  .journal-footer-nav__link {
+    font-size: 20px;
+    gap: 10px;
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .journal-footer-nav {
+    padding: 15px 0;
+  }
+  .journal-box__footer {
+    padding: 8px 0 10px;
+  }
+  .journal-box .journal-box__price {
+    padding-top: 5px;
+  }
+  .journal-box .journal-box__price .price {
+    font-size: 18px;
+  }
+  .journal-box__title {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .journal-box__wrap {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .elements__item {
     padding: 20px;
     border-radius: 10px;
@@ -1694,6 +1742,12 @@
 }
 
 @media screen and (max-width: 574px) {
+  .header-filter__label {
+    font-size: 16px;
+  }
+  .journal-box__wrap:after {
+    left: -6px;
+  }
   .elements__item {
     .elements__item__header {
       width: 100px;
