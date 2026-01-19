@@ -214,6 +214,25 @@
 }
 
 @media screen and (max-width: 991px) {
+  .single-book__mob-sharing {
+    display: block;
+    padding-bottom: 40px;
+    margin-top: -10px;
+    .news__sharing {
+      padding-top: 0;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  .single-book__img {
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .books-params {
+    order: 2;
+    padding-top: 0;
+  }
   .books-list {
     margin-bottom: 30px;
   }
@@ -880,6 +899,59 @@
 }
 
 @media screen and (max-width: 768px) {
+  .books-params {
+    padding-bottom: 5px;
+  }
+  .author-box {
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+  .author-box__wrap {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .books-params p {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .price-box {
+    padding: 20px;
+    gap: 15px;
+    & .price-box__item__btn {
+      min-width: 121px;
+      width: 21px;
+    }
+    .price-box__item__label {
+      font-size: 12px;
+    }
+    .price-box__item__cost {
+      font-size: 20px;
+    }
+  }
+  .mb-25 {
+    margin-bottom: 10px;
+  }
+  .books-slider {
+    padding: 20px 0;
+    .swiper-slide {
+      width: 221px;
+      &:first-child {
+        .journal-box__wrap:after {
+          display: none;
+        }
+      }
+    }
+    .swiper {
+      overflow: visible;
+    }
+    .journal-box__wrap:after {
+      left: -8px;
+    }
+    .swiper__nav {
+      display: none !important;
+    }
+  }
   .sets-journal {
     margin-bottom: 30px;
   }
