@@ -3229,7 +3229,8 @@ body {
   }
 
   &__content {
-    h2 {
+    h2,
+    & h1 {
       font-size: 52px;
       font-weight: bold;
       line-height: 1.2;
@@ -5660,3 +5661,6 @@ input[type=number]::-webkit-inner-spin-button {
   display: none;
 }
 
+.news__footer.not-border {
+  border-top: none;
+}

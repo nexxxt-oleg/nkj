@@ -625,7 +625,8 @@
   .progress-bar {
     top: 48px;
   }
-  .news__content h2 {
+  .news__content h2,
+  .news__content h1 {
     font-size: 36px;
   }
   .news__content h4 {
@@ -1844,6 +1845,9 @@
   }
   .crosswords__header {
     padding-bottom: 10px;
+  }
+  .news__content h1 {
+    font-size: 22px;
   }
 }
 
