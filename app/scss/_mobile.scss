@@ -46,6 +46,12 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .cart-sb {
+    padding: 0;
+  }
+  .cart__footer-btn {
+    display: none;
+  }
   .banner.banner--elemet {
     background-image: url("../images/dist/bg-element_mob.png");
     background-position: 50% 100%;
@@ -214,6 +220,24 @@
 }
 
 @media screen and (max-width: 991px) {
+  .cart-list__item {
+    align-items: flex-start;
+  }
+  .cart-list__item__right {
+    position: relative;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 35px;
+    align-items: flex-start;
+  }
+  .cart-list__item__text {
+    max-width: 100%;
+  }
+  .cart-list__item__col-del {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
   .single-book__mob-sharing {
     display: block;
     padding-bottom: 40px;
@@ -1852,6 +1876,45 @@
 }
 
 @media screen and (max-width: 574px) {
+  .promocode__input input {
+    padding-right: 50px;
+  }
+  .cart-sb__wrap__line {
+    font-size: 14px;
+  }
+  .promocode__input__submit {
+    width: 38px;
+    font-size: 0;
+    background-image: url("data:image/svg+xml,%3Csvg id='_Слой_2' data-name='Слой 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 341.34 331.87'%3E%3Cg id='Layer_1' data-name='Layer 1'%3E%3Cpath fill='%23fff' d='M259.67,187.26H0s0-42.66,0-42.66l259.66-.02L145.24,30.17,175.41,0l165.93,165.93-165.93,165.93-30.17-30.17,114.43-114.43Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+  }
+  .promocode__label {
+    font-size: 12px;
+  }
+  .cart-list__item__col-price .cost {
+    font-size: 18px;
+  }
+  .cart-list__item__type {
+    font-size: 12px;
+    line-height: 1.1;
+    padding-bottom: 5px;
+  }
+  .cart-list__item__title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .count-box__val {
+    height: 36px;
+    font-size: 12px;
+  }
+  .cart-list__item {
+    gap: 20px;
+  }
+  .count-box, .count-box__nav {
+    height: 36px;
+  }
   .header-filter__label {
     font-size: 16px;
   }
@@ -1890,10 +1953,14 @@
     padding-bottom: 0;
   }
   .fpad90 {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
-
-
+  .cart-empty {
+    padding-top: 0;
+  }
+  .cart-empty__btn {
+    padding-top: 20px;
+  }
   .banner.banner--elemets {
     padding-top: 15px;
     border-radius: 10px;

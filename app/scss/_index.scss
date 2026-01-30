@@ -5062,6 +5062,13 @@ body {
     border-bottom: 1px solid #c7d0da;
     gap: 30px;
 
+    &__right {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
     &__col-img {
       width: 110px;
       min-width: 110px;
