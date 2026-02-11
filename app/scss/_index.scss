@@ -5728,3 +5728,57 @@ input[type=number]::-webkit-inner-spin-button {
     width: 145px;
   }
 }
+
+.cookie {
+  position: fixed;
+  z-index: 100;
+  bottom: 22px;
+  left: 0;
+  right: 0;
+  &__wrap {
+    padding: 15px 255px 15px 84px;
+    border-radius: 15px;
+    background: #282828;
+    position: relative;
+  }
+  &__desc {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 18px;
+    a {
+      color: #ffffff;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__ico {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    width: 84px;
+    position: absolute;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    right: 24px;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    .button {
+      width: 145px;
+      background: #c7d0da;
+      border: none;
+      &:hover {
+        background: #fff;
+      }
+    }
+  }
+}

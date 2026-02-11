@@ -921,10 +921,38 @@
   .crossword__questions {
     padding-left: 0;
   }
+  .cookie__wrap {
+    padding-right: 200px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .cookie {
+    bottom: 10px;
+    &__wrap {
+      padding: 20px;
+      text-align: center;
+    }
+    &__ico {
+      position: relative;
+      top: auto;
+      left: auto;
+      height: auto;
+      width: 100%;
+    }
 
+    &__desc {
+      padding: 20px 0;
+    }
+
+    &__btn {
+      position: relative;
+      right: auto;
+      top: auto;
+      width: 100%;
+      justify-content: center;
+    }
+  }
   .pagination.pagination--v2 {
     padding-top: 10px;
   }
