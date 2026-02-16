@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
 
-    <title>События</title>
+    <title>Наука, жизнь</title>
     <meta name="description" content="">
 
     <meta name="viewport"
@@ -324,122 +324,206 @@
     </ul>
 </div>
 
-<div class="container tpad25 fpad90">
 
-    <div class="row justify-content-between ">
-        <div class="col-xl-8 col-lg-9 ">
-            <article class="news">
-                <div class="news__top">
-                    <a href="" class="news__top__cat">СОБЫТИЯ</a>
-                    <div class="news__top__date">25 мая 2025</div>
-                </div>
-                <div class="news__content text">
-                    <h1>Лекция «По следам удивительных арктических экспедиций XVIII-начала XIX вв.»</h1>
-                    <h4>Приглашаем школьников на лекцию «По следам удивительных арктических экспедиций XVIII-начала XIX
-                        вв.», которую 20 декабря прочтет ведущий научный сотрудник кафедры геоморфологии и
-                        палеогеографии географического факультета МГУ, к.г.н., Почетный полярник Ф.А. Романенко. </h4>
-                    <div class="news__slider">
-                        <div class="news__slider__img">
-                            <img src="images/dist/nn2.jpg" alt="">
-                        </div>
-                        <div class="news__slider__caption">
-                            Расчистка золотого украшения. Кадр из видео: <a href="" target="_blank">телеграм-канал
-                            «АрхеоКод»</a> (ИИМК РАН).
+<div class="container fpad140">
+    <div class="row justify-content-center">
+        <div class="col-xl-8 col-lg-10">
+            <div class="search-page">
+                <form action="" class="search-page__form">
+                    <div class="search-page__form__wrap">
+                        <input id="search" type="text" class="search-page__form__text" required
+                               placeholder="Поиск по сайту">
+                        <div class="search-page__form__right">
+                            <button type="reset" class="search-page__form__btn d-none">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#svg-del"></use>
+                                </svg>
+                            </button>
+                            <button type="submit" class="search-page__form__btn">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#svg-search"></use>
+                                </svg>
+                            </button>
                         </div>
                     </div>
-                    <p>Для участия необходимо зарегистрироваться. При регистрации выберите желаемый формат участия
-                        (очный или дистанционный). Учителя, сопровождающие группу школьников, могут выбрать групповую
-                        форму регистрации.</p>
-                    <p><a href="">https://forms.yandex.ru/cloud/693a828f6d2d7341e6c50c36/</a></p>
-
-                    <p>Регистрация открыта до 15:00 18 декабря (четверг).</p>
-
-                </div>
-                <div class="news__footer not-border">
-                    <ul class="nav nav-sharing flex-row justify-content-lg-start justify-content-center">
+                    <ul class="nav search-page__form__variants">
                         <li>
-                            <a href="" class="news__sharing__item">
-                                <svg width="24" height="15">
-                                    <use xlink:href="#svg-vk"></use>
-                                </svg>
-                            </a>
+                            <span class="search-page__form__variants_label">
+                                Искать
+                            </span>
                         </li>
                         <li>
-                            <a href="" class="news__sharing__item">
-                                <svg width="24" height="20">
-                                    <use xlink:href="#svg-tg"></use>
-                                </svg>
-                            </a>
+                            <label class="custom-checkbox-btn">
+                                <input type="radio" name="variant" value="all" checked>
+                                <span class="custom-checkbox-btn__value">Везде</span>
+                            </label>
                         </li>
                         <li>
-                            <a href="" class="news__sharing__item">
-                                <svg width="24" height="20">
-                                    <use xlink:href="#svg-ok"></use>
-                                </svg>
-                            </a>
+                            <label class="custom-checkbox-btn">
+                                <input type="radio" name="variant" value="Новости">
+                                <span class="custom-checkbox-btn__value">Новости</span>
+                            </label>
                         </li>
                         <li>
-                            <a href="" class="news__sharing__item">
-                                <svg width="22" height="22">
-                                    <use xlink:href="#svg-x"></use>
-                                </svg>
-                            </a>
+                            <label class="custom-checkbox-btn">
+                                <input type="radio" name="variant" value="События">
+                                <span class="custom-checkbox-btn__value">События</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-checkbox-btn">
+                                <input type="radio" name="variant" value="Факт дня">
+                                <span class="custom-checkbox-btn__value">Факт дня</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-checkbox-btn">
+                                <input type="radio" name="variant" value="Новости партнеров">
+                                <span class="custom-checkbox-btn__value">Новости партнеров</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-checkbox-btn">
+                                <input type="radio" name="variant" value="Спецпроекты">
+                                <span class="custom-checkbox-btn__value">Спецпроекты</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-checkbox-btn">
+                                <input type="radio" name="variant" value="Журналы">
+                                <span class="custom-checkbox-btn__value">Журналы</span>
+                            </label>
                         </li>
                     </ul>
+
+                    <a href="" class="search-page__link">
+                        <svg width="18" height="18">
+                            <use xlink:href="#svg-author"></use>
+                        </svg>
+                        Авторский указатель
+                    </a>
+                </form>
+                <div class="search-page__result">
+                    <div class="search-page__result__header">
+                        <h1>Результат поиска</h1>
+                        <div class="search-page__result__count">
+                            Найдено: <b>1500</b>
+                        </div>
+                    </div>
+
+                    <div class="search-page__result__list">
+                        <a href="" class="search-page__result__item search-item">
+                            <div class="search-item__desc ">
+                                <div class="search-item__top">
+                                    <span class="search-item__caption">НОВОСТИ</span>
+                                    <span class="search-item__top__area"></span>
+                                    <span class="search-item__date">25 мая 2025</span>
+                                </div>
+                                <h2 class="search-item__title"><span class="search-item__val">На кургане</span> в Туве
+                                    проводили ритуалы «из Геродота» задолго до него</h2>
+                                <p>Ритуал скифов с <span class="search-item__val">«призрачными всадниками»</span> мог
+                                    появится в Южной Сибири. мог появится в Южной Сибири. мог появится в Южной Сибири.
+                                    мог появится в Южной Сибири. мог появится в Южной Сибири. мог появится в Южной
+                                    Сибири.</p>
+                            </div>
+                            <div class="search-item__img">
+                                <img src="images/dist/n1.jpg" width="110" height="110" loading="lazy" alt="">
+                            </div>
+                        </a>
+                        <a href="" class="search-page__result__item search-item">
+                            <div class="search-item__desc ">
+                                <div class="search-item__top">
+                                    <span class="search-item__caption">НОВОСТИ</span>
+                                    <span class="search-item__top__area"></span>
+                                    <span class="search-item__date">25 мая 2025</span>
+                                </div>
+                                <h2 class="search-item__title"><span class="search-item__val">На кургане</span> в Туве
+                                    проводили ритуалы «из Геродота» задолго до него</h2>
+                                <p>Ритуал скифов с <span class="search-item__val">«призрачными всадниками»</span> мог
+                                    появится в Южной Сибири.</p>
+                            </div>
+                            <div class="search-item__img">
+                                <img src="images/dist/n1.jpg" width="110" height="110" loading="lazy" alt="">
+                            </div>
+                        </a>
+                        <a href="" class="search-page__result__item search-item">
+                            <div class="search-item__desc ">
+                                <div class="search-item__top">
+                                    <span class="search-item__caption">СТАТЬИ</span>
+                                </div>
+                                <h2 class="search-item__title">Поможет ли искусственный интеллект понять животных?</h2>
+                                <div class="search-item__caption">НАУКА И ЖИЗНЬ №11, 2025</div>
+                            </div>
+                            <div class="search-item__img">
+                                <img src="images/dist/n1.jpg" width="110" height="110" loading="lazy" alt="">
+                            </div>
+                        </a>
+                        <a href="" class="search-page__result__item search-item">
+                            <div class="search-item__desc ">
+                                <div class="search-item__top">
+                                    <span class="search-item__caption">ЖУРНАЛЫ</span>
+                                </div>
+                                <h2 class="search-item__title pb-0">№11, 2025</h2>
+                            </div>
+                            <div class="search-item__img">
+                                <figure class="search-item__img__journal">
+                                    <img src="images/dist/j1.jpg" width="70" height="110" loading="lazy" alt="">
+                                </figure>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </article>
-            <div class="events mob-pad-0">
-                <a class="events__item" href="">
-                    <div class="events__item__desc">
-                        <h2 class="events__item__title">Лекция «Астероиды. Малые тела Солнечной системы» – 9 ноября</h2>
-                        <div class="events__item__text">
-                            С 16 декабря 2025 года по 13 декабря 2026 года. Биомузей приглашает встретиться с птицей
-                            2026 года — чомгой.
-                        </div>
-                        <div class="events__item__footer">
+                
+<ul class="nav pagination">
+    <li class="pagination__btn pagination__btn--prev">
+        <a href="" class="pagination__btn__nav">
+            <svg width="24" height="24">
+            <use xlink:href="#svg-prev"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="pagination__item">
+        <a href="" class="pagination__item__link">1</a>
+    </li>
+    <li class="pagination__item">
+        <a href="" class="pagination__item__link active">2</a>
+    </li>
+    <li class="pagination__item">
+        <a href="" class="pagination__item__link">3</a>
+    </li>
+    <li class="pagination__item">
+        <div class="pagination__item__dotts">...</div>
+    </li>
+    <li class="pagination__item">
+        <a href="" class="pagination__item__link">25</a>
+    </li>
+    <li class="pagination__btn pagination__btn--next">
+        <a href="" class="pagination__btn__nav">
+            <svg width="24" height="24">
+                <use xlink:href="#svg-next"></use>
+            </svg>
+        </a>
+    </li>
+</ul>
 
-                            <span class="events__item__date">
-                                 <svg class="mr-15" width="17" height="18">
-                                    <use xlink:href="#svg-date"></use>
-                                </svg>
-                                16 декабря 2025 — 13 декабря 2026
-                            </span>
-                        </div>
+                <br>
+                <br>
+                <br>
+                <div class="search-page__not-res">
+                    <div class="search-page__not-res__title">
+                        Поиск не дал результатов.
                     </div>
-                </a>
-                <a class="events__item" href="">
-                    <div class="events__item__desc">
-                        <h2 class="events__item__title">Лекция «Астероиды. Малые тела Солнечной системы» – 9 ноября</h2>
-                        <div class="events__item__text">
-                            С 16 декабря 2025 года по 13 декабря 2026 года. Биомузей приглашает встретиться с птицей
-                            2026 года — чомгой.
-                        </div>
-                        <div class="events__item__footer">
-
-                            <span class="events__item__date">
-                                 <svg class="mr-15" width="17" height="18">
-                                    <use xlink:href="#svg-date"></use>
-                                </svg>
-                                13 декабря 2026
-                            </span>
-                        </div>
+                    <div class="search-page__not-res__text">
+                        Попробуйте уточнить запрос или изменить ключевые слова.
                     </div>
-                    <div class="events__item__pic">
-                        <img src="images/dist/m1.jpg" width="160" height="160" loading="lazy" alt="">
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-            <div class="marketing marketing-sb">
-                <div class="marketing-sb__title">НЕМНОГО РЕКЛАМЫ</div>
-                <div class="marketing__img"></div>
-
-                <div class="marketing__img"></div>
+                </div>
             </div>
         </div>
     </div>
+
 </div>
+
+
 <footer class="footer">
     <div class="container">
         <div class="footer__top">
