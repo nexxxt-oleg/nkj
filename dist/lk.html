@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
 
-    <title>События</title>
+    <title>Наука, жизнь</title>
     <meta name="description" content="">
 
     <meta name="viewport"
@@ -27,7 +27,7 @@
 
 
     <header class="header">
-        <div class="header__top" id="headerTop">
+        <div class="header__top header__top--lk" id="headerTop">
             <div class="header__top__toolbar">
                 <div class="container">
                     <div class="row align-items-center toolbar-top">
@@ -76,7 +76,7 @@
                             </ul>
                             <a href="" class="toolbar-top__link">О журнале</a>
                         </div>
-                        <div class="col-8 col-lg-8 col-xl-4 toolbar-top__center">
+                        <div class="col-8 col-lg-8 col-xl-3 toolbar-top__center">
                             <div class="toolbar-top__mob-nav">
                                 <a href="#navbarTop" data-bs-toggle="collapse" data-bs-target="#navbarTop"
                                    class="hamburger hamburger--squeeze toolbar-top__toggle-btn collapsed">
@@ -85,13 +85,13 @@
                                     </div>
                                 </a>
                             </div>
-                            <a href="/" class="toolbar-top__logo">
-                                <svg width="300" height="20">
+                            <a href="/" class="toolbar-top__logo d-block flex-grow-1">
+                                <svg width="274" height="18">
                                     <use xlink:href="#svg-logo"></use>
                                 </svg>
                             </a>
                         </div>
-                        <div class="col-4 col-lg-4 col-xl-4">
+                        <div class="col-4 col-lg-4 col-xl-5">
                             <ul class="nav toolbar-top__right">
                                 <li>
                                     <a href="">
@@ -111,14 +111,30 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="">
+                                <li class="dropdown">
+                                    <a href="" class="toolbar-top__lk-menu" data-bs-toggle="dropdown">
                                         <div class="toolbar-top__right__ico">
                                             <svg width="14" height="18">
                                                 <use xlink:href="#svg-user"></use>
                                             </svg>
                                         </div>
+                                        <div class="toolbar-top__lk-menu__fio">
+                                            <span>Космодемьянский А.</span>
+                                            <svg width="8" height="4">
+                                                <use xlink:href="#svg-dropdown"></use>
+                                            </svg>
+                                        </div>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Личный кабинет</a></li>
+                                        <li><a class="dropdown-item" href="#">Мои заказы</a></li>
+                                        <li><a class="dropdown-item" href="#">Электронные покупки</a></li>
+                                        <li><a class="dropdown-item" href="#">Профиль доставки</a></li>
+                                        <li><a class="dropdown-item" href="#">E-mail рассылки</a></li>
+                                        <li><a class="dropdown-item" href="#">Техническая поддержка</a></li>
+                                        <li><a class="dropdown-item" href="#">Настройки профиля</a></li>
+                                        <li><a class="dropdown-item" href="#">Выйти</a></li>
+                                    </ul>
                                 </li>
                                 <li class="pl-25 toolbar-top__right__col-subscription">
                                     <a href="" class="button button--black">
@@ -273,25 +289,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="header__body">
-                <a href="" class="header__body__logo">
-                    <div class="header__body__logo__number">№10 октябрь 2024</div>
-                    <svg class="d-block" width="810" height="52">
-                        <use xlink:href="#svg-logo"></use>
-                    </svg>
-                    <div class="header__body__logo__slogan">Тот самый научно-популярный!</div>
-                </a>
-                <div class="header__body__mob-subscription">
-                    <a href="" class="button button--black">
-                        Оформить подписку
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="header-mob-line"></div>
-
-        <div class="container header__desktop-nav">
+        <div class="container header__desktop-nav tpad30">
             <div class="header__footer">
                 <ul class="nav header__nav">
                     <li><a href="">Новости</a></li>
@@ -309,197 +307,268 @@
             </div>
         </div>
     </header>
+    <div class="container">
+        <ul class="nav breadcrumbs">
+            <li>
+                <a href="/">Главная</a>
+            </li>
+            <li>
+                <a href="">Личный кабинет</a>
+            </li>
+        </ul>
+    </div>
 
-<div class="container">
-    <ul class="nav breadcrumbs">
-        <li>
-            <a href="/">Главная</a>
-        </li>
-        <li>
-            <a href="">Интернет-магазин</a>
-        </li>
-        <li>
-            <span>Подари журнал библиотеке</span>
-        </li>
-    </ul>
-</div>
 
-<div class="container tpad25 fpad90">
 
-    <h1 class="caption caption--h1 mb-35" data-text="События">
-        События
-    </h1>
-
-    <div class="row justify-content-between ">
-        <div class="col-xl-8 col-lg-9">
-            <div class="events mob-pad-0">
-                <a class="events__item" href="">
-                    <div class="events__item__desc">
-                        <h2 class="events__item__title">Лекция «Астероиды. Малые тела Солнечной системы» – 9 ноября</h2>
-                        <div class="events__item__text">
-                            С 16 декабря 2025 года по 13 декабря 2026 года. Биомузей приглашает встретиться с птицей
-                            2026 года — чомгой.
-                        </div>
-                        <div class="events__item__footer">
-
-                            <span class="events__item__date">
-                                 <svg class="mr-15" width="17" height="18">
-                                    <use xlink:href="#svg-date"></use>
-                                </svg>
-                                16 декабря 2025 — 13 декабря 2026
-                            </span>
-                        </div>
-                    </div>
-                </a>
-                <a class="events__item" href="">
-                    <div class="events__item__desc">
-                        <h2 class="events__item__title">Лекция «Астероиды. Малые тела Солнечной системы» – 9 ноября</h2>
-                        <div class="events__item__text">
-                            С 16 декабря 2025 года по 13 декабря 2026 года. Биомузей приглашает встретиться с птицей
-                            2026 года — чомгой.
-                        </div>
-                        <div class="events__item__footer">
-
-                            <span class="events__item__date">
-                                 <svg class="mr-15" width="17" height="18">
-                                    <use xlink:href="#svg-date"></use>
-                                </svg>
-                                13 декабря 2026
-                            </span>
-                        </div>
-                    </div>
-                    <div class="events__item__pic">
-                        <img src="images/dist/m1.jpg" width="160" height="160" loading="lazy" alt="">
-                    </div>
-                </a>
-                <a class="events__item" href="">
-                    <div class="events__item__desc">
-                        <h2 class="events__item__title">Лекция «Астероиды. Малые тела Солнечной системы» – 9 ноября</h2>
-                        <div class="events__item__text">
-                            С 16 декабря 2025 года по 13 декабря 2026 года. Биомузей приглашает встретиться с птицей
-                            2026 года — чомгой.
-                        </div>
-                        <div class="events__item__footer">
-
-                            <span class="events__item__date">
-                                 <svg class="mr-15" width="17" height="18">
-                                    <use xlink:href="#svg-date"></use>
-                                </svg>
-                                13 декабря 2026
-                            </span>
-                        </div>
-                    </div>
-                </a>
-                <div class="d-lg-none d-block tpad15 fpad50" >
-                    <div class="marketing__img"></div>
+<div class="container fpad90">
+    <div class="row cabinet">
+        <div class="col-lg-3">
+            <div class="cabinet__user">
+                <div class="cabinet__user__ico">
+                    <svg width="14" height="18">
+                        <use xlink:href="#svg-user"></use>
+                    </svg>
                 </div>
-                <a class="events__item" href="">
-                    <div class="events__item__desc">
-                        <h2 class="events__item__title">Лекция «Астероиды. Малые тела Солнечной системы» – 9 ноября</h2>
-                        <div class="events__item__text">
-                            С 16 декабря 2025 года по 13 декабря 2026 года. Биомузей приглашает встретиться с птицей
-                            2026 года — чомгой.
-                        </div>
-                        <div class="events__item__footer">
-
-                            <span class="events__item__date">
-                                 <svg class="mr-15" width="17" height="18">
-                                    <use xlink:href="#svg-date"></use>
-                                </svg>
-                                16 декабря 2025 — 13 декабря 2026
-                            </span>
-                        </div>
-                    </div>
-                </a>
-                <a class="events__item" href="">
-                    <div class="events__item__desc">
-                        <h2 class="events__item__title">Лекция «Астероиды. Малые тела Солнечной системы» – 9 ноября</h2>
-                        <div class="events__item__text">
-                            С 16 декабря 2025 года по 13 декабря 2026 года. Биомузей приглашает встретиться с птицей
-                            2026 года — чомгой.
-                        </div>
-                        <div class="events__item__footer">
-
-                            <span class="events__item__date">
-                                 <svg class="mr-15" width="17" height="18">
-                                    <use xlink:href="#svg-date"></use>
-                                </svg>
-                                13 декабря 2026
-                            </span>
-                        </div>
-                    </div>
-                    <div class="events__item__pic">
-                        <img src="images/dist/m1.jpg" width="160" height="160" loading="lazy" alt="">
-                    </div>
-                </a>
-                <a class="events__item" href="">
-                    <div class="events__item__desc">
-                        <h2 class="events__item__title">Лекция «Астероиды. Малые тела Солнечной системы» – 9 ноября</h2>
-                        <div class="events__item__text">
-                            С 16 декабря 2025 года по 13 декабря 2026 года. Биомузей приглашает встретиться с птицей
-                            2026 года — чомгой.
-                        </div>
-                        <div class="events__item__footer">
-
-                            <span class="events__item__date">
-                                 <svg class="mr-15" width="17" height="18">
-                                    <use xlink:href="#svg-date"></use>
-                                </svg>
-                                13 декабря 2026
-                            </span>
-                        </div>
-                    </div>
-                </a>
+                <div class="cabinet__user__fio">
+                    Космодемьянский
+                    Александр
+                    Ольгович-Синицин
+                </div>
             </div>
-
-            <div class="more-link">
-    <button class="button button--black button--big w-100">
-        Показать еще
-    </button>
-</div>
-<ul class="nav pagination pagination--v2">
-    <li class="pagination__btn pagination__btn--prev">
-        <a href="" class="pagination__btn__nav">
-            <svg width="24" height="24">
-                <use xlink:href="#svg-prev"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="pagination__item">
-        <a href="" class="pagination__item__link">1</a>
-    </li>
-    <li class="pagination__item">
-        <a href="" class="pagination__item__link active">2</a>
-    </li>
-    <li class="pagination__item">
-        <a href="" class="pagination__item__link">3</a>
-    </li>
-    <li class="pagination__item">
-        <div class="pagination__item__dotts">...</div>
-    </li>
-    <li class="pagination__item">
-        <a href="" class="pagination__item__link">25</a>
-    </li>
-    <li class="pagination__btn pagination__btn--next">
-        <a href="" class="pagination__btn__nav">
-            <svg width="24" height="24">
-                <use xlink:href="#svg-next"></use>
-            </svg>
-        </a>
-    </li>
-</ul>
-
+            <ul class="nav cabinet__nav">
+                <li>
+                    <a href="" class="active cabinet__nav__item">
+                        <div class="cabinet__nav__item__ico">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-nav1"></use>
+                            </svg>
+                        </div>
+                        <div class="cabinet__nav__item__caption">Личный кабинет</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="cabinet__nav__item">
+                        <div class="cabinet__nav__item__ico">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-nav2"></use>
+                            </svg>
+                        </div>
+                        <div class="cabinet__nav__item__caption">Мои заказы</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="cabinet__nav__item">
+                        <div class="cabinet__nav__item__ico">
+                            <svg width="20" height="18">
+                                <use xlink:href="#svg-nav3"></use>
+                            </svg>
+                        </div>
+                        <div class="cabinet__nav__item__caption">Электронные покупки</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="cabinet__nav__item">
+                        <div class="cabinet__nav__item__ico">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-nav4"></use>
+                            </svg>
+                        </div>
+                        <div class="cabinet__nav__item__caption">Профиль доставки</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="cabinet__nav__item">
+                        <div class="cabinet__nav__item__ico">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-nav5"></use>
+                            </svg>
+                        </div>
+                        <div class="cabinet__nav__item__caption">E-mail рассылки</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="cabinet__nav__item">
+                        <div class="cabinet__nav__item__ico">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-nav6"></use>
+                            </svg>
+                        </div>
+                        <div class="cabinet__nav__item__caption">Техническая поддержка</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="cabinet__nav__item">
+                        <div class="cabinet__nav__item__ico">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-nav7"></use>
+                            </svg>
+                        </div>
+                        <div class="cabinet__nav__item__caption">Настройки профиля</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="cabinet__nav__item">
+                        <div class="cabinet__nav__item__ico">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-nav8"></use>
+                            </svg>
+                        </div>
+                        <div class="cabinet__nav__item__caption">Выйти</div>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-            <div class="marketing marketing-sb">
-                <div class="marketing-sb__title">НЕМНОГО РЕКЛАМЫ</div>
-                <div class="marketing__img"></div>
+        <div class="col-lg-9">
+            <div class="cabinet__alert cabinet__alert--silver">
+                <div class="cabinet__alert__ico">
+                    <svg width="24" height="24">
+                        <use xlink:href="#svg-subscription"></use>
+                    </svg>
+                </div>
+                <div class="cabinet__alert__text">
+                    <div class="cabinet__alert__title">
+                        У вас нет активных подписок на журнал «Наука и жизнь»
+                    </div>
+                    Оформите подписку на электронную или печатную версии журнала
+                </div>
+                <div class="cabinet__alert__btn">
+                    <a href="" class="button button--black w-100">Оформить подписку</a>
+                </div>
+            </div>
+            <div class="cabinet__alert cabinet__alert--pink">
+                <div class="cabinet__alert__ico">
+                    <svg width="24" height="24">
+                        <use xlink:href="#svg-subscription"></use>
+                    </svg>
+                </div>
+                <div class="cabinet__alert__text">
+                    <div class="cabinet__alert__title">
+                        Ваша подписка истекла!
+                    </div>
+                    Электронная подписка журнала «Наука и жизнь» (истекла 30.11.2025)
+                </div>
+                <div class="cabinet__alert__btn">
+                    <a href="" class="button button--black w-100">Оформить подписку</a>
+                </div>
+            </div>
+            <div class="cabinet__alert cabinet__alert--green">
+                <div class="cabinet__alert__ico">
+                    <svg width="24" height="24">
+                        <use xlink:href="#svg-subscription"></use>
+                    </svg>
+                </div>
+                <div class="cabinet__alert__text">
+                    <div class="cabinet__alert__title">
+                        Ваши подписки:
+                    </div>
+                    Подписка на 2026 год с доставкой в почтовый ящик до 31.12.2026
+                </div>
+                <div class="cabinet__alert__btn">
 
-                <div class="marketing__img"></div>
+                </div>
+            </div>
+            <div class="row fpad25">
+                <div class="col-lg-4 fpad25">
+                    <a href="" class="cabinet__card">
+                        <div class="cabinet__card__ico">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-nav2"></use>
+                            </svg>
+                        </div>
+                        <div class="cabinet__card__title">
+                            Мои заказы
+                        </div>
+                        <div class="cabinet__card__numb">
+                            7
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 fpad25">
+                    <a href="" class="cabinet__card">
+                        <div class="cabinet__card__ico">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-nav3"></use>
+                            </svg>
+                        </div>
+                        <div class="cabinet__card__title">
+                            Электронные покупки
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 fpad25">
+                    <a href="" class="cabinet__card">
+                        <div class="cabinet__card__ico">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-nav4"></use>
+                            </svg>
+                        </div>
+                        <div class="cabinet__card__title">
+                            Профиль доставки
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 fpad25">
+                    <a href="" class="cabinet__card">
+                        <div class="cabinet__card__ico">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-nav5"></use>
+                            </svg>
+                        </div>
+                        <div class="cabinet__card__title">
+                            E-mail рассылки
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 fpad25">
+                    <a href="" class="cabinet__card">
+                        <div class="cabinet__card__ico">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-nav6"></use>
+                            </svg>
+                        </div>
+                        <div class="cabinet__card__title">
+                            Техническая поддержка
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 fpad25">
+                    <a href="" class="cabinet__card">
+                        <div class="cabinet__card__ico">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-nav7"></use>
+                            </svg>
+                        </div>
+                        <div class="cabinet__card__title">
+                            Настройки профиля
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="new-journal-line cabinet__journal">
+                <div class="cabinet__journal__col-img">
+                    <a href="" class="new-journal-line__img">
+                        <div class="new-journal-line__img__wrap">
+                            <figure>
+                                <img src="images/dist/j1.jpg" width="128" loading="lazy" alt="">
+                            </figure>
+                        </div>
+                    </a>
+                </div>
+                <div class="cabinet__journal__col-desc">
+                    <div class="new-journal-line__title">
+                        <b>Свежий номер 10, 2025</b><br>
+                        уже в продаже
+                    </div>
+                </div>
+                <div class="cabinet__journal__col-btn">
+                    <a href="" class="button button--white">Купить</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+
 <footer class="footer">
     <div class="container">
         <div class="footer__top">
