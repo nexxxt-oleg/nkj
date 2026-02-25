@@ -1,0 +1,89 @@
+<!--#set var="title" value="Наука, жизнь" -->
+<!--#include virtual="/parts/header-lk.html" -->
+
+
+<div class="container fpad60">
+    <div class="row cabinet">
+        <div class="col-lg-3">
+            <!--#include virtual="/parts/lk-left.html" -->
+        </div>
+        <div class="col-lg-9">
+            <div class="cabinet__header">
+                <a href="" class="cabinet__header__back">
+                    <svg class="d-block" width="16" height="16">
+                        <use xlink:href="#svg-prev"></use>
+                    </svg>
+                </a>
+                <h1 class="cabinet__header__title">Настройки профиля</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="fpad25">
+                        <div class="cabinet__form">
+                            <h2 class="cabinet__form__title">Изменить E-mail</h2>
+                            <p class="cabinet__form__text">Текущий E-mail: <b class="fw-semibold">inbox@mail.ru</b></p>
+                            <form action="">
+                                <div class="cabinet__form__inp-row">
+                                    <label for="email" class="cabinet__form__label">Новый E-mail *</label>
+                                    <input type="email" name="email" id="email" class="cabinet__form__inp">
+                                </div>
+                                <div class="cabinet__form__submit">
+                                    <button class="button button--black w-100" type="submit">Отправить</button>
+                                </div>
+                                <div class="cabinet__form__ps">
+                                    * - на указаную почту будет отправленно письмо с ссылой для подтверждения смены
+                                    email. Срок действия ссылки 15 минут с момента отправки.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="fpad25">
+                        <div class="cabinet__form">
+                            <h2 class="cabinet__form__title">Изменить данные пользователя</h2>
+                            <form action="">
+                                <div class="cabinet__form__inp-row">
+                                    <label for="fio" class="cabinet__form__label">Фамилия *</label>
+                                    <input type="text" name="fio" id="fio" class="cabinet__form__inp">
+                                </div>
+                                <div class="cabinet__form__inp-row">
+                                    <label for="name" class="cabinet__form__label">Имя *</label>
+                                    <input type="text" name="name" id="name" class="cabinet__form__inp">
+                                </div>
+                                <div class="cabinet__form__inp-row">
+                                    <label for="pass" class="cabinet__form__label">Новый пароль *</label>
+                                    <div class="position-relative">
+                                        <input type="password" name="pass" autocomplete="off" id="pass" class="cabinet__form__inp">
+                                        <button class="form-reg__inp__ico js-pass" data-target="pass">
+                                            <svg width="24" height="14">
+                                                <use xlink:href="#svg-pass-toggle"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cabinet__form__inp-row">
+                                    <label for="pass2" class="cabinet__form__label">Подтверждение нового пароля *</label>
+                                    <div class="position-relative">
+                                        <input type="password" name="pass2" autocomplete="off" id="pass2" class="cabinet__form__inp">
+                                        <button class="form-reg__inp__ico js-pass" data-target="pass2">
+                                            <svg width="24" height="14">
+                                                <use xlink:href="#svg-pass-toggle"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cabinet__form__submit">
+                                    <button class="button button--black w-100" type="submit">Сохранить</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--#include virtual="/parts/footer.html" -->

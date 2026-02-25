@@ -1,0 +1,83 @@
+<!--#set var="title" value="Наука, жизнь" -->
+<!--#include virtual="/parts/header-lk.html" -->
+
+
+<div class="container fpad60">
+    <div class="row cabinet">
+        <div class="col-lg-3">
+            <!--#include virtual="/parts/lk-left.html" -->
+        </div>
+        <div class="col-lg-9">
+            <div class="cabinet__header">
+                <a href="" class="cabinet__header__back">
+                    <svg class="d-block" width="16" height="16">
+                        <use xlink:href="#svg-prev"></use>
+                    </svg>
+                </a>
+                <h1 class="cabinet__header__title">Профиль доставки</h1>
+            </div>
+
+            <p class="cabinet__form__text">Поля, помеченные символом «*», являются обязательными для заполнения.</p>
+            <div class="fpad30 tpad10">
+                <form action="">
+                    <div class="row ">
+                        <div class="cabinet__form__inp-row col-12">
+                            <label class="cabinet__form__label">Фамилия, Имя и Отчество *</label>
+                            <input type="text" name="fio" class="cabinet__form__inp2"
+                                   value="Космодемьянский Александр Константинович">
+                        </div>
+                        <div class="cabinet__form__inp-row col-12">
+                            <label class="cabinet__form__label">E-mail *</label>
+                            <input type="email" name="email" class="cabinet__form__inp2">
+                        </div>
+                        <div class="cabinet__form__inp-row col-12">
+                            <label class="cabinet__form__label">Телефон</label>
+                            <input type="tel" name="tel" class="cabinet__form__inp2 js-mask-phone">
+                        </div>
+
+                        <div class="cabinet__form__inp-row col-lg-4">
+                            <label class="cabinet__form__label">Индекс *</label>
+                            <input type="text" name="index" class="cabinet__form__inp2">
+                        </div>
+                        <div class="cabinet__form__inp-row col-lg-8">
+                            <label class="cabinet__form__label">Край/Область *</label>
+                            <input type="text" name="krai" class="cabinet__form__inp2">
+                        </div>
+                        <div class="cabinet__form__inp-row col-lg-12">
+                            <label class="cabinet__form__label">Населенный пункт *</label>
+                            <input type="text" name="punkt" class="cabinet__form__inp2">
+                        </div>
+                        <div class="cabinet__form__inp-row col-lg-8">
+                            <label class="cabinet__form__label">Улица *</label>
+                            <input type="text" name="street" class="cabinet__form__inp2">
+                        </div>
+                        <div class="cabinet__form__inp-row col-lg-4">
+                            <label class="cabinet__form__label">Дом *</label>
+                            <input type="text" name="dom" class="cabinet__form__inp2">
+                        </div>
+                        <div class="cabinet__form__inp-row col-lg-4">
+                            <label class="cabinet__form__label">Корпус</label>
+                            <input type="text" name="Корпус" class="cabinet__form__inp2">
+                        </div>
+                        <div class="cabinet__form__inp-row col-lg-4">
+                            <label class="cabinet__form__label">Строение</label>
+                            <input type="text" name="Строение" class="cabinet__form__inp2">
+                        </div>
+                        <div class="cabinet__form__inp-row col-lg-4">
+                            <label class="cabinet__form__label">Квартира</label>
+                            <input type="text" name="Квартира" class="cabinet__form__inp2">
+                        </div>
+                    </div>
+                    <div class="cabinet__form__submit">
+                        <button class="button button--black w-100" type="submit">Отправить</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--#include virtual="/parts/footer.html" -->

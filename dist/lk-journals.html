@@ -27,7 +27,7 @@
 
 
     <header class="header">
-        <div class="header__top" id="headerTop">
+        <div class="header__top header__top--lk" id="headerTop">
             <div class="header__top__toolbar">
                 <div class="container">
                     <div class="row align-items-center toolbar-top">
@@ -76,7 +76,7 @@
                             </ul>
                             <a href="" class="toolbar-top__link">О журнале</a>
                         </div>
-                        <div class="col-8 col-lg-8 col-xl-4 toolbar-top__center">
+                        <div class="col-8 col-lg-8 col-xl-3 toolbar-top__center">
                             <div class="toolbar-top__mob-nav">
                                 <a href="#navbarTop" data-bs-toggle="collapse" data-bs-target="#navbarTop"
                                    class="hamburger hamburger--squeeze toolbar-top__toggle-btn collapsed">
@@ -85,13 +85,13 @@
                                     </div>
                                 </a>
                             </div>
-                            <a href="/" class="toolbar-top__logo">
-                                <svg width="300" height="20">
+                            <a href="/" class="toolbar-top__logo d-block flex-grow-1">
+                                <svg width="274" height="18">
                                     <use xlink:href="#svg-logo"></use>
                                 </svg>
                             </a>
                         </div>
-                        <div class="col-4 col-lg-4 col-xl-4">
+                        <div class="col-4 col-lg-4 col-xl-5">
                             <ul class="nav toolbar-top__right">
                                 <li>
                                     <a href="">
@@ -111,14 +111,30 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="">
+                                <li class="dropdown">
+                                    <a href="" class="toolbar-top__lk-menu" data-bs-toggle="dropdown">
                                         <div class="toolbar-top__right__ico">
                                             <svg width="14" height="18">
                                                 <use xlink:href="#svg-user"></use>
                                             </svg>
                                         </div>
+                                        <div class="toolbar-top__lk-menu__fio">
+                                            <span>Космодемьянский А.</span>
+                                            <svg width="8" height="4">
+                                                <use xlink:href="#svg-dropdown"></use>
+                                            </svg>
+                                        </div>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Личный кабинет</a></li>
+                                        <li><a class="dropdown-item" href="#">Мои заказы</a></li>
+                                        <li><a class="dropdown-item" href="#">Электронные покупки</a></li>
+                                        <li><a class="dropdown-item" href="#">Профиль доставки</a></li>
+                                        <li><a class="dropdown-item" href="#">E-mail рассылки</a></li>
+                                        <li><a class="dropdown-item" href="#">Техническая поддержка</a></li>
+                                        <li><a class="dropdown-item" href="#">Настройки профиля</a></li>
+                                        <li><a class="dropdown-item" href="#">Выйти</a></li>
+                                    </ul>
                                 </li>
                                 <li class="pl-25 toolbar-top__right__col-subscription">
                                     <a href="" class="button button--black">
@@ -273,25 +289,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="header__body">
-                <a href="" class="header__body__logo">
-                    <div class="header__body__logo__number">№10 октябрь 2024</div>
-                    <svg class="d-block" width="810" height="52">
-                        <use xlink:href="#svg-logo"></use>
-                    </svg>
-                    <div class="header__body__logo__slogan">Тот самый научно-популярный!</div>
-                </a>
-                <div class="header__body__mob-subscription">
-                    <a href="" class="button button--black">
-                        Оформить подписку
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="header-mob-line"></div>
-
-        <div class="container header__desktop-nav">
+        <div class="container header__desktop-nav tpad30">
             <div class="header__footer">
                 <ul class="nav header__nav">
                     <li><a href="">Новости</a></li>
@@ -309,451 +307,247 @@
             </div>
         </div>
     </header>
+    <div class="container">
+        <ul class="nav breadcrumbs">
+            <li>
+                <a href="/">Главная</a>
+            </li>
+            <li>
+                <a href="">Личный кабинет</a>
+            </li>
+        </ul>
+    </div>
 
-<div class="container">
-    <ul class="nav breadcrumbs">
-        <li>
-            <a href="/">Главная</a>
-        </li>
-        <li>
-            <a href="">Интернет-магазин</a>
-        </li>
-        <li>
-            <span>Подари журнал библиотеке</span>
-        </li>
-    </ul>
+
+
+<div class="container fpad60">
+    <div class="row cabinet">
+        <div class="col-lg-3">
+            <div class="cabinet__user">
+    <div class="cabinet__user__ico">
+        <svg width="14" height="18">
+            <use xlink:href="#svg-user"></use>
+        </svg>
+    </div>
+    <div class="cabinet__user__fio">
+        Космодемьянский
+        Александр
+        Ольгович-Синицин
+    </div>
 </div>
-
-
-<div class="container tpad25 fpad90">
-    <div class="spec-box spec-box--big">
-        <div class="spec-box__img">
-            <picture>
-                <source srcset="images/dist/mir.jpg" media="(max-width: 768px)">
-                <source srcset="images/dist/mir.jpg 1x, images/dist/mir@2.jpg 2x">
-                <img src="images/dist/mir.jpg" loading="lazy" alt="">
-            </picture>
-        </div>
-        <div class="spec-box__logo">
-            <img src="images/dist/spec-logo.png" width="80" height="78" loading="lazy" alt="">
-        </div>
-        <div class="spec-box__wrap text-white">
-            <div>
-                <div class="mir-title">
-                    <h1 class="caption caption--white caption--h1" data-text="Ускользающий мир">Ускользающий мир</h1>
-                    <a href="" target="_blank" class="caption__rss">
-                        <svg class="d-block" width="18" height="18">
-                            <use xlink:href="#svg-rss"></use>
-                        </svg>
-                    </a>
-                </div>
-                <p class="fs-24">Совместный информационный проект Росзаповедцентра Минприроды России и журнала «Наука и
-                    жизнь»</p>
-                <div class="spec-box__wrap__footer">
-                    <a href="" class="button button--white">О проекте</a>
-                </div>
+<ul class="nav cabinet__nav">
+    <li>
+        <a href="" class="active cabinet__nav__item">
+            <div class="cabinet__nav__item__ico">
+                <svg width="20" height="20">
+                    <use xlink:href="#svg-nav1"></use>
+                </svg>
             </div>
-        </div>
-    </div>
-
-    <div class="row fpad60">
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box card-box--v1">
-                <div class="card-box__img">
-                    <img src="images/dist/n1.jpg" width="240" height="160" loading="lazy" alt="">
-                </div>
-                <div class="card-box__title">
-                    «Мозг – это маленькая вселенная»
-                </div>
-                <div class="card-box__anons">
-                    Как аспиранту заниматься нейронауками и не отвлекаться на бюрократию, а научному руководителю найти
-                    талантливых молодых учёных? Рассказывает член-корреспондент РАН Тагир Аушев, заведующий лабораторией
-                    физики высоких энергий МФТИ и научный директор Центра перспективных междисциплинарных исследований
-                    «Идея».
-                </div>
-                <div class="card-box__date">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box card-box--v3" style="background-image: url(images/dist/bg-f1.jpg)">
-                <div class="card-box__img">
-                </div>
-
-                <div class="card-box__title color-white">
-                    «Мозг – это маленькая вселенная»
-                </div>
-                <div class="card-box__anons color-white">
-                    Как аспиранту заниматься нейронауками и не отвлекаться на бюрократию, а научному руководителю найти
-                    талантливых молодых учёных? Рассказывает член-корреспондент РАН Тагир Аушев, заведующий лабораторией
-                    физики высоких энергий МФТИ и научный директор Центра перспективных междисциплинарных исследований
-                    «Идея».
-                </div>
-                <div class="card-box__date color-white">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box">
-                <div class="card-box__img">
-                    <img src="images/dist/n1.jpg" width="240" height="160" loading="lazy" alt="">
-                </div>
-                <div class="card-box__title">
-                    Через «Научную квартиру» по пути на «Лунную базу»
-                </div>
-                <div class="card-box__anons">
-                    По одной из интерактивных площадок Фестиваля НАУКА 0+, проходившего с 11 по 13 октября в Москве,
-                    гуляла Татьяна Зимина.
-                </div>
-                <div class="card-box__date">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box">
-                <div class="card-box__img">
-                    <img src="images/dist/n1.jpg" width="240" height="160" loading="lazy" alt="">
-                </div>
-                <div class="card-box__title">
-                    Через «Научную квартиру» по пути на «Лунную базу»
-                </div>
-                <div class="card-box__anons">
-                    По одной из интерактивных площадок Фестиваля НАУКА 0+, проходившего с 11 по 13 октября в Москве,
-                    гуляла Татьяна Зимина.
-                </div>
-                <div class="card-box__date">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box card-box--v1">
-                <div class="card-box__img">
-                    <img src="images/dist/n1.jpg" width="240" height="160" loading="lazy" alt="">
-                </div>
-                <div class="card-box__title">
-                    «Мозг – это маленькая вселенная»
-                </div>
-                <div class="card-box__anons">
-                    Как аспиранту заниматься нейронауками и не отвлекаться на бюрократию, а научному руководителю найти
-                    талантливых молодых учёных? Рассказывает член-корреспондент РАН Тагир Аушев, заведующий лабораторией
-                    физики высоких энергий МФТИ и научный директор Центра перспективных междисциплинарных исследований
-                    «Идея».
-                </div>
-                <div class="card-box__date">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box card-box--v3" style="background-image: url(images/dist/bg-f1.jpg)">
-                <div class="card-box__img">
-                </div>
-
-                <div class="card-box__title color-white">
-                    «Мозг – это маленькая вселенная»
-                </div>
-                <div class="card-box__anons color-white">
-                    Как аспиранту заниматься нейронауками и не отвлекаться на бюрократию, а научному руководителю найти
-                    талантливых молодых учёных? Рассказывает член-корреспондент РАН Тагир Аушев, заведующий лабораторией
-                    физики высоких энергий МФТИ и научный директор Центра перспективных междисциплинарных исследований
-                    «Идея».
-                </div>
-                <div class="card-box__date color-white">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box card-box--v1">
-                <div class="card-box__img">
-                    <img src="images/dist/n1.jpg" width="240" height="160" loading="lazy" alt="">
-                </div>
-                <div class="card-box__title">
-                    «Мозг – это маленькая вселенная»
-                </div>
-                <div class="card-box__anons">
-                    Как аспиранту заниматься нейронауками и не отвлекаться на бюрократию, а научному руководителю найти
-                    талантливых молодых учёных? Рассказывает член-корреспондент РАН Тагир Аушев, заведующий лабораторией
-                    физики высоких энергий МФТИ и научный директор Центра перспективных междисциплинарных исследований
-                    «Идея».
-                </div>
-                <div class="card-box__date">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box card-box--v3" style="background-image: url(images/dist/bg-f1.jpg)">
-                <div class="card-box__img">
-                </div>
-
-                <div class="card-box__title color-white">
-                    «Мозг – это маленькая вселенная»
-                </div>
-                <div class="card-box__anons color-white">
-                    Как аспиранту заниматься нейронауками и не отвлекаться на бюрократию, а научному руководителю найти
-                    талантливых молодых учёных? Рассказывает член-корреспондент РАН Тагир Аушев, заведующий лабораторией
-                    физики высоких энергий МФТИ и научный директор Центра перспективных междисциплинарных исследований
-                    «Идея».
-                </div>
-                <div class="card-box__date color-white">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box card-box--v4">
-                <div class="card-box__img">
-                    <img src="images/dist/n1.jpg" width="136" height="90" loading="lazy" alt="">
-                </div>
-                <div class="card-box__title">
-                    Через «Научную квартиру» по пути на «Лунную базу»
-                </div>
-                <div class="card-box__anons">
-                    По одной из интерактивных площадок Фестиваля НАУКА 0+, проходившего с 11 по 13 октября в Москве,
-                    гуляла Татьяна Зимина.
-                </div>
-                <div class="card-box__date">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="fpad90">
-        <div class="marketing ">
-            <div class="marketing__header">
-                <h3 class="caption caption--h5" data-text="НЕМНОГО РЕКЛАМЫ">
-                    НЕМНОГО РЕКЛАМЫ
-                </h3>
-            </div>
-            <div class="marketing__body">
-                <div class="row">
-                    <div class="col-lg-3 fpad40">
-                        <div class="marketing__img"></div>
-                    </div>
-                    <div class="col-lg-3 fpad40">
-                        <div class="marketing__img"></div>
-                    </div>
-                    <div class="col-lg-3 fpad40">
-                        <div class="marketing__img"></div>
-                    </div>
-                    <div class="col-lg-3 fpad40">
-                        <div class="marketing__img"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box">
-                <div class="card-box__img">
-                    <img src="images/dist/n1.jpg" width="240" height="160" loading="lazy" alt="">
-                </div>
-                <div class="card-box__title">
-                    «Мозг – это маленькая вселенная»
-                </div>
-                <div class="card-box__anons">
-                    Как аспиранту заниматься нейронауками и не отвлекаться на бюрократию, а научному руководителю найти
-                    талантливых молодых учёных? Рассказывает член-корреспондент РАН Тагир Аушев, заведующий лабораторией
-                    физики высоких энергий МФТИ и научный директор Центра перспективных междисциплинарных исследований
-                    «Идея».
-                </div>
-                <div class="card-box__date">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box card-box--v3" style="background-image: url(images/dist/bg-f1.jpg)">
-                <div class="card-box__img">
-                </div>
-
-                <div class="card-box__title color-white">
-                    «Мозг – это маленькая вселенная»
-                </div>
-                <div class="card-box__anons color-white">
-                    Как аспиранту заниматься нейронауками и не отвлекаться на бюрократию, а научному руководителю найти
-                    талантливых молодых учёных? Рассказывает член-корреспондент РАН Тагир Аушев, заведующий лабораторией
-                    физики высоких энергий МФТИ и научный директор Центра перспективных междисциплинарных исследований
-                    «Идея».
-                </div>
-                <div class="card-box__date color-white">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box">
-                <div class="card-box__img">
-                    <img src="images/dist/n1.jpg" width="240" height="160" loading="lazy" alt="">
-                </div>
-                <div class="card-box__title">
-                    Через «Научную квартиру» по пути на «Лунную базу»
-                </div>
-                <div class="card-box__anons">
-                    По одной из интерактивных площадок Фестиваля НАУКА 0+, проходившего с 11 по 13 октября в Москве,
-                    гуляла Татьяна Зимина.
-                </div>
-                <div class="card-box__date">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box card-box--v3" style="background-image: url(images/dist/bg-f1.jpg)">
-                <div class="card-box__img">
-                </div>
-
-                <div class="card-box__title color-white">
-                    «Мозг – это маленькая вселенная»
-                </div>
-                <div class="card-box__anons color-white">
-                    Как аспиранту заниматься нейронауками и не отвлекаться на бюрократию, а научному руководителю найти
-                    талантливых молодых учёных? Рассказывает член-корреспондент РАН Тагир Аушев, заведующий лабораторией
-                    физики высоких энергий МФТИ и научный директор Центра перспективных междисциплинарных исследований
-                    «Идея».
-                </div>
-                <div class="card-box__date color-white">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box card-box--v1">
-                <div class="card-box__img">
-                    <img src="images/dist/n1.jpg" width="240" height="160" loading="lazy" alt="">
-                </div>
-                <div class="card-box__title">
-                    «Мозг – это маленькая вселенная»
-                </div>
-                <div class="card-box__anons">
-                    Как аспиранту заниматься нейронауками и не отвлекаться на бюрократию, а научному руководителю найти
-                    талантливых молодых учёных? Рассказывает член-корреспондент РАН Тагир Аушев, заведующий лабораторией
-                    физики высоких энергий МФТИ и научный директор Центра перспективных междисциплинарных исследований
-                    «Идея».
-                </div>
-                <div class="card-box__date">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box card-box--v3" style="background-image: url(images/dist/bg-f1.jpg)">
-                <div class="card-box__img">
-                </div>
-
-                <div class="card-box__title color-white">
-                    «Мозг – это маленькая вселенная»
-                </div>
-                <div class="card-box__anons color-white">
-                    Как аспиранту заниматься нейронауками и не отвлекаться на бюрократию, а научному руководителю найти
-                    талантливых молодых учёных? Рассказывает член-корреспондент РАН Тагир Аушев, заведующий лабораторией
-                    физики высоких энергий МФТИ и научный директор Центра перспективных междисциплинарных исследований
-                    «Идея».
-                </div>
-                <div class="card-box__date color-white">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box card-box--v4">
-                <div class="card-box__img">
-                    <img src="images/dist/n1.jpg" width="240" height="160" loading="lazy" alt="">
-                </div>
-                <div class="card-box__title">
-                    «Мозг – это маленькая вселенная»
-                </div>
-                <div class="card-box__anons">
-                    Как аспиранту заниматься нейронауками и не отвлекаться на бюрократию, а научному руководителю найти
-                    талантливых молодых учёных? Рассказывает член-корреспондент РАН Тагир Аушев, заведующий лабораторией
-                    физики высоких энергий МФТИ и научный директор Центра перспективных междисциплинарных исследований
-                    «Идея».
-                </div>
-                <div class="card-box__date">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box card-box--v3" style="background-image: url(images/dist/bg-f1.jpg)">
-                <div class="card-box__img">
-                </div>
-
-                <div class="card-box__title color-white">
-                    «Мозг – это маленькая вселенная»
-                </div>
-                <div class="card-box__anons color-white">
-                    Как аспиранту заниматься нейронауками и не отвлекаться на бюрократию, а научному руководителю найти
-                    талантливых молодых учёных? Рассказывает член-корреспондент РАН Тагир Аушев, заведующий лабораторией
-                    физики высоких энергий МФТИ и научный директор Центра перспективных междисциплинарных исследований
-                    «Идея».
-                </div>
-                <div class="card-box__date color-white">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 fpad40 d-flex flex-column">
-            <a href="" class="card-box ">
-                <div class="card-box__img">
-                    <img src="images/dist/n1.jpg" width="240" height="160" loading="lazy" alt="">
-                </div>
-                <div class="card-box__title">
-                    Через «Научную квартиру» по пути на «Лунную базу»
-                </div>
-                <div class="card-box__anons">
-                    По одной из интерактивных площадок Фестиваля НАУКА 0+, проходившего с 11 по 13 октября в Москве,
-                    гуляла Татьяна Зимина.
-                </div>
-                <div class="card-box__date">
-                    6 ноября
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="more-link">
-    <button class="button button--black button--big w-100">
-        Показать еще
-    </button>
-</div>
-<ul class="nav pagination pagination--v2">
-    <li class="pagination__btn pagination__btn--prev">
-        <a href="" class="pagination__btn__nav">
-            <svg width="24" height="24">
-                <use xlink:href="#svg-prev"></use>
-            </svg>
+            <div class="cabinet__nav__item__caption">Личный кабинет</div>
         </a>
     </li>
-    <li class="pagination__item">
-        <a href="" class="pagination__item__link">1</a>
+    <li>
+        <a href="" class="cabinet__nav__item">
+            <div class="cabinet__nav__item__ico">
+                <svg width="20" height="20">
+                    <use xlink:href="#svg-nav2"></use>
+                </svg>
+            </div>
+            <div class="cabinet__nav__item__caption">Мои заказы</div>
+        </a>
     </li>
-    <li class="pagination__item">
-        <a href="" class="pagination__item__link active">2</a>
+    <li>
+        <a href="" class="cabinet__nav__item">
+            <div class="cabinet__nav__item__ico">
+                <svg width="20" height="18">
+                    <use xlink:href="#svg-nav3"></use>
+                </svg>
+            </div>
+            <div class="cabinet__nav__item__caption">Электронные покупки</div>
+        </a>
     </li>
-    <li class="pagination__item">
-        <a href="" class="pagination__item__link">3</a>
+    <li>
+        <a href="" class="cabinet__nav__item">
+            <div class="cabinet__nav__item__ico">
+                <svg width="20" height="20">
+                    <use xlink:href="#svg-nav4"></use>
+                </svg>
+            </div>
+            <div class="cabinet__nav__item__caption">Профиль доставки</div>
+        </a>
     </li>
-    <li class="pagination__item">
-        <div class="pagination__item__dotts">...</div>
+    <li>
+        <a href="" class="cabinet__nav__item">
+            <div class="cabinet__nav__item__ico">
+                <svg width="20" height="20">
+                    <use xlink:href="#svg-nav5"></use>
+                </svg>
+            </div>
+            <div class="cabinet__nav__item__caption">E-mail рассылки</div>
+        </a>
     </li>
-    <li class="pagination__item">
-        <a href="" class="pagination__item__link">25</a>
+    <li>
+        <a href="" class="cabinet__nav__item">
+            <div class="cabinet__nav__item__ico">
+                <svg width="20" height="20">
+                    <use xlink:href="#svg-nav6"></use>
+                </svg>
+            </div>
+            <div class="cabinet__nav__item__caption">Техническая поддержка</div>
+        </a>
     </li>
-    <li class="pagination__btn pagination__btn--next">
-        <a href="" class="pagination__btn__nav">
-            <svg width="24" height="24">
-                <use xlink:href="#svg-next"></use>
-            </svg>
+    <li>
+        <a href="" class="cabinet__nav__item">
+            <div class="cabinet__nav__item__ico">
+                <svg width="20" height="20">
+                    <use xlink:href="#svg-nav7"></use>
+                </svg>
+            </div>
+            <div class="cabinet__nav__item__caption">Настройки профиля</div>
+        </a>
+    </li>
+    <li>
+        <a href="" class="cabinet__nav__item">
+            <div class="cabinet__nav__item__ico">
+                <svg width="20" height="20">
+                    <use xlink:href="#svg-nav8"></use>
+                </svg>
+            </div>
+            <div class="cabinet__nav__item__caption">Выйти</div>
         </a>
     </li>
 </ul>
 
+        </div>
+        <div class="col-lg-9">
+            <div class="cabinet__header">
+                <a href="" class="cabinet__header__back">
+                    <svg class="d-block" width="16" height="16">
+                        <use xlink:href="#svg-prev"></use>
+                    </svg>
+                </a>
+                <h1 class="cabinet__header__title">Электронные покупки</h1>
+            </div>
+            <ul class="nav cabinet__tabs">
+                <li>
+                    <a href="" class="active">
+                        Журналы по подписке <span class="count">8</span>
+                    </a>
+                </li>
+                <li><a href="">Электронные журналы <span class="count">120</span></a></li>
+            </ul>
+            <div class="header-filter">
+                <div class="header-filter__label text-nowrap">Выбрать год:</div>
+                <div class="dropdown">
+                    <div class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
+                        <input id="years" readonly="" class="crosswords__header__year" type="text" value="2025">
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><span onclick="document.getElementById('years').value=2025" class="dropdown-item"
+                                  href="#">2025</span></li>
+                        <li><span onclick="document.getElementById('years').value=2024" class="dropdown-item"
+                                  href="#">2024</span></li>
+                        <li><span onclick="document.getElementById('years').value=2023" class="dropdown-item"
+                                  href="#">2023</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="overflow-hidden cabinet__journals">
+                <div class="row">
+                    <div class="col-6 col-lg-3 journal-box">
+                        <div class="journal-box__wrap">
+                            <a href="" class="journal-box__img">
+                                <figure class="card-box__new-img__wrap">
+                                    <div class="cart-list__item__badge">PDF</div>
+                                    <img src="images/dist/j1.jpg" width="267" height="413" loading="lazy" alt="">
+                                </figure>
+                            </a>
+                            <div class="journal-box__footer">
+                                <a href="" class="journal-box__title">
+                                    №12 декабрь 2025
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 journal-box">
+                        <div class="journal-box__wrap">
+                            <a href="" class="journal-box__img">
+                                <figure class="card-box__new-img__wrap">
+                                    <div class="cart-list__item__badge">PDF</div>
+                                    <img src="images/dist/j1.jpg" width="267" height="413" loading="lazy" alt="">
+                                </figure>
+                            </a>
+                            <div class="journal-box__footer">
+                                <a href="" class="journal-box__title">
+                                    №12 декабрь 2025
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6 col-lg-3 journal-box">
+                        <div class="journal-box__wrap">
+                            <a href="" class="journal-box__img">
+                                <figure class="card-box__new-img__wrap">
+                                    <div class="cart-list__item__badge">PDF</div>
+                                    <img src="images/dist/j1.jpg" width="267" height="413" loading="lazy" alt="">
+                                </figure>
+                            </a>
+                            <div class="journal-box__footer">
+                                <a href="" class="journal-box__title">
+                                    №12 декабрь 2025
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 journal-box">
+                        <div class="journal-box__wrap">
+                            <a href="" class="journal-box__img">
+                                <figure class="card-box__new-img__wrap">
+                                    <div class="cart-list__item__badge">PDF</div>
+                                    <img src="images/dist/j1.jpg" width="267" height="413" loading="lazy" alt="">
+                                </figure>
+                            </a>
+                            <div class="journal-box__footer">
+                                <a href="" class="journal-box__title">
+                                    №12 декабрь 2025
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 journal-box">
+                        <div class="journal-box__wrap">
+                            <a href="" class="journal-box__img">
+                                <figure class="card-box__new-img__wrap">
+                                    <div class="cart-list__item__badge">PDF</div>
+                                    <img src="images/dist/j1.jpg" width="267" height="413" loading="lazy" alt="">
+                                </figure>
+                            </a>
+                            <div class="journal-box__footer">
+                                <a href="" class="journal-box__title">
+                                    №12 декабрь 2025
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cabinet__not-journals">
+                <div class="cabinet__not-journals__ico">
+                    <svg class="d-block" width="36" height="32">
+                        <use xlink:href="#svg-polka"></use>
+                    </svg>
+                </div>
+                <div class="cabinet__not-journals__title">Ваша полка с журналами пока пуста.</div>
+                <div class="cabinet__not-journals__text">Оформите свою самую первую подписку прямо сейчас!</div>
+                <div class="cabinet__not-journals__btn">
+                    <a href="" class="button button--black">Оформить подписку</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 

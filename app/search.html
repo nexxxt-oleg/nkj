@@ -8,7 +8,7 @@
             <div class="search-page">
                 <form action="" class="search-page__form">
                     <div class="search-page__form__wrap">
-                        <input id="search" type="text" class="search-page__form__text" required
+                        <input id="search" type="text" class="search-page__form__text" autocomplete="off" required
                                placeholder="Поиск по сайту">
                         <div class="search-page__form__right">
                             <button type="reset" class="search-page__form__btn d-none">
@@ -17,6 +17,80 @@
                                 </svg>
                             </button>
                             <button type="submit" class="search-page__form__btn">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#svg-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="nav search-page__form__variants">
+                        <li>
+                            <span class="search-page__form__variants_label">
+                                Искать
+                            </span>
+                        </li>
+                        <li>
+                            <label class="custom-checkbox-btn">
+                                <input type="radio" name="variant" value="all" checked>
+                                <span class="custom-checkbox-btn__value">Везде</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-checkbox-btn">
+                                <input type="radio" name="variant" value="Новости">
+                                <span class="custom-checkbox-btn__value">Новости</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-checkbox-btn">
+                                <input type="radio" name="variant" value="События">
+                                <span class="custom-checkbox-btn__value">События</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-checkbox-btn">
+                                <input type="radio" name="variant" value="Факт дня">
+                                <span class="custom-checkbox-btn__value">Факт дня</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-checkbox-btn">
+                                <input type="radio" name="variant" value="Новости партнеров">
+                                <span class="custom-checkbox-btn__value">Новости партнеров</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-checkbox-btn">
+                                <input type="radio" name="variant" value="Спецпроекты">
+                                <span class="custom-checkbox-btn__value">Спецпроекты</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-checkbox-btn">
+                                <input type="radio" name="variant" value="Журналы">
+                                <span class="custom-checkbox-btn__value">Журналы</span>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <a href="" class="search-page__link">
+                        <svg width="18" height="18">
+                            <use xlink:href="#svg-author"></use>
+                        </svg>
+                        Авторский указатель
+                    </a>
+                </form>
+                <form action="" class="search-page__form">
+                    <div class="search-page__form__wrap">
+                        <input id="search" type="text" class="search-page__form__text" autocomplete="off" required
+                               placeholder="Поиск по сайту">
+                        <div class="search-page__form__right">
+                            <button type="reset" class="search-page__form__btn ">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#svg-del"></use>
+                                </svg>
+                            </button>
+                            <button type="submit" class="search-page__form__btn d-none">
                                 <svg width="24" height="24">
                                     <use xlink:href="#svg-search"></use>
                                 </svg>

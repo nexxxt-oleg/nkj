@@ -1,0 +1,52 @@
+<!--#set var="title" value="Наука, жизнь" -->
+<!--#include virtual="/parts/header-lk.html" -->
+
+<div class="container fpad60">
+    <div class="row cabinet">
+        <div class="col-lg-3">
+            <!--#include virtual="/parts/lk-left.html" -->
+        </div>
+        <div class="col-lg-9">
+            <div class="cabinet__header">
+                <a href="" class="cabinet__header__back">
+                    <svg class="d-block" width="16" height="16">
+                        <use xlink:href="#svg-prev"></use>
+                    </svg>
+                </a>
+                <h1 class="cabinet__header__title">E-mail рассылки</h1>
+            </div>
+            <ul class="nav cabinet__subscriptions">
+                <li>
+                    <label class="cabinet__subscriptions__item" for="subscriptions_1">
+                        <input id="subscriptions_1" type="checkbox" value="Наука и жизнь, свежий номер"
+                               name="subscriptions"
+                               checked>
+                        <span class="cabinet__subscriptions__item__val">
+                        Наука и жизнь, свежий номер
+                    </span>
+                    </label>
+                </li>
+                <li>
+                    <label class="cabinet__subscriptions__item" for="subscriptions_2">
+                        <input id="subscriptions_2" type="checkbox" value="Объявления редакции" name="subscriptions">
+                        <span class="cabinet__subscriptions__item__val">
+                        Объявления редакции
+                    </span>
+                    </label>
+                </li>
+                <li>
+                    <label class="cabinet__subscriptions__item" for="subscriptions_3">
+                        <input id="subscriptions_3" type="checkbox" value="Продление подписки" name="subscriptions">
+                        <span class="cabinet__subscriptions__item__val">
+                        Продление подписки
+                    </span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
