@@ -6717,3 +6717,144 @@ button:active {
   font-weight: bold;
   margin-bottom: 40px;
 }
+.footer__soc__item:hover,
+.footer a:hover {
+  color: #fff;
+}
+
+.authors {
+  &__header {
+    padding-bottom: 40px;
+    &__search {
+      position: relative;
+      width: 100%;
+      max-width: 415px;
+      height: 30px;
+      margin-top: 5px;
+      &__inp {
+        width: 100%;
+        border: none;
+        padding: 5px 40px 5px 0;
+        height: 30px;
+        background: transparent;
+        font-size: 18px;
+        line-height: 20px;
+        &::placeholder {
+          opacity: 1;
+          color: #6d6d6d;
+        }
+      }
+
+      &__btn {
+        border: none;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.search-page__form__variants.authors__filter  {
+  gap: 5px;
+  padding-bottom: 40px;
+  .custom-checkbox-btn__value {
+    border-color: #fff;
+  }
+  .custom-checkbox-btn__value:hover {
+    border-color: #c7d0da;
+  }
+  .custom-checkbox-btn input:checked + .custom-checkbox-btn__value {
+    border-color: #282828 !important;
+    color: #fff;
+  }
+}
+
+.custom-checkbox-btn.custom-checkbox-btn--letter .custom-checkbox-btn__value {
+  width: 32px;
+  min-width: 32px;
+  padding: 0 5px !important;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authors__list__item {
+  flex-grow: 1;
+  min-height: 360px;
+
+}
+
+.author-card {
+  padding: 30px;
+  border: 1px solid #c7d0da;
+  color: #282828;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  &__ava {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    background-color: #c7d0da;
+    margin-bottom: 25px;
+    background-image: url("data:image/svg+xml,%3Csvg id='_Слой_2' data-name='Слой 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 31.32 25.2'%3E%3Cpolygon fill='%23ffffff' points='17.78 11.88 17.78 .94 16.49 .94 16.49 0 31.32 0 31.32 .94 28.65 .94 28.65 24.26 31.32 24.26 31.32 25.2 16.49 25.2 16.49 24.26 17.78 24.26 17.78 12.81 13.53 12.81 13.53 24.26 14.83 24.26 14.83 25.2 0 25.2 0 24.26 2.66 24.26 2.66 .94 0 .94 0 0 14.83 0 14.83 .94 13.53 .94 13.53 11.88 17.78 11.88'/%3E%3C/svg%3E");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 32px 26px;
+    img {
+      display: block;
+      width: 90px;
+      height: 90px;
+      border-radius: 45px;
+      object-fit: cover;
+    }
+  }
+  &__fio {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+  &__position {
+    font-size: 16px;
+    line-height: 24px;
+    color: #282828;
+    padding-bottom: 25px;
+  }
+  &__footer {
+    margin-top: auto;
+  }
+  &__publications {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #282828;
+    &__count {
+      height: 32px;
+      padding: 5px 15px;
+      border-radius: 16px;
+      background: #c7d0da;
+      font-weight: 500;
+    }
+  }
+  &:hover {
+    color: #3e5c6f;
+    border-color: #282828;
+  }
+}
+
+.tpad60 {
+  padding-top: 60px;
+}
