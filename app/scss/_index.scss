@@ -6858,3 +6858,14 @@ button:active {
 .tpad60 {
   padding-top: 60px;
 }
+
+.author-card.author-card--min {
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 30px;
+  margin-bottom: 5px;
+  min-height: 64px;
+  .author-card__publications {
+    padding-bottom: 0;
+  }
+}
