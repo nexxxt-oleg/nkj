@@ -301,6 +301,12 @@ body {
     background: #fff;
   }
 
+  &--silver {
+    border: none;
+    color: #282828;
+    background: #ecf0f1;
+  }
+
   &.h-48 {
     height: 48px;
     border-radius: 24px;
@@ -6511,6 +6517,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     border: 11px solid #e8ecf1;
+    color: #282828;
 
     &::after {
       content: '';
@@ -6983,6 +6990,119 @@ button:active {
     }
     p {
       margin-bottom: 30px;
+    }
+  }
+}
+
+.cabinet__orders {
+  flex-direction: column;
+  &__item {
+    width: 100%;
+    padding-bottom: 25px;
+  }
+}
+
+.order-info {
+  padding: 25px 30px 20px;
+  border-radius: 20px;
+  border: 1px solid #c7d0da;
+  &__body {
+    display: flex;
+    padding-bottom: 20px;
+    min-height: 172px;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  &__col-desc {
+    width: 300px;
+  }
+  &__col-photos {
+    min-width: 485px;
+    width: 485px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    .card-box__new-img__wrap {
+      img {
+        width: 110px;
+        height: 171px;
+        object-fit: cover;
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #c7d0da;
+    gap: 10px;
+  }
+
+  &__photo {
+    position: relative;
+    width: 112px;
+  }
+
+  &__status {
+    gap: 10px;
+    padding-bottom: 15px;
+    li {
+      padding: 0 5px;
+      height: 24px;
+      line-height: 24px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    &__green {
+      background: #cee599;
+    }
+    &__red {
+      background: #ffdede;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+    padding-bottom: 10px;
+  }
+  &__price {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  &__text {
+    padding-top: 10px;
+    p {
+      display: block;
+      margin: 0;
+      padding-top: 8px;
+      font-size: 14px;
+      line-height: 1.3;
+      b  {
+        font-weight: bold;
+      }
+    }
+  }
+  &__photo__more {
+    width: 110px;
+    height: 171px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #ecf0f1;
+    span {
+      font-size: 14px;
+      line-height: 1.3;
+      b {
+        display: block;
+        font-size: 24px;
+        line-height: 1.1;
+        font-weight: bold;
+      }
     }
   }
 }
