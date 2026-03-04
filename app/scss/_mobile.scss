@@ -46,6 +46,9 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .cabinet__alert__ico {
+    display: none;
+  }
   .cart-sb {
     padding: 0;
   }
@@ -220,6 +223,45 @@
 }
 
 @media screen and (max-width: 991px) {
+  .cabinet__journal {
+    height: 145px;
+    margin-top: 15px;
+    padding: 20px 20px 20px 110px;
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    .new-journal-line__img {
+      margin: 0;
+      width: 62px;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 18px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .new-journal-line__title {
+      font-size: 16px;
+      padding-bottom: 15px;
+    }
+  }
+  .cabinet__card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 70px;
+    border-radius: 10px;
+  }
+  .fpad25 {
+    padding-bottom: 10px;
+  }
+  .cabinet__card__ico {
+    min-width: 42px;
+  }
+  .cabinet__nav {
+    display: none;
+  }
   .cart-list__item {
     align-items: flex-start;
   }
@@ -927,6 +969,65 @@
 }
 
 @media screen and (max-width: 768px) {
+  .cabinet__journal .new-journal-line__title {
+    padding-bottom: 10px;
+  }
+  .cabinet__journal {
+    height: 165px;
+  }
+  .cabinet__alert {
+    min-height: 20px;
+  }
+  .cabinet__card__numb {
+    top: 8px;
+    right: 8px;
+  }
+  .cabinet__card {
+    padding: 15px 25px 15px 20px;
+  }
+  .cabinet__card__title {
+    font-size: 15px;
+  }
+  .cabinet__user__fio,
+  .cabinet__alert__text {
+    font-size: 14px;
+  }
+  .toolbar-top__right .dropdown .dropdown-menu {
+    margin: 5px 0 !important;
+  }
+  .toolbar-top__lk-menu__fio {
+    margin-left: 0;
+    padding-right: 0;
+  }
+  .toolbar-top__lk-menu__fio__full,
+  .toolbar-top__lk-menu .toolbar-top__right__ico {
+    display: none;
+  }
+  .toolbar-top__lk-menu__fio svg {
+    display: none;
+  }
+  .toolbar-top__lk-menu__fio__mob {
+    display: block !important;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    background: #282828;
+  }
+  .cabinet__alert {
+    min-height: 60px;
+    padding: 15px;
+    margin-bottom: 30px;
+    display: block;
+    &__btn {
+      padding-top: 15px;
+      width: 160px;
+    }
+  }
   .cookie {
     bottom: 10px;
     &__wrap {

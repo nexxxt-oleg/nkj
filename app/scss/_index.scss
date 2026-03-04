@@ -6109,13 +6109,17 @@ a:hover {
     position: relative;
     margin-left: -8px;
 
-    span {
+    &__full {
       display: block;
       white-space: nowrap;
       font-size: 14px;
       font-weight: 500;
       color: #282828;
 
+    }
+
+    &__mob {
+      display: none;
     }
 
     svg {
