@@ -2004,7 +2004,8 @@ body {
     margin: 0;
     padding-bottom: 25px;
   }
-  strong  {
+
+  strong {
     font-weight: bold;
   }
 }
@@ -6596,6 +6597,7 @@ a:hover {
     font-size: 16px;
     line-height: 28px;
   }
+
   &__inp2 {
     display: block;
     width: 100%;
@@ -6644,11 +6646,13 @@ button:active {
   max-width: 524px;
   width: 100%;
   flex-direction: column;
+
   li {
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: 1px solid #c7d0da;
   }
+
   &__item {
     display: block;
     position: relative;
@@ -6657,23 +6661,27 @@ button:active {
 
     input {
       display: none;
+
       &:checked {
         & + .cabinet__subscriptions__item__val {
           &::after {
             background: #282828;
           }
+
           &::before {
             margin-right: 0;
           }
         }
       }
     }
+
     &__val {
       display: block;
       font-size: 18px;
       line-height: 24px;
       position: relative;
       padding-right: 45px;
+
       &::after {
         content: '';
         width: 43px;
@@ -6687,6 +6695,7 @@ button:active {
         position: absolute;
         z-index: 1;
       }
+
       &::before {
         content: '';
         display: block;
@@ -6710,27 +6719,32 @@ button:active {
   padding: 25px 30px;
   border-radius: 20px;
   background: #e8ecf1;
+
   &__title {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 20px;
     line-height: 1.3;
   }
+
   p {
     margin: 0;
     font-size: 16px;
     line-height: 1.3;
   }
+
   &__footer {
     padding-top: 20px;
   }
 }
+
 .cabiner__title {
   font-size: 24px;
   line-height: 1.3;
   font-weight: bold;
   margin-bottom: 40px;
 }
+
 .footer__soc__item:hover,
 .footer a:hover {
   color: #fff;
@@ -6739,12 +6753,14 @@ button:active {
 .authors {
   &__header {
     padding-bottom: 40px;
+
     &__search {
       position: relative;
       width: 100%;
       max-width: 415px;
       height: 30px;
       margin-top: 5px;
+
       &__inp {
         width: 100%;
         border: none;
@@ -6753,6 +6769,7 @@ button:active {
         background: transparent;
         font-size: 18px;
         line-height: 20px;
+
         &::placeholder {
           opacity: 1;
           color: #6d6d6d;
@@ -6774,15 +6791,18 @@ button:active {
   }
 }
 
-.search-page__form__variants.authors__filter  {
+.search-page__form__variants.authors__filter {
   gap: 5px;
   padding-bottom: 40px;
+
   .custom-checkbox-btn__value {
     border-color: #fff;
   }
+
   .custom-checkbox-btn__value:hover {
     border-color: #c7d0da;
   }
+
   .custom-checkbox-btn input:checked + .custom-checkbox-btn__value {
     border-color: #282828 !important;
     color: #fff;
@@ -6816,6 +6836,7 @@ button:active {
   flex-direction: column;
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
+
   &__ava {
     width: 90px;
     height: 90px;
@@ -6826,6 +6847,7 @@ button:active {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 32px 26px;
+
     img {
       display: block;
       width: 90px;
@@ -6834,20 +6856,24 @@ button:active {
       object-fit: cover;
     }
   }
+
   &__fio {
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
   }
+
   &__position {
     font-size: 16px;
     line-height: 24px;
     color: #282828;
     padding-bottom: 25px;
   }
+
   &__footer {
     margin-top: auto;
   }
+
   &__publications {
     display: flex;
     align-items: center;
@@ -6855,6 +6881,7 @@ button:active {
     font-size: 14px;
     line-height: 22px;
     color: #282828;
+
     &__count {
       height: 32px;
       padding: 5px 15px;
@@ -6863,6 +6890,7 @@ button:active {
       font-weight: 500;
     }
   }
+
   &:hover {
     color: #3e5c6f;
     border-color: #282828;
@@ -6879,6 +6907,7 @@ button:active {
   padding: 15px 30px;
   margin-bottom: 5px;
   min-height: 64px;
+
   .author-card__publications {
     padding-bottom: 0;
   }
@@ -6891,6 +6920,7 @@ button:active {
     align-items: center;
     padding-bottom: 35px;
     gap: 40px;
+
     &__ava {
       width: 200px;
       min-width: 200px;
@@ -6902,6 +6932,7 @@ button:active {
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: 32px 26px;
+
       img {
         display: block;
         width: 200px;
@@ -6941,6 +6972,7 @@ button:active {
     gap: 35px;
     margin-bottom: 50px;
     position: relative;
+
     &::after {
       content: '';
       position: absolute;
@@ -6951,6 +6983,7 @@ button:active {
       height: 1px;
       background: #c7d0da;
     }
+
     a {
       display: block;
       position: relative;
@@ -6961,8 +6994,10 @@ button:active {
       font-weight: bold;
       color: #89969e;
       z-index: 3;
+
       &.active {
         color: #282828;
+
         &::after {
           content: '';
           display: block;
@@ -6992,6 +7027,7 @@ button:active {
       border-radius: 20px;
       margin-bottom: 30px;
     }
+
     p {
       margin-bottom: 30px;
     }
@@ -7000,6 +7036,7 @@ button:active {
 
 .cabinet__orders {
   flex-direction: column;
+
   &__item {
     width: 100%;
     padding-bottom: 25px;
@@ -7024,15 +7061,18 @@ button:active {
     gap: 30px;
     justify-content: space-between;
   }
+
   &__col-desc {
     width: 300px;
   }
+
   &__col-photos {
     min-width: 485px;
     width: 485px;
     display: flex;
     justify-content: flex-end;
     gap: 15px;
+
     .card-box__new-img__wrap {
       img {
         width: 110px;
@@ -7041,6 +7081,7 @@ button:active {
       }
     }
   }
+
   &__footer {
     display: flex;
     align-items: center;
@@ -7057,6 +7098,7 @@ button:active {
   &__status {
     gap: 10px;
     padding-bottom: 15px;
+
     li {
       padding: 0 5px;
       height: 24px;
@@ -7066,9 +7108,11 @@ button:active {
       font-weight: bold;
       border-radius: 5px;
     }
+
     &__green {
       background: #cee599;
     }
+
     &__red {
       background: #ffdede;
     }
@@ -7079,27 +7123,33 @@ button:active {
     font-weight: bold;
     line-height: 1.3;
     padding-bottom: 10px;
+
     &.fs-20 {
       font-size: 20px;
     }
   }
+
   &__price {
     font-size: 14px;
     line-height: 1.3;
   }
+
   &__text {
     padding-top: 10px;
+
     p {
       display: block;
       margin: 0;
       padding-top: 8px;
       font-size: 14px;
       line-height: 1.3;
-      b  {
+
+      b {
         font-weight: bold;
       }
     }
   }
+
   &__photo__more {
     width: 110px;
     height: 171px;
@@ -7108,9 +7158,11 @@ button:active {
     justify-content: center;
     text-align: center;
     background: #ecf0f1;
+
     span {
       font-size: 14px;
       line-height: 1.3;
+
       b {
         display: block;
         font-size: 24px;
@@ -7141,6 +7193,7 @@ button:active {
     font-size: 14px;
     line-height: 1.2;
   }
+
   &__label {
     font-size: 14px;
     line-height: 1.2;
@@ -7161,15 +7214,18 @@ button:active {
     font-size: 14px;
     line-height: 18px;
     user-select: none;
+
     span {
       color: #282828;
       display: block;
       border-bottom: 1px dotted #282828;
       user-select: none;
     }
+
     &.collapsed .close {
       display: none;
     }
+
     &:not(.collapsed) .open {
       display: none;
     }
@@ -7188,6 +7244,7 @@ button:active {
       margin-top: -2px;
       transition: all 0.2s ease-in-out;
     }
+
     &:not(.collapsed)::after {
       transform: rotate(180deg);
     }
@@ -7195,10 +7252,12 @@ button:active {
 
   &__cost {
     line-height: 18px;
+
     &__label {
       font-size: 14px;
       color: #6d6d6d;
     }
+
     &__value {
       font-size: 16px;
       font-weight: bold;
@@ -7208,10 +7267,12 @@ button:active {
   &__pay-system {
     display: flex;
     gap: 30px;
+
     &__active {
       min-width: 174px;
       width: 174px;
     }
+
     &__ico {
       img {
         display: block;
@@ -7236,8 +7297,10 @@ button:active {
         border-radius: 10px;
         border: 2px solid #fff;
         position: relative;
+
         &.selected {
           border-color: #282828;
+
           &::after {
             content: '';
             display: block;
@@ -7263,6 +7326,7 @@ button:active {
     display: flex;
     gap: 30px;
     padding-bottom: 15px;
+
     &__ico {
       min-width: 174px;
       width: 174px;
@@ -7281,4 +7345,134 @@ button:active {
   max-width: 100%;
   height: auto;
   border: 1px solid #282828;
+}
+
+.order-info__products-label {
+  display: flex;
+  padding: 12px 0;
+  border-bottom: 1px solid #c7d0da;
+
+  div {
+    color: #6d6d6d;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.order-info__products-label__col1 {
+  flex-grow: 1;
+}
+
+.order-info__products-label__col2,
+.order-info__products__col2 {
+  width: 94px;
+  min-width: 94px;
+  padding-right: 10px;
+}
+
+.order-info__products-label__col3,
+.order-info__products__col3 {
+  width: 106px;
+  min-width: 106px;
+  padding-right: 10px;
+}
+
+.order-info__products-label__col4,
+.order-info__products__col4 {
+  width: 135px;
+  min-width: 135px;
+  padding-right: 10px;
+}
+
+.order-info__products__col5,
+.order-info__products-label__col5 {
+  width: 112px;
+  min-width: 112px;
+}
+
+.order-info__products {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #c7d0da;
+
+  .card-box__new-img__wrap {
+    margin-bottom: 0;
+  }
+
+  .order-info__photo {
+    width: 110px;
+    min-width: 110px;
+  }
+
+  &__col-title {
+    flex-grow: 1;
+    padding: 0 30px;
+  }
+
+  div b {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+
+  &__label {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+}
+
+.order-info__products__col4 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.order-info__footer__itog {
+  display: flex;
+  justify-content: flex-end;
+
+  &__wrap {
+    width: 292px;
+    min-width: 292px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #c7d0da;
+    div {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  &__value {
+    font-weight: bold;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 0 0;
+    &__label {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: bold;
+    }
+    &__value {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: bold;
+    }
+  }
 }
