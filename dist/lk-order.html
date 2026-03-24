@@ -323,7 +323,7 @@
 
 <div class="container fpad60">
     <div class="row cabinet">
-        <div class="col-lg-3">
+        <div class="col-xl-3 col-lg-4 d-lg-block d-none">
             <div class="cabinet__user">
     <div class="cabinet__user__ico">
         <svg width="14" height="18">
@@ -420,7 +420,7 @@
 </ul>
 
         </div>
-        <div class="col-lg-9">
+        <div class="col-xl-9 col-lg-8">
             <div class="cabinet__header">
                 <a href="" class="cabinet__header__back">
                     <svg class="d-block" width="16" height="16">
@@ -432,7 +432,8 @@
 
             <div class="order-info">
                 <div class="order-info__header">
-                    <div class="order-info__title fs-20 pb-0">Заказ №73796 от 05.09.2025, 3 товара на сумму 1 230 ₽
+                    <div class="order-info__title fs-20 pb-0">Заказ №73796 от 05.09.2025, 3 товара на сумму <span
+                            class="text-nowrap">1 230 ₽</span>
                     </div>
                 </div>
                 <div class="order-info__body">
@@ -441,7 +442,7 @@
                             <div class="order-info__caption">Информация о заказе</div>
                             <p class="order-info__p"><span class="order-info__label">ФИО:</span> Космодемьянский
                                 Александр Константинович</p>
-                            <div class="fpad15">
+                            <div class="fpad15 mob-fpad15">
                                 <a data-bs-toggle="collapse" data-bs-target="#collapseInfo" href="#collapseInfo"
                                    class="order-info__more-info collapsed">
                                     <span class="open">Подробнее</span>
@@ -449,7 +450,7 @@
                                 </a>
                             </div>
                             <div class="accordion-collapse collapse" id="collapseInfo">
-                                <div class="fpad15">
+                                <div class="fpad15 mob-fpad15">
                                     <div class="order-info__params-order">
                                         <div class="order-info__caption">Информация о пользователе</div>
                                         <p class="order-info__p"><span class="order-info__label d-block">Логин: </span>
@@ -492,7 +493,7 @@
                     </div>
                 </div>
                 <div class="order-info__footer">
-                    <div class="fpad15 w-100">
+                    <div class="fpad15 mob-fpad15 w-100">
                         <div class="order-info__caption">Способ оплаты</div>
                         <div class="order-info__pay-system">
                             <div class="order-info__pay-system__active">
@@ -543,7 +544,7 @@
                     </div>
                 </div>
                 <div class="order-info__footer">
-                    <div class="fpad15 w-100">
+                    <div class="fpad15 mob-fpad15 w-100">
                         <div class="order-info__caption">Способ доставки</div>
                         <div class="order-info__delivery">
 
@@ -562,7 +563,7 @@
                                 <p class="order-info__p pb-2"><span class="order-info__label">Статус отгрузки:</span>
                                     Ожидает обработки</p>
                                 <p class="order-info__p pb-0"><span class="order-info__label">Стоимость доставки:</span>
-                                    <b class="fs-16 fw-bold">240 ₽</b></p>
+                                    <b class="order-info__p__cost fw-bold">240 ₽</b></p>
                             </div>
                         </div>
                     </div>
@@ -587,74 +588,90 @@
                                 Сумма
                             </div>
                         </div>
-                        <div class="order-info__products">
-                            <div class="order-info__photo">
-                                <figure class="card-box__new-img__wrap">
-                                    <img src="images/dist/j1.jpg" width="110" height="171" loading="lazy" alt="">
-                                </figure>
+                        <div class="order-info__products-list">
+                            <div class="order-info__products">
+                                <div class="order-info__photo">
+                                    <figure class="card-box__new-img__wrap">
+                                        <img src="images/dist/j1.jpg" width="110" height="171" loading="lazy" alt="">
+                                    </figure>
+                                </div>
+                                <div class="order-info__products__col-title">
+                                    <div class="order-info__products__label">Печатный журнал</div>
+                                    <div class="order-info__products__title">№11 ноябрь 2025</div>
+                                </div>
+                                <div class="order-info__products__col2">
+                                    <span class="order-info__products__mob-label">Цена</span>
+                                    <b class="order-info__products__props-val">330 ₽</b>
+                                </div>
+                                <div class="order-info__products__col3">
+                                    <span class="order-info__products__mob-label">Скидка</span>
+                                    <b class="order-info__products__props-val"></b>
+                                </div>
+                                <div class="order-info__products__col4">
+                                    <span class="order-info__products__mob-label">Количество</span>
+                                    <span class="order-info__products__props-val">1 шт.</span>
+                                </div>
+                                <div class="order-info__products__col5">
+                                    <span class="order-info__products__mob-label">Сумма</span>
+                                    <b class="order-info__products__props-val">330 ₽</b>
+                                </div>
                             </div>
-                            <div class="order-info__products__col-title">
-                                <div class="order-info__products__label">Печатный журнал</div>
-                                <div class="order-info__products__title">№11 ноябрь 2025</div>
+                            <div class="order-info__products">
+                                <div class="order-info__photo">
+                                    <div class="cart-list__item__badge">PDF</div>
+                                    <figure class="card-box__new-img__wrap">
+                                        <img src="images/dist/j1.jpg" width="110" height="171" loading="lazy" alt="">
+                                    </figure>
+                                </div>
+                                <div class="order-info__products__col-title">
+                                    <div class="order-info__products__label">Электронный журнал</div>
+                                    <div class="order-info__products__title">№10 октябрь 2025</div>
+                                </div>
+                                <div class="order-info__products__col2">
+                                    <span class="order-info__products__mob-label">Цена</span>
+                                    <b class="order-info__products__props-val">330 ₽</b>
+                                </div>
+                                <div class="order-info__products__col3">
+                                    <span class="order-info__products__mob-label">Скидка</span>
+                                    <b class="order-info__products__props-val"></b>
+                                </div>
+                                <div class="order-info__products__col4">
+                                    <span class="order-info__products__mob-label">Количество</span>
+                                    <span class="order-info__products__props-val">1 шт.</span>
+                                </div>
+                                <div class="order-info__products__col5">
+                                    <span class="order-info__products__mob-label">Сумма</span>
+                                    <b class="order-info__products__props-val">330 ₽</b>
+                                </div>
                             </div>
-                            <div class="order-info__products__col2">
-                                <b>330 ₽</b>
-                            </div>
-                            <div class="order-info__products__col3">
-
-                            </div>
-                            <div class="order-info__products__col4">
-                                1 шт.
-                            </div>
-                            <div class="order-info__products__col5">
-                                <b>330 ₽</b>
-                            </div>
-                        </div>
-                        <div class="order-info__products">
-                            <div class="order-info__photo">
-                                <div class="cart-list__item__badge">PDF</div>
-                                <figure class="card-box__new-img__wrap">
-                                    <img src="images/dist/j1.jpg" width="110" height="171" loading="lazy" alt="">
-                                </figure>
-                            </div>
-                            <div class="order-info__products__col-title">
-                                <div class="order-info__products__label">Электронный журнал</div>
-                                <div class="order-info__products__title">№10 октябрь 2025</div>
-                            </div>
-                            <div class="order-info__products__col2">
-                                <b>330 ₽</b>
-                            </div>
-                            <div class="order-info__products__col3">
-
-                            </div>
-                            <div class="order-info__products__col4">
-                                1 шт.
-                            </div>
-                            <div class="order-info__products__col5">
-                                <b>330 ₽</b>
-                            </div>
-                        </div>
-                        <div class="order-info__products">
-                            <div class="order-info__photo">
-                                <figure class="card-box__new-img__wrap">
-                                    <img src="images/dist/j1.jpg" width="110" height="171" loading="lazy" alt="">
-                                </figure>
-                            </div>
-                            <div class="order-info__products__col-title">
-                                <div class="order-info__products__label">Печатная книга</div>
-                                <div class="order-info__products__title">Благородных упражнений изустные преданья... Интеллектуальные игры и головоломки</div>
-                            </div>
-                            <div class="order-info__products__col2">
-                                <b>330 ₽</b>
-                            </div>
-                            <div class="order-info__products__col3">
-
-                            </div>
-                            <div class="order-info__products__col4">
-                                1 шт.
-                            </div>
-                            <div class="order-info__products__col5">
-                                <b>330 ₽</b>
+                            <div class="order-info__products">
+                                <div class="order-info__photo">
+                                    <figure class="card-box__new-img__wrap">
+                                        <img src="images/dist/j1.jpg" width="110" height="171" loading="lazy" alt="">
+                                    </figure>
+                                </div>
+                                <div class="order-info__products__col-title">
+                                    <div class="order-info__products__label">Печатная книга</div>
+                                    <div class="order-info__products__title">Благородных упражнений изустные преданья...
+                                        Интеллектуальные игры и головоломки
+                                    </div>
+                                </div>
+                                <div class="order-info__products__col2">
+                                    <span class="order-info__products__mob-label">Цена</span>
+                                    <b class="order-info__products__props-val">330 ₽</b>
+                                </div>
+                                <div class="order-info__products__col3">
+                                    <span class="order-info__products__mob-label">Скидка</span>
+                                    <b class="order-info__products__props-val"></b>
+                                </div>
+                                <div class="order-info__products__col4">
+                                    <span class="order-info__products__mob-label">Количество</span>
+                                    <span class="order-info__products__props-val">1 шт.</span>
+                                </div>
+                                <div class="order-info__products__col5">
+                                    <span class="order-info__products__mob-label">Сумма</span>
+                                    <b class="order-info__products__props-val">330 ₽</b>
+                                </div>
                             </div>
                         </div>
                         <div class="order-info__footer__itog">

@@ -323,7 +323,7 @@
 
 <div class="container fpad60">
     <div class="row cabinet">
-        <div class="col-lg-3">
+        <div class="col-xl-3 col-lg-4 d-lg-block d-none">
             <div class="cabinet__user">
     <div class="cabinet__user__ico">
         <svg width="14" height="18">
@@ -420,7 +420,7 @@
 </ul>
 
         </div>
-        <div class="col-lg-9">
+        <div class="col-xl-9 col-lg-8">
             <div class="cabinet__header">
                 <a href="" class="cabinet__header__back">
                     <svg class="d-block" width="16" height="16">
@@ -429,14 +429,16 @@
                 </a>
                 <h1 class="cabinet__header__title">Мои заказы</h1>
             </div>
-            <ul class="nav cabinet__tabs">
-                <li>
-                    <a href="" class="active">
-                        Актуальные
-                    </a>
-                </li>
-                <li><a href="">Завершенные</a></li>
-            </ul>
+            <div class="swiper cabinet__tabs overflow-visible" id="cabinetTabs">
+                <div class="swiper-wrapper nav flex-nowrap overflow-visible position-relative z-3">
+                    <div class="swiper-slide cabinet__tabs__item">
+                        <a href="" class="active">
+                            Актуальные
+                        </a>
+                    </div>
+                    <div class="swiper-slide cabinet__tabs__item"><a href="">Завершенные</a></div>
+                </div>
+            </div>
 
             <ul class="nav cabinet__orders">
                 <li class="cabinet__orders__item">

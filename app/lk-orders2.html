@@ -4,7 +4,7 @@
 
 <div class="container fpad60">
     <div class="row cabinet">
-        <div class="col-xl-3 col-lg-4">
+        <div class="col-xl-3 col-lg-4 d-lg-block d-none">
             <!--#include virtual="/parts/lk-left.html" -->
         </div>
         <div class="col-xl-9 col-lg-8">
@@ -16,14 +16,18 @@
                 </a>
                 <h1 class="cabinet__header__title">Мои заказы</h1>
             </div>
-            <ul class="nav cabinet__tabs">
-                <li>
-                    <a href="" >
-                        Актуальные
-                    </a>
-                </li>
-                <li><a href="" class="active">Завершенные</a></li>
-            </ul>
+
+            <div class="swiper cabinet__tabs overflow-visible" id="cabinetTabs">
+                <div class="swiper-wrapper nav flex-nowrap overflow-visible position-relative z-3">
+                    <div class="swiper-slide cabinet__tabs__item">
+                        <a href="" >
+                            Актуальные
+                        </a>
+                    </div>
+                    <div class="swiper-slide cabinet__tabs__item"><a href="" class="active">Завершенные</a></div>
+                </div>
+            </div>
+
 
             <ul class="nav cabinet__orders">
                 <li class="cabinet__orders__item">

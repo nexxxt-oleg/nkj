@@ -323,7 +323,7 @@
 
 <div class="container fpad60">
     <div class="row cabinet">
-        <div class="col-lg-3">
+        <div class="col-xl-3 col-lg-4 d-lg-block d-none">
             <div class="cabinet__user">
     <div class="cabinet__user__ico">
         <svg width="14" height="18">
@@ -420,7 +420,7 @@
 </ul>
 
         </div>
-        <div class="col-lg-9">
+        <div class="col-xl-9 col-lg-8">
             <div class="cabinet__header">
                 <a href="" class="cabinet__header__back">
                     <svg class="d-block" width="16" height="16">
@@ -429,14 +429,20 @@
                 </a>
                 <h1 class="cabinet__header__title">Электронные покупки</h1>
             </div>
-            <ul class="nav cabinet__tabs">
-                <li>
-                    <a href="" class="active">
-                        Журналы по подписке <span class="count">8</span>
-                    </a>
-                </li>
-                <li><a href="">Электронные журналы <span class="count">120</span></a></li>
-            </ul>
+
+            <div class="swiper cabinet__tabs overflow-visible" id="cabinetTabs">
+                <div class="swiper-wrapper nav flex-nowrap overflow-visible position-relative z-3">
+                    <div class="swiper-slide cabinet__tabs__item">
+                        <a href="" class="active">
+                            Журналы по подписке <span class="count">8</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide cabinet__tabs__item">
+                        <a href="">Электронные журналы <span class="count">120</span></a>
+                    </div>
+                </div>
+            </div>
+
             <div class="header-filter">
                 <div class="header-filter__label text-nowrap">Выбрать год:</div>
                 <div class="dropdown">
@@ -543,6 +549,10 @@
                 </div>
                 <div class="cabinet__not-journals__title">Ваша полка с журналами пока пуста.</div>
                 <div class="cabinet__not-journals__text">Оформите свою самую первую подписку прямо сейчас!</div>
+               <!--
+                <div class="cabinet__not-journals__title">Ваша электронная библиотека пуста.</div>
+                <div class="cabinet__not-journals__text">Начните знакомство с журналом прямо сейчас! прямо сейчас!</div>
+                -->
                 <div class="cabinet__not-journals__btn">
                     <a href="" class="button button--black">Оформить подписку</a>
                 </div>

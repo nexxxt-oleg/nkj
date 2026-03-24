@@ -6431,7 +6431,7 @@ a:hover {
 .cabinet__tabs {
   margin-bottom: 25px;
   position: relative;
-  gap: 40px;
+
   z-index: 1;
 
   &::after {
@@ -6439,16 +6439,17 @@ a:hover {
     display: block;
     position: absolute;
     z-index: 1;
-    bottom: 0;
+    bottom: 0.5px;
     left: 0;
     width: 100%;
     height: 1px;
     background: #89969e;
   }
 
-  li {
+  &__item {
     position: relative;
     z-index: 5;
+    width: auto;
   }
 
   a {
@@ -6490,7 +6491,7 @@ a:hover {
         position: absolute;
         z-index: 5;
         left: 0;
-        bottom: -0.5px;
+        bottom: 0;
         height: 2px;
         background: #282828;
         width: 100%;
@@ -7475,4 +7476,11 @@ button:active {
       font-weight: bold;
     }
   }
+}
+
+.order-info__products__mob-label {
+  display: none;
+}
+.order-info__p__cost {
+  font-size: 16px;
 }

@@ -1,4 +1,14 @@
 @media screen and (max-width: 1400px) {
+  .order-info__pay-system__list {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .order-info__pay-system__desc {
+    width: calc(100% - 200px);
+  }
+  .order-info__pay-system__list__item {
+    min-width: 194px;
+  }
 
   .header__nav li {
     padding: 0;
@@ -46,6 +56,44 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .order-info__products__col2,
+  .order-info__products__col3,
+  .order-info__products__col4,
+  .order-info__products__col5 {
+    width: 100%;
+    display: flex;
+    padding-right: 0;
+    padding-top: 5px;
+  }
+  .order-info__products {
+    display: block;
+    position: relative;
+    padding-left: 140px;
+    min-height: 220px;
+    .order-info__photo {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 20px;
+    }
+    .order-info__products__col-title {
+      padding: 0 0 5px;
+    }
+    .order-info__products__mob-label {
+      display: block;
+      width: 85px;
+      min-width: 85px;
+      color: #6d6d6d;
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .order-info__products__props-val {
+      line-height: 20px;
+    }
+  }
+  .order-info__products-label {
+    display: none;
+  }
   .cabinet__alert__ico {
     display: none;
   }
@@ -969,6 +1017,131 @@
 }
 
 @media screen and (max-width: 768px) {
+  .cabinet__form {
+    padding: 20px;
+  }
+  .cabinet__subscriptions__item__val,
+  .cabinet__form__title {
+    font-size: 16px;
+  }
+  .accordion__item__header {
+    min-height: auto;
+    padding: 12px 25px 12px 0;
+    &::after {
+      width: 16px;
+      height: 16px;
+      margin-top: 0;
+      top: 13px;
+    }
+  }
+  .cabiner__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .cabiner__card__title {
+    font-size: 16px;
+  }
+  .cabiner__card p,
+  .cabinet__form__text {
+    font-size: 14px;
+  }
+  .journal-box {
+    padding-bottom: 15px;
+  }
+  .header-filter .dropdown-toggle::after {
+    margin-left: -5px;
+  }
+  .cabinet__tabs {
+    margin-bottom: 15px;
+  }
+  .cabinet__form__label {
+    font-size: 12px;
+  }
+  .cabinet__form__inp, .cabinet__form__inp2 {
+    height: 46px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .cabinet__not-journals__ico svg {
+    width: 24px;
+    height: auto;
+  }
+  .cabinet__tabs a {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+  .order-info__footer__itog__price__value {
+    font-size: 20px;
+  }
+  .order-info__footer__itog__price__label {
+    font-size: 16px;
+  }
+  .order-info__footer__itog__row div {
+    font-size: 14px;
+  }
+  .order-info__products__label {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .order-info__products b.order-info__products__props-val {
+    font-size: 14px !important;
+  }
+  .order-info__products span.order-info__products__props-val {
+    font-size: 12px !important;
+  }
+  .order-info__products__title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .order-info__footer__itog__wrap {
+    width: 100%;
+    min-width: 100%;
+  }
+  .order-info__params-order {
+    padding: 15px 20px 5px;
+  }
+  .mob-fpad15 {
+    padding-bottom: 15px !important;
+  }
+  .order-info__caption {
+    font-size: 16px;
+  }
+  .order-info__col-desc {
+    width: 100%;
+  }
+  .order-info {
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .order-info__title.fs-20 {
+    font-size: 18px;
+  }
+  .order-info__col-buttons {
+    width: 100%;
+    padding-top: 15px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .button {
+      max-width: 130px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .order-info__header {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  .order-info__body {
+    display: block;
+    min-height: auto;
+  }
+  .cabinet__header__title {
+    font-size: 22px;
+  }
+  .cabinet__header {
+    padding-bottom: 15px;
+  }
   .cabinet__journal .new-journal-line__title {
     padding-bottom: 10px;
   }
@@ -2005,6 +2178,44 @@
 }
 
 @media screen and (max-width: 574px) {
+  .order-info__products {
+    padding: 15px 0 15px 100px;
+    min-height: 150px;
+
+  }
+  .order-info__products-lists {
+    margin-top: -15px;
+  }
+  .order-info__products .order-info__photo {
+    top: 18px;
+    width: 80px;
+    min-width: 80px;
+  }
+  .order-info__pay-system__list {
+    display: block;
+  }
+  .order-info__pay-system__list__item {
+    margin: 0 auto 5px;
+  }
+
+  .order-info__pay-system,
+  .order-info__delivery {
+    display: block;
+  }
+  .order-info__pay-system__desc {
+    width: 100%;
+  }
+  .order-info__pay-system__active {
+    width: 194px;
+    padding: 0 10px 10px;
+    margin: 0 auto;
+  }
+
+  .order-info__delivery__ico {
+    margin: 0 auto 10px;
+  }
+
+
   .promocode__input input {
     padding-right: 50px;
   }
