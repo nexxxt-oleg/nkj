@@ -1014,9 +1014,112 @@
   .cookie__wrap {
     padding-right: 200px;
   }
+  .mob-fpad0 {
+    padding-bottom: 0 !important;
+  }
+  .author-page__fio {
+    font-size: 40px;
+
+  }
+  .authors__header__search {
+    max-width: 100%;
+  }
+  .authors__list__item {
+    min-height: auto;
+  }
+  .author-card {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .author-card__ava, .author-card__ava img {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    border-radius: 32px;
+  }
+  .author-card__fio {
+    display: flex;
+    align-items: center;
+    min-height: 64px;
+    margin-bottom: 5px;
+  }
+  .author-card__position {
+    padding-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .authors__header__search__btn svg {
+    width: 20px;
+    height: 20px;
+  }
+  .author-card__publications {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .author-card__publications__count {
+    height: 24px;
+    padding: 0 12px;
+    line-height: 24px;
+    font-size: 12px;
+    border-radius: 12px;
+  }
+  .author-card__fio {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .author-card__position {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .author-card {
+    padding: 20px;
+  }
+  .search-page__form__variants.authors__filter {
+    margin-bottom: 20px;
+  }
+  .author-page__header__info {
+    display: flex;
+    flex-direction: column;
+    .author-page__fio {
+      font-size: 22px;
+      padding: 0 0 10px;
+    }
+    .author-page__position {
+      font-size: 14px;
+      line-height: 20px;
+      padding-bottom: 15px;
+    }
+    .author-page__publications {
+      order: 3;
+      padding-bottom: 0;
+      font-size: 12px;
+      line-height: 24px;
+    }
+    .author-card__publications__count {
+      height: 24px;
+      border-radius: 12px;
+      font-size: 12px;
+      line-height: 24px;
+      padding: 0 10px;
+    }
+  }
+
+  .author-page__header {
+    gap: 16px;
+    align-items: flex-start;
+    padding-bottom: 20px;
+  }
+  .author-page__header__ava img {
+    width: 63px;
+    height: 63px;
+    border-radius: 32px;
+  }
+  .author-page__header__ava {
+    width: 63px;
+    height: 63px;
+    min-width: 63px;
+  }
   .cabinet__form {
     padding: 20px;
   }
@@ -2174,6 +2277,29 @@
   }
   .news__content h1 {
     font-size: 22px;
+  }
+  .author-page__tabs {
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    gap: 25px;
+  }
+  .author-page__variants-filter {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .author-page__tabs a {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 5px;
+  }
+  .author-page__content p {
+    margin-bottom: 15px;
+  }
+  .authors__header {
+    padding-bottom: 20px;
+  }
+  .authors__header__search__inp {
+    font-size: 14px;
   }
 }
 

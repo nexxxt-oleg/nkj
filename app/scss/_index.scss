@@ -6793,8 +6793,7 @@ button:active {
 }
 
 .search-page__form__variants.authors__filter {
-  gap: 5px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 
   .custom-checkbox-btn__value {
     border-color: #fff;
@@ -7033,6 +7032,10 @@ button:active {
       margin-bottom: 30px;
     }
   }
+}
+
+#filterLetter .search-page__form__variants.authors__filter {
+  gap: 0;
 }
 
 .cabinet__orders {
@@ -7483,4 +7486,10 @@ button:active {
 }
 .order-info__p__cost {
   font-size: 16px;
+}
+
+.author-card__desc {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
