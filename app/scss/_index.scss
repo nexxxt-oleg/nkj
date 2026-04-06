@@ -187,6 +187,10 @@ body {
   font-weight: 700;
   /*-webkit-text-stroke: 1px #959595;*/
 
+  &:hover {
+    color: #fff;
+  }
+
   &::before {
     content: attr(data-text);
     position: absolute;
@@ -6770,10 +6774,7 @@ button:active {
   margin-bottom: 40px;
 }
 
-.footer__soc__item:hover,
-.footer a:hover {
-  color: #fff;
-}
+
 
 .authors {
   &__header {
@@ -7583,4 +7584,47 @@ button:active {
   &__col2 {
     grid-column: span 3;
   }
+}
+a,
+.card-box__title,
+.events__item__title,
+.mir-box__wrap__title,
+.footer__soc__item,
+.footer__web__title {
+  transition: all 0.2s ease-in-out;
+}
+.toolbar-top__soc__item:hover,
+.header__nav li a:hover,
+.toolbar-top__right a:hover .toolbar-top__right__ico,
+.title-box-top .caption__rss:hover,
+.all-link:hover,
+.card-box__title:hover,
+.events__item:hover .events__item__title,
+.mir-box__wrap__title:hover,
+.card-box__title.color-white:hover {
+  color: #07805c;
+}
+
+.toolbar-top__link:hover {
+  background: #c7d0da;
+}
+
+.button--black:hover {
+  background: #07805c;
+}
+.button--white:hover {
+  background: #07805c;
+  color: #fff;
+}
+
+.footer__soc__item:hover {
+  background: #c7d0da;
+  color: #282828;
+}
+
+.footer__nav a:hover,
+.footer__info a:hover,
+.footer__web:hover,
+.footer__web:hover .footer__web__title {
+  color: #c7d0da;
 }
