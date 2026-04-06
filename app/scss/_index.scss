@@ -7600,11 +7600,12 @@ a,
 .all-link:hover,
 .card-box__title:hover,
 .events__item:hover .events__item__title,
-.mir-box__wrap__title:hover,
-.card-box__title.color-white:hover {
+.mir-box__wrap__title:hover {
   color: #07805c;
 }
-
+.card-box__title.color-white:hover {
+  color: #c7d0da !important;
+}
 .toolbar-top__link:hover {
   background: #c7d0da;
 }
