@@ -7694,3 +7694,34 @@ a.title-box-top:hover .caption__rss,
 .order-info__pay-system__list__item {
   cursor: pointer;
 }
+
+.card-box--new {
+  overflow: visible !important;
+}
+
+.card-box__hover {
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  &.w-240 {
+    width: 240px;
+  }
+  &.h-160 {
+    height: 160px;
+  }
+
+  &.w-136 {
+    width: 136px;
+  }
+  &.h-90 {
+    height: 90px;
+  }
+  &.aspect-ratio-np {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 342 / 206;
+  }
+}
