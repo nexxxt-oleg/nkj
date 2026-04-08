@@ -2497,6 +2497,11 @@
   .authors__header__search__inp {
     font-size: 14px;
   }
+
+  .caption--h2:before {
+    left: -2px;
+    top: -2px;
+  }
 }
 
 @media screen and (max-width: 574px) {
