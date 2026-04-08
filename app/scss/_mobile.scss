@@ -2502,6 +2502,11 @@
     left: -2px;
     top: -2px;
   }
+  .card-box .card-box__img--bottom {
+    order: 0;
+    padding-top: 0;
+    padding-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 574px) {
