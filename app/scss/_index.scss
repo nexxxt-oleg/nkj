@@ -7637,7 +7637,8 @@ a.title-box-top {
   text-decoration: none;
 }
 
-a.title-box-top:hover .caption:before {
+a.title-box-top:hover .caption:before,
+a.caption:hover:before {
   color: #07805c;
   -webkit-text-stroke: 1px #07805c;
   text-stroke: 1px #07805c;
@@ -7661,4 +7662,9 @@ a.title-box-top:hover .caption__rss,
   .button {
     color: #282828;
   }
+}
+
+.fact__header {
+  margin-left: -10px;
+  margin-right: -10px;
 }
