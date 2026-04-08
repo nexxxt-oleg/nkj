@@ -7592,7 +7592,8 @@ a,
 .events__item__title,
 .mir-box__wrap__title,
 .footer__soc__item,
-.footer__web__title {
+.footer__web__title,
+.author-card {
   transition: all 0.2s ease-in-out;
 }
 .toolbar-top__soc__item:hover,
@@ -7603,7 +7604,9 @@ a,
 .card-box__title:hover,
 .events__item:hover .events__item__title,
 .mir-box__wrap__title:hover,
-a.title-box-top:hover {
+a.title-box-top:hover,
+.author-card:hover,
+.breadcrumbs li a:hover {
   color: #07805c;
 }
 .card-box__title.color-white:hover {
