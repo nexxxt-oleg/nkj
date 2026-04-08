@@ -706,6 +706,8 @@ body {
 .mir-box {
   padding-top: 15px;
   text-align: center;
+  display: block;
+  text-decoration: none;
 
   &__caption {
     font-size: 13px;
@@ -719,13 +721,24 @@ body {
     text-decoration: none;
 
     &__img {
-      display: flex;
-      justify-content: center;
-      padding-bottom: 30px;
+      display: block;
+      margin: 0 auto 30px;
+      border-radius: 20px;
+      overflow: hidden;
+
+      width: 100%;
+      height: auto;
+      aspect-ratio: 305 / 202;
+      max-width: 305px;
 
       img {
         display: block;
         border-radius: 20px;
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 305 / 202;
+        object-fit: cover;
       }
     }
 
@@ -739,6 +752,12 @@ body {
     &__text {
       color: #6d6d6d;
       font-size: 15px;
+    }
+  }
+
+  &:hover {
+    .mir-box__wrap__img img {
+      transform: scale(1.05);
     }
   }
 }
@@ -7675,9 +7694,7 @@ a.title-box-top:hover .caption__rss,
 .card-box__img img {
   transition: all 0.2s ease-in-out;
 }
-.card-box:hover .card-box__img img {
-  transform: scale(1.05);
-}
+
 
 .cookie__btn {
   .button {
@@ -7690,9 +7707,7 @@ a.title-box-top:hover .caption__rss,
   margin-right: -10px;
 }
 
-.card-box:hover .card-box__bg {
-  transform: scale(1.05);
-}
+
 
 .order-info__pay-system__list__item {
   cursor: pointer;
@@ -7726,5 +7741,19 @@ a.title-box-top:hover .caption__rss,
     width: 100%;
     height: auto;
     aspect-ratio: 342 / 206;
+  }
+}
+.cookie__desc a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .card-box:hover .card-box__bg {
+    transform: scale(1.05);
+  }
+  .card-box:hover .card-box__img img {
+    transform: scale(1.05);
   }
 }

@@ -2507,6 +2507,17 @@
     padding-top: 0;
     padding-bottom: 15px;
   }
+  .swiper-slide {
+    .card-box__hover {
+      width: auto;
+      height: auto;
+    }
+
+    .card-box .card-box__img--bottom {
+      padding-bottom: 0 !important;
+      padding-top: 15px !important;
+    }
+  }
 }
 
 @media screen and (max-width: 574px) {
