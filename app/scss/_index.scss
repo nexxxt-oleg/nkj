@@ -6486,6 +6486,7 @@ a:hover {
 
     &:hover {
       border-color: #282828;
+      color: #07805c;
     }
   }
 
@@ -7747,7 +7748,13 @@ a.title-box-top:hover .caption__rss,
   color: #fff;
   text-decoration: none;
 }
-
+.order-info__photo__more {
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+.order-info__photo__more:hover {
+  color: #07805c;
+}
 
 @media screen and (min-width: 1200px) {
   .card-box:hover .card-box__bg {
@@ -7756,4 +7763,21 @@ a.title-box-top:hover .caption__rss,
   .card-box:hover .card-box__img img {
     transform: scale(1.05);
   }
+}
+
+.button--silver:hover {
+  color: #07805c;
+  background: #fff;
+}
+.order-info__footer .button--white:hover {
+  background: #fff;
+  color: #d73434;
+}
+
+.pagination__btn__nav:hover {
+  color: #07805c;
+  border-color: #282828;
+}
+.pagination__item__link:hover {
+  border-color: #282828;
 }
