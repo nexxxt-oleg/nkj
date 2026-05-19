@@ -7781,3 +7781,9 @@ a.title-box-top:hover .caption__rss,
 .pagination__item__link:hover {
   border-color: #282828;
 }
+
+.news__slider__wrapper{
+  .swiper__nav {
+    top: 248px;
+  }
+}

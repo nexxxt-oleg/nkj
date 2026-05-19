@@ -2518,9 +2518,19 @@
       padding-top: 15px !important;
     }
   }
+  .news__slider__wrapper{
+    .swiper__nav {
+      top: 150px;
+    }
+  }
 }
 
 @media screen and (max-width: 574px) {
+  .news__slider__wrapper{
+    .swiper__nav {
+      top: 86px;
+    }
+  }
   .cart-list__item__badge {
     top: 5px;
     left: 5px;
