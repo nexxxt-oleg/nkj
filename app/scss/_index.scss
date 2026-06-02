@@ -5672,7 +5672,7 @@ input[type=number]::-webkit-inner-spin-button {
 
   &__item {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     align-items: center;
 
     &__desc {
@@ -5680,7 +5680,7 @@ input[type=number]::-webkit-inner-spin-button {
     }
 
     &__btn {
-      min-width: 145px;
+      min-width: 142px;
     }
 
     &__label {
@@ -7785,5 +7785,86 @@ a.title-box-top:hover .caption__rss,
 .news__slider__wrapper{
   .swiper__nav {
     top: 248px;
+  }
+}
+
+.books-params__list {
+  display: block;
+  padding-bottom: 35px;
+  li {
+    padding: 0 0 15px 25px;
+    position: relative;
+    font-size: 16px;
+    &::after {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 3px;
+      position: absolute;
+      z-index: 1;
+      top: 8px;
+      left: 1px;
+      background: #282828;
+    }
+  }
+
+}
+
+.price-box__item__cost__old {
+  color: #c7d0da;
+  text-decoration: line-through;
+  text-decoration-color: #e31e27;
+}
+
+.button.button--ozon {
+  color: #fff;
+  background: #005bff;
+}
+.button.button--wb {
+  color: #fff;
+  background: #990099;
+  padding: 5px 10px;
+}
+.single-book__sale {
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  left: 15px;
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 12px;
+  color: #fff;
+  background: #e31e27;
+  font-size: 12px;
+  line-height: 14px;
+  height: 24px;
+  font-weight: 500;
+  border-radius: 12px;
+}
+
+.books-params__btn {
+  max-width: 234px;
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    gap: 10px;
+    padding: 5px;
+    height: 44px;
+    border-radius: 22px;
+    border: 1px solid #c7d0da;
+  }
+  &__ico {
+    min-width: 32px;
+    width: 32px;
+    color: #c7d0da;
+  }
+  &__text {
+    color: #282828;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: bold;
   }
 }
