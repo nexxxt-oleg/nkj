@@ -290,6 +290,36 @@
 }
 
 @media screen and (max-width: 991px) {
+  .single-journal-art {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    &__img {
+      width: 64px;
+      min-width: 64px;
+      img {
+        width: 64px;
+        height: 64px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+    }
+  }
+  .books-params__btn {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    &__item {
+      width: calc(50% - 8px);
+    }
+  }
+  .books-params__list {
+    padding-bottom: 10px;
+  }
+  .single-journal-pic {
+    width: 230px;
+    margin: 0 auto;
+  }
   .cabinet__journal {
     height: 145px;
     margin-top: 15px;
@@ -1073,6 +1103,18 @@
 }
 
 @media screen and (max-width: 768px) {
+  .single-journal-paginate__item__img {
+    display: none;
+  }
+  .single-journal-paginate__item {
+    align-items: flex-start;
+    gap: 10px;
+    &__line {
+      width: 24px;
+      height: 24px;
+      min-width: 24px;
+    }
+  }
   .search-page__not-res{
     padding: 10px 0;
   }
@@ -2526,6 +2568,32 @@
 }
 
 @media screen and (max-width: 574px) {
+  .single-journal-art {
+    padding: 15px 0;
+    gap: 16px;
+  }
+  .books-params__list li {
+    font-size: 14px;
+    padding: 0 0 10px 15px;
+  }
+  .single-journal-paginate__item__nomer {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .single-journal-paginate {
+    gap: 16px;
+    justify-content: space-between;
+    &__item {
+      width: 140px;
+      min-width: 140px;
+    }
+  }
+  .single-journal-paginate__item__title {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 16px;
+  }
   .news__slider__wrapper{
     .swiper__nav {
       top: 86px;
