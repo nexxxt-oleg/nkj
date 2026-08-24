@@ -7952,3 +7952,47 @@ a.title-box-top:hover .caption__rss,
     }
   }
 }
+
+.fact.fact--main {
+  margin-bottom: 50px;
+  text-align: left;
+  position: relative;
+  overflow: visible;
+  padding-left: 50px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: calc(100% - 40px);
+    height: 12px;
+    background: #282828;
+    left: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    border-radius: 0 0 6px 6px;
+  }
+  .fact__header {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .fact__body {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 150px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+
+    .card-box__title {
+      font-size: 52px;
+      flex-grow: 1;
+      text-align: left;
+      line-height: 1.2;
+    }
+    .fact__body__img {
+      min-width: 190px;
+    }
+  }
+}
