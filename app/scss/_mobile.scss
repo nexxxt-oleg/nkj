@@ -293,9 +293,11 @@
   .single-journal-art {
     flex-direction: row-reverse;
     align-items: flex-start;
+
     &__img {
       width: 64px;
       min-width: 64px;
+
       img {
         width: 64px;
         height: 64px;
@@ -309,6 +311,7 @@
     width: 100%;
     display: flex;
     gap: 16px;
+
     &__item {
       width: calc(50% - 8px);
     }
@@ -1109,13 +1112,14 @@
   .single-journal-paginate__item {
     align-items: flex-start;
     gap: 10px;
+
     &__line {
       width: 24px;
       height: 24px;
       min-width: 24px;
     }
   }
-  .search-page__not-res{
+  .search-page__not-res {
     padding: 10px 0;
   }
   .search-page__not-res__title {
@@ -1147,6 +1151,7 @@
   }
   .search-item__img {
     min-width: 64px;
+
     & > img {
       width: 64px;
       height: 64px;
@@ -1159,6 +1164,7 @@
   .search-page__result__header {
     display: block;
     padding-bottom: 20px;
+
     .search-page__result__count {
       padding-top: 5px;
     }
@@ -1174,12 +1180,15 @@
 
     font-size: 14px;
     line-height: 18px;
+
     &__label {
       width: 80px;
     }
+
     &__val {
       font-weight: bold;
     }
+
     .dropdown-toggle {
       display: flex;
       align-items: center;
@@ -2560,10 +2569,49 @@
       padding-top: 15px !important;
     }
   }
-  .news__slider__wrapper{
+  .news__slider__wrapper {
     .swiper__nav {
       top: 150px;
     }
+  }
+  .search-page__form__text {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 60px;
+  }
+  .search-page__form__btn {
+    height: 60px;
+  }
+  .categories-group__header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .categories-group__title {
+    gap: 20px;
+  }
+  .categories-group__title__ico {
+    min-width: 48px;
+    height: 48px;
+
+    img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+  }
+  .categories-group__title__text {
+    font-size: 18px;
+  }
+  .categories-group__sub-title {
+    font-size: 16px;
+  }
+  .categories-group__sub-nav li a {
+    font-size: 14px;
+  }
+  .categories-group__sub-nav {
+    padding-bottom: 15px;
   }
 }
 
@@ -2583,6 +2631,7 @@
   .single-journal-paginate {
     gap: 16px;
     justify-content: space-between;
+
     &__item {
       width: 140px;
       min-width: 140px;
@@ -2594,7 +2643,7 @@
     letter-spacing: 0.1em;
     line-height: 16px;
   }
-  .news__slider__wrapper{
+  .news__slider__wrapper {
     .swiper__nav {
       top: 86px;
     }
