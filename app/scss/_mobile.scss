@@ -290,6 +290,35 @@
 }
 
 @media screen and (max-width: 991px) {
+  .modal__filter-years {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    &__item {
+      display: flex;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 500;
+      cursor: pointer;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      background: #e8ecf1;
+      border: 1px solid #e8ecf1;
+      transition: all 0.2s ease-in-out;
+      color: #000;
+      &.active {
+        color: #fff;
+        background: #000 !important;
+        border-color: #000 !important;
+      }
+    }
+  }
+
+  .header-filter.header-filter--acc {
+    display: none;
+  }
   .single-journal-art {
     flex-direction: row-reverse;
     align-items: flex-start;
