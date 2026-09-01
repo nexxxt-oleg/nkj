@@ -1,4 +1,7 @@
 @media screen and (max-width: 1400px) {
+  .order-page__wrap {
+    gap: 24px;
+  }
   .order-info__pay-system__list {
     gap: 15px;
     flex-wrap: wrap;
@@ -56,6 +59,17 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .bx-soa-pp.row {
+    .col-lg-6 {
+      width: 100%;
+    }
+  }
+  #bx-soa-delivery .bx-soa-pp-desc-container .bx-soa-pp-company {
+    min-width: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
   .order-info__body {
     display: block;
     min-height: auto;
@@ -290,6 +304,23 @@
 }
 
 @media screen and (max-width: 991px) {
+  .order-page {
+    margin-top: -60px;
+    padding-top: 60px;
+  }
+  .order-page__sidebar__inn,
+  .order-page__col-sb {
+    width: 100%;
+  }
+  .order-page__wrap {
+    flex-direction: column;
+  }
+  .footer-pag-years--mob {
+    display: block;
+  }
+  .journal-footer-nav__center {
+    display: none !important;
+  }
   .modal__filter-years {
     display: grid;
     gap: 10px;
@@ -1135,6 +1166,37 @@
 }
 
 @media screen and (max-width: 768px) {
+  .order-page__sidebar__label, .order-page__sidebar__value {
+    font-size: 14px;
+  }
+  .order-page__sidebar__inn {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .order-page__wrap {
+    gap: 0;
+  }
+  .order-page__sidebar__itog__label {
+    font-size: 16px;
+  }
+  .order-page__sidebar__itog__value {
+    font-size: 20px;
+  }
+  #bx-soa-delivery .bx-soa-pp-desc-container .bx-soa-pp-company {
+    padding: 20px 40px;
+    border-radius: 10px;
+  }
+  .order-page__group {
+    padding: 25px 20px;
+    border-radius: 10px;
+  }
+  .order-page__group__title {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  .bx-soa-location-input-container .bx-sls {
+    padding-bottom: 15px;
+  }
   .single-journal-paginate__item__img {
     display: none;
   }
@@ -2645,6 +2707,52 @@
 }
 
 @media screen and (max-width: 574px) {
+  #bx-soa-paysystem .bx-soa-pp-item-container .bx-soa-pp-company.bx-selected .bx-soa-pp-company-graf-container:after {
+    top: 0;
+    left: 0;
+  }
+  #bx-soa-paysystem .bx-soa-pp-item-container .bx-soa-pp-company {
+    width: calc(50% - 8px);
+    min-width: calc(50% - 8px);
+  }
+  .order-page__col-sb {
+    min-width: 100%;
+  }
+  #bx-soa-paysystem .bx-soa-pp-item-container .bx-soa-pp-company-graf-container {
+    height: 75px;
+  }
+  #bx-soa-paysystem .bx-soa-pp-item-container {
+    gap: 16px;
+  }
+  #bx-soa-delivery .bx-soa-pp-desc-container .bx-soa-pp-company .bx-soa-pp-company-title  {
+    font-size: 16px;
+    text-align: center;
+  }
+  #bx-soa-delivery .bx-soa-pp-desc-container .bx-soa-pp-company .bx-soa-pp-company-desc {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  #bx-soa-delivery .bx-soa-pp-desc-container .bx-soa-pp-company .bx-soa-pp-list .bx-soa-pp-list-termin,
+  #bx-soa-delivery .bx-soa-pp-desc-container .bx-soa-pp-company .bx-soa-pp-list .bx-soa-pp-list-description {
+    font-size: 14px;
+  }
+  #bx-soa-delivery .bx-soa-pp-desc-container .bx-soa-pp-company .bx-soa-pp-company-graf-container {
+    padding-bottom: 20px;
+  }
+  .order-page__group .bx-soa-custom-label,
+  .bx-soa-reference{
+    font-size: 12px;
+  }
+  #bx-soa-delivery .bx-soa-pp-item-container .bx-soa-pp-company .bx-soa-pp-company-graf-container {
+    height: 70px;
+  }
+  #bx-soa-delivery .bx-soa-pp-item-container .bx-soa-pp-company .bx-soa-pp-company-smalltitle {
+    padding-top: 5px;
+    font-size: 14px;
+  }
+  #bx-soa-delivery .bx-soa-pp-item-container {
+    gap: 16px;
+  }
   .single-journal-art {
     padding: 15px 0;
     gap: 16px;

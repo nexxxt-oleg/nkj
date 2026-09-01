@@ -8696,3 +8696,46 @@ a.title-box-top:hover .caption__rss,
     padding: 20px 10px;
   }
 }
+
+.journal-footer-nav__center {
+  height: 60px;
+  width: 574px;
+  .footer-pag-years__btn {
+    width: 100%;
+    text-align: center;
+    border: none;
+    height: 60px;
+    background: transparent;
+  }
+  .crosswords__header__year {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+  }
+  .dropdown-toggle::after {
+    position: absolute;
+    z-index: 1;
+    left: 100%;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top:  5px solid;
+    top: 50%;
+    margin-top: -3px;
+  }
+  .footer-pag-years__accordion {
+    background-color: #fff;
+    border-radius: 15px;
+  }
+}
+
+.footer-pag-years--mob {
+  display: none;
+}
+
+
+.footer-pag-years__accordion.active {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+}
+#bx-soa-paysystem .bx-soa-pp-item-container .bx-soa-pp-company-image {
+  background-position: 50% 50%;
+}
