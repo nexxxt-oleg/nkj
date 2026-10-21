@@ -8743,3 +8743,8 @@ a.title-box-top:hover .caption__rss,
 #bx-soa-paysystem .bx-soa-pp-item-container .bx-soa-pp-company-image {
   background-position: 50% 50%;
 }
+
+.main > div.container {
+  position: relative;
+  z-index: 1;
+}

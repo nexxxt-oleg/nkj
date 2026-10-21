@@ -59,6 +59,27 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .fact.fact--main {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .fact__header {
+      text-align: center;
+    }
+
+    .fact__body {
+      flex-direction: column;
+      gap: 15px;
+      padding: 0;
+
+      .card-box__title {
+        text-align: center !important;
+        font-size: 30px;
+      }
+    }
+
+  }
   .bx-soa-pp.row {
     .col-lg-6 {
       width: 100%;
@@ -304,6 +325,39 @@
 }
 
 @media screen and (max-width: 991px) {
+  .new-journal-line.row {
+    position: relative;
+    z-index: 1;
+    padding-left: 100px;
+    min-height: 165px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+
+    .col-lg-4:first-child {
+      width: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .new-journal-line__img {
+      width: 62px;
+      margin: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .new-journal-line__title {
+      font-size: 16px;
+      padding-top: 35px;
+    }
+  }
   .order-page {
     margin-top: -60px;
     padding-top: 60px;
@@ -325,6 +379,7 @@
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
+
     &__item {
       display: flex;
       font-size: 14px;
@@ -339,6 +394,7 @@
       border: 1px solid #e8ecf1;
       transition: all 0.2s ease-in-out;
       color: #000;
+
       &.active {
         color: #fff;
         background: #000 !important;
@@ -1166,6 +1222,14 @@
 }
 
 @media screen and (max-width: 768px) {
+  .fact.fact--main .fact__body .fact__body__img {
+    width: 110px;
+    min-width: 110px;
+    padding-bottom: 0;
+  }
+  .fact.fact--main .fact__body .card-box__title {
+    font-size: 16px;
+  }
   .order-page__sidebar__label, .order-page__sidebar__value {
     font-size: 14px;
   }
@@ -2707,6 +2771,19 @@
 }
 
 @media screen and (max-width: 574px) {
+  .new-journal-line.row .col-lg-4:first-child {
+    width: 70px;
+  }
+  .new-journal-line.row {
+    padding-left: 70px;
+    height: auto;
+    min-height: 150px;
+    display: block;
+  }
+  .new-journal-line.row .new-journal-line__title {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
   #bx-soa-paysystem .bx-soa-pp-item-container .bx-soa-pp-company.bx-selected .bx-soa-pp-company-graf-container:after {
     top: 0;
     left: 0;
@@ -2724,7 +2801,7 @@
   #bx-soa-paysystem .bx-soa-pp-item-container {
     gap: 16px;
   }
-  #bx-soa-delivery .bx-soa-pp-desc-container .bx-soa-pp-company .bx-soa-pp-company-title  {
+  #bx-soa-delivery .bx-soa-pp-desc-container .bx-soa-pp-company .bx-soa-pp-company-title {
     font-size: 16px;
     text-align: center;
   }
@@ -2740,7 +2817,7 @@
     padding-bottom: 20px;
   }
   .order-page__group .bx-soa-custom-label,
-  .bx-soa-reference{
+  .bx-soa-reference {
     font-size: 12px;
   }
   #bx-soa-delivery .bx-soa-pp-item-container .bx-soa-pp-company .bx-soa-pp-company-graf-container {
