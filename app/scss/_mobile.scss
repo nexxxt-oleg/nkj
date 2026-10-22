@@ -1222,6 +1222,12 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .reg-box__inner {
+      min-height: calc(100vh - 67px);
+    }
+
+
   .fact.fact--main .fact__body .fact__body__img {
     width: 110px;
     min-width: 110px;

@@ -1236,7 +1236,7 @@ body {
 
 @media screen and (min-width: 1921px) {
   .reg-box::after {
-    background-image: url("../images/dist/bg-auth@2.jpg");
+    background-image: url("../images/dist/bg-auth.jpg");
   }
 }
 
@@ -8747,4 +8747,11 @@ a.title-box-top:hover .caption__rss,
 .main > div.container {
   position: relative;
   z-index: 1;
+}
+
+button.reg-box__right__back {
+  background: transparent;
+  border: none;
+  padding: 0;
+  outline: none !important;
 }
