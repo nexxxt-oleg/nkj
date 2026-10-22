@@ -1222,7 +1222,9 @@
 }
 
 @media screen and (max-width: 768px) {
-
+  .reg-box {
+    background: url("../images/dist/bg-reg-mob.jpg") 50% 0 no-repeat;
+  }
     .reg-box__inner {
       min-height: calc(100vh - 67px);
     }
