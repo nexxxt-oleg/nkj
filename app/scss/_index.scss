@@ -8755,3 +8755,11 @@ button.reg-box__right__back {
   padding: 0;
   outline: none !important;
 }
+
+.news {
+  position: relative;
+  overflow: hidden;
+}
+.news__sidebar__inner {
+  padding-bottom: 50px;
+}
