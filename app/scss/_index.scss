@@ -8561,12 +8561,13 @@ a.title-box-top:hover .caption__rss,
 }
 
 .header-filter--acc {
-  position: relative;
+  position: absolute;
   height: 55px;
   width: 460px;
   min-width: 460px;
   z-index: 2;
-  margin-right: -60px;
+  top: 10px;
+  right: -60px;
 }
 
 .header-filter-accordion {
@@ -8659,10 +8660,11 @@ a.title-box-top:hover .caption__rss,
 }
 
 .header-filter-accordion {
-  background: #fff;
+
   border-radius: 15px;
   &.active {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    background: #fff;
   }
 }
 
@@ -8771,4 +8773,10 @@ button.reg-box__right__back {
 }
 .news__sidebar__inner {
   padding-bottom: 50px;
+}
+
+.header-box__col-right {
+  width: 200px;
+  position: relative;
+  height: 60px;
 }
