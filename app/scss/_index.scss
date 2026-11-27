@@ -8972,4 +8972,29 @@ button.reg-box__right__back {
     }
   }
 }
+.related-articles__item img,
+.single-journal-art img {
+  transition: all 0.2s ease-in-out;
+}
+.related-articles__item:hover {
+  .related-articles__item__title {
+    color: #198754;
+  }
+  img {
+    transform: scale(1.1);
+  }
+}
+.single-journal-art:hover {
+  .related-articles__item__title {
+    color: #198754;
+  }
+  img {
+    transform: scale(1.1);
+  }
+}
 
+.single-journal-paginate__item:hover {
+  .single-journal-paginate__item__title {
+    color: #198754;
+  }
+}
