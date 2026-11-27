@@ -8998,3 +8998,26 @@ button.reg-box__right__back {
     color: #198754;
   }
 }
+
+.link-box:hover .link-box__name,
+.header__body__logo__number:hover,
+.news__top__cat:hover {
+  color: #198754;
+}
+
+.journal-box__img:hover {
+  transform: translateY(-5px);
+}
+.journal-box__img {
+  transition: all 0.2s ease-in-out;
+}
+
+.header-filter__btn {
+  color: #282828;
+}
+
+
+.books-params__list a:hover {
+  color: #198754;
+  text-decoration: none;
+}
