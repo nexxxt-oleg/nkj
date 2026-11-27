@@ -8,7 +8,13 @@
     }
   }
 }
-
+@media screen and (max-width: 1440px) {
+  .scroll-top {
+    margin-left: 0;
+    left: auto;
+    right: 10px;
+  }
+}
 @media screen and (max-width: 1400px) {
   .order-page__wrap {
     gap: 24px;
@@ -31,7 +37,7 @@
     font-size: 12px;
   }
   .toolbar-top__right__ico {
-    width: 40px;
+    width: 44px;
   }
   .card-box.card-box--fact {
     padding-left: 15px;
@@ -2800,7 +2806,9 @@
 }
 
 @media screen and (max-width: 574px) {
-
+  .toolbar-top__right {
+    gap: 10px;
+  }
   .new-journal-line.row .col-lg-4:first-child {
     width: 70px;
   }
