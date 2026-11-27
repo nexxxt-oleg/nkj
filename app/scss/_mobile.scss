@@ -1,3 +1,14 @@
+@media screen and (min-width: 1401px) {
+  .header.header--home .header__body {
+    padding: 40px 0 60px;
+
+    .header__body__logo__img svg {
+      width: 810px;
+      height: 52px;
+    }
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .order-page__wrap {
     gap: 24px;
@@ -1223,6 +1234,8 @@
     width: 100%;
     height: auto;
   }
+
+
 }
 
 @media screen and (max-width: 768px) {
