@@ -1896,6 +1896,7 @@ body {
   padding: 50px 40px 60px 40px;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 
   &__wrap {
     position: relative;
@@ -1952,6 +1953,17 @@ body {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+
+    .button {
+      background: #07805c;
     }
   }
 }
@@ -7698,7 +7710,7 @@ a.title-box-top:hover,
 .breadcrumbs li a:hover,
 .elements__item:hover h2,
 .journal-box__title:hover {
-  color: #07805c;
+  color: #16a085;
 }
 
 .card-box__title.color-white:hover {
